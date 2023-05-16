@@ -1,0 +1,10 @@
+测试套/软件包名,测试用例名,日志文件,原因,Broken testcase,pkg not found,preinstall absent,kernel module absent,file missing,systemd unit restart failure,systemd unit runtime error,systemd unit enable failure,timeout
+nodejs,oe_test_nodejs_04,2023-05-16-14_59_02.log,failed to execute the case,0,0,0,0,0,0,0,0,0
+nodejs,oe_test_nodejs_03,2023-05-16-14_53_59.log,failed to execute the case,0,0,0,0,0,0,0,0,0
+nodejs,oe_test_nodejs_02,2023-05-16-14_48_53.log,failed to execute the case,0,0,0,0,0,0,0,0,0
+nodejs,oe_test_nodejs_01,2023-05-16-14_43_46.log,failed to execute the case,0,0,0,0,0,0,0,0,0
+mysql,oe_test_service_mysql,2023-05-16-13_26_36,"file missing
+systemd unit restart failure
+systemd unit runtime error
+systemd unit enable failure
+",0,0,0,0,1,1,1,1,0
