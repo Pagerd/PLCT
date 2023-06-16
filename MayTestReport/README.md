@@ -249,3 +249,210 @@ Failed to restart ceph.target: Unit ceph.target is masked.
 ### chrony
 
 ##### oe_test_service_chrony_wait:
+
+### clamav
+
+##### oe_test_clamav_clamdtop:
+
+
+
+### clevis
+
+##### oe_test_high_nbde:缺少cryptsetup-reencrypt
+
+对应log如下
+
+```
++ DNF_INSTALL 'tang clevis clevis-dracut cryptsetup-reencrypt clevis-udisks2'
++ pkgs='tang clevis clevis-dracut cryptsetup-reencrypt clevis-udisks2'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen/libs/locallibs/rpm_manage.py install --pkgs 'tang clevis clevis-dracut cryptsetup-reencrypt clevis-udisks2' --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:31:47 ago on Wed 07 Jun 2023 06:21:20 PM UTC.
+No match for argument: cryptsetup-reencrypt
+Error: Unable to find a match: cryptsetup-reencrypt'
+```
+
+##### oe_test_install_clevis:
+
+对应log如下
+
+```
++ clevis encrypt tang '{"url":"http://127.0.0.1:8009","adv":"adv.jws"}'
+Advertisement file '' is malformed!
++ CHECK_RESULT 1 0 0 'Failed to encrypt file'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to encrypt file'
++ exit_mode=0
++ '[' -z 1 ']'
+```
+
+##### oe_test_service_clevis-luks-askpass:
+
+对应log如下
+
+```
++ service=clevis-luks-askpass.service
++ status='inactive (dead)'
++ systemctl status clevis-luks-askpass.service
++ grep Active
++ grep -v 'inactive (dead)'
+     Active: active (running) since Wed 2023-06-07 18:59:28 UTC; 3s ago
++ CHECK_RESULT 0 0 1 'There is an error for the status of clevis-luks-askpass.service'
++ actual_result=0
++ expect_result=0
++ mode=1
++ error_log='There is an error for the status of clevis-luks-askpass.service'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 1 -eq 0 ']'
+```
+
+##### oe_test_tang_encrypt:
+
+对应log如下
+
+```
++ tang-show-keys 8009
+curl: (22) The requested URL returned error: 404
++ CHECK_RESULT 22 0 0 'Failed to check whether the Tang server advertises the signature key from the new key pair'
++ actual_result=22
++ expect_result=0
++ mode=0
+```
+
+
+
+### cmake
+
+
+
+### cobbler
+
+
+
+### cockpit
+
+
+
+### conntrack-tools
+
+
+
+### corosync
+
+
+
+### corosync-qdevice
+
+
+
+### cppcheck
+
+
+
+### dblatex
+
+
+
+### dbxtool
+
+
+
+### dejagnu
+
+
+
+### derby
+
+
+
+### dhcp
+
+
+
+### digest-list-tools
+
+
+
+### dmidecode
+
+
+
+### docker-engine
+
+
+
+### dracut
+
+
+
+### easymock
+
+
+
+### ebtables
+
+
+
+### etcd
+
+
+
+### fastdfs
+
+
+
+### fcgi
+
+
+
+### fftw
+
+
+
+### fio
+
+
+
+### firebird
+
+
+
+### firewalld
+
+
+
+### freeipmi
+
+
+
+### freeradius
+
+
+
+### ganglia
+
+
+
+### gradle
+
+
+
+### groovy
+
+
+
+### iftop
+
+
+
+### initscrpits
+
+
+
+### iSulad
+
