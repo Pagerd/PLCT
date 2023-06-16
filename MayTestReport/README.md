@@ -8,7 +8,7 @@
 
 ### container-exception-logger
 
-##### oe_test_container-exception-logger: 没有对应的riscv的docker包
+##### oe_test_container-exception-logger: 对应的镜像地址有误
 
 下为对应的log文件
 
