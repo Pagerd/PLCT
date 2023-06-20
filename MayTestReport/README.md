@@ -328,13 +328,105 @@ curl: (22) The requested URL returned error: 404
 
 ### cmake
 
+##### oe_test_ccmake:
+
+对应log如下
+
+```
+spawn ccmake -B ../buildccmake -S ../../common/
+Error opening terminal: unknown.
+expect: spawn id exp3 not open
+    while executing
+"expect "*" {send "\r"}"
++ test -d ../buildccmake/CMakeFiles
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
+```
+
+##### oe_test_ccmake3:
+
+对应log如下
+
+```
++ expect
+spawn ccmake3 -B ../buildccmake3 -S ../../common/
+Error opening terminal: unknown.
+expect: spawn id exp3 not open
+    while executing
+"expect "*" {send "\r"}"
++ test -d ../buildccmake3/CMakeFiles
++ CHECK_RESULT 1
++ actual_result=1
+```
+
 
 
 ### cobbler
 
+##### 所有测试套
+
+对应log如下
+
+```
++ cobbler distro add --name=OpenEuler1 --owners=root --boot-loader=grub --initrd=/mnt/images/pxeboot/initrd.img --kernel=/mnt/isolinux/vmlinuz
+cobblerd does not appear to be running/accessible: ConnectionRefusedError(111, 'Connection refused')
+Traceback (most recent call last):
+  File "/usr/bin/cobbler", line 35, in <module>
+    sys.exit(app.main())
+  File "/usr/lib/python3.10/site-packages/cobbler/cli.py", line 852, in main
+    rc = cli.run(sys.argv)
+  File "/usr/lib/python3.10/site-packages/cobbler/cli.py", line 418, in run
+    self.token = self.remote.login("", self.shared_secret)
+  File "/usr/lib64/python3.10/xmlrpc/client.py", line 1122, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib64/python3.10/xmlrpc/client.py", line 1464, in __request
+    response = self.__transport.request(
+  File "/usr/lib64/python3.10/xmlrpc/client.py", line 1166, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib64/python3.10/xmlrpc/client.py", line 1196, in single_request
+    raise ProtocolError(
+xmlrpc.client.ProtocolError: <ProtocolError for 127.0.0.1:80/cobbler_api: 503 Service Unavailable>
++ CHECK_RESULT 1 0 0 'Failed option: distro add'
+```
+
 
 
 ### cockpit
+
+##### oe_test_service_cockpit:
+
+对应log报错内容如下：
+
+```
++ DNF_INSTALL cockpit
++ pkgs=cockpit
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen/libs/locallibs/rpm_manage.py install --pkgs cockpit --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:02:33 ago on Tue 30 May 2023 04:29:18 PM CST.
+Error: 
+ Problem: package libvirt-6.2.0-52.oe2303.riscv64 requires libvirt-daemon-driver-storage = 6.2.0-52.oe2303, but none of the providers can be installed
+  - package cockpit-285-1.oe2303.riscv64 requires libvirt, but none of the providers can be installed
+  - package libvirt-daemon-driver-storage-6.2.0-52.oe2303.riscv64 requires libvirt-daemon-driver-storage-rbd = 6.2.0-52.oe2303, but none of the providers can be installed
+  - conflicting requests
+  - nothing provides librados.so.2()(64bit) needed by libvirt-daemon-driver-storage-rbd-6.2.0-52.oe2303.riscv64
+  - nothing provides librbd.so.1()(64bit) needed by libvirt-daemon-driver-storage-rbd-6.2.0-52.oe2303.riscv64
+  - nothing provides librados.so.2(LIBRADOS_14.2.0)(64bit) needed by libvirt-daemon-driver-storage-rbd-6.2.0-52.oe2303.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages or '\''--nobest'\'' to use not only best candidate packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:02:33 ago on Tue 30 May 2023 04:29:18 PM CST.
+Error: 
+ Problem: package libvirt-6.2.0-52.oe2303.riscv64 requires libvirt-daemon-driver-storage = 6.2.0-52.oe2303, but none of the providers can be installed
+  - package cockpit-285-1.oe2303.riscv64 requires libvirt, but none of the providers can be installed
+  - package libvirt-daemon-driver-storage-6.2.0-52.oe2303.riscv64 requires libvirt-daemon-driver-storage-rbd = 6.2.0-52.oe2303, but none of the providers can be installed
+  - conflicting requests
+  - nothing provides librados.so.2()(64bit) needed by libvirt-daemon-driver-storage-rbd-6.2.0-52.oe2303.riscv64
+  - nothing provides librbd.so.1()(64bit) needed by libvirt-daemon-driver-storage-rbd-6.2.0-52.oe2303.riscv64
+  - nothing provides librados.so.2(LIBRADOS_14.2.0)(64bit) needed by libvirt-daemon-driver-storage-rbd-6.2.0-52.oe2303.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages or '\''--nobest'\'' to use not only best candidate packages)'
+```
 
 
 
