@@ -432,9 +432,26 @@ Error:
 
 ### conntrack-tools
 
+##### oe_test_service_conntracked
+
+```
++ journalctl --since '2023-05-30 16:41:38' -u conntrackd.service
++ grep -i 'fail\|error'
++ grep -v -i 'DEBUG\|INFO\|WARNING'
+May 30 16:41:39 openeuler-riscv64 conntrackd[504]: [Tue May 30 16:41:39 2023] (pid=504) [ERROR] parsing config file in line (123), symbol 'SndSocketBuffer': syntax error
+May 30 16:41:39 openeuler-riscv64 systemd[1]: conntrackd.service: Main process exited, code=exited, status=1/FAILURE
+May 30 16:41:39 openeuler-riscv64 systemd[1]: conntrackd.service: Failed with result 'exit-code'.
+May 30 16:42:03 openeuler-riscv64 conntrackd[520]: [Tue May 30 16:42:03 2023] (pid=520) [ERROR] parsing config file in line (123), symbol 'SndSocketBuffer': syntax error
+May 30 16:42:03 openeuler-riscv64 systemd[1]: conntrackd.service: Main process exited, code=exited, status=1/FAILURE
+May 30 16:42:03 openeuler-riscv64 systemd[1]: conntrackd.service: Failed with result 'exit-code'.
++ CHECK_RESULT 0 0 1 'There is an error message for the log of conntrackd.service'
+```
+
 
 
 ### corosync
+
+##### oe_test_service_corosync
 
 
 
@@ -444,13 +461,57 @@ Error:
 
 ### cppcheck
 
+##### oe_test_cppcheck:
 
+对应log如下
+
+```
++ cppcheck -DA --force file.c
++ grep A=1
+file.c:5:6: error: Array 'a[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+    a[10] = 0;
+     ^
+Checking file.c: A=1...
++ CHECK_RESULT 0 1
++ actual_result=0
++ expect_result=1
++ mode=0
++ error_log=
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 1x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_cppcheck.sh line 95'
++ message='oe_test_cppcheck.sh line 95'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_cppcheck.sh line 95'
+Tue May 30 17:01:24 2023 - ERROR - oe_test_cppcheck.sh line 95
+```
+
+测试用例内如下
+
+```
+if [ $VERSION_ID != "22.03" ]; then
+        cppcheck -DA --force file.c | grep "A=1"
+        CHECK_RESULT $? 1
+    else
+        cppcheck -DA --force file.c | grep "A=1"
+        CHECK_RESULT $?
+    fi
+```
+
+根据输出结果疑似为测试时23.03特性与22.03相符但是测试套没有更新
 
 ### dblatex
 
 
 
 ### dbxtool
+
+##### oe_test_service_dbxtool:服务不存在
+
+
 
 
 
@@ -464,35 +525,44 @@ Error:
 
 ### dhcp
 
-
+服务启动不了
 
 ### digest-list-tools
 
-
+服务启动不了
 
 ### dmidecode
 
-
+测试套没有安装dmidecode就开始测试
 
 ### docker-engine
 
-
+服务启动不了
 
 ### dracut
 
-
+服务启动不了
 
 ### easymock
+
+##### oe_test_easymock_spring
+
+缺乏对应包
+
+```
+++ python3 /root/mugen/libs/locallibs/rpm_manage.py install --pkgs springframework-test --node 1 --tempfile ''
+Fri May 26 01:04:51 2023 - ERROR - pkgs:(springframework-test) not found
+```
 
 
 
 ### ebtables
 
-
+服务启动不了
 
 ### etcd
 
-
+服务启动不了
 
 ### fastdfs
 
@@ -512,39 +582,90 @@ Error:
 
 ### firebird
 
-
+服务启动不了
 
 ### firewalld
 
-
+服务启动不了
 
 ### freeipmi
 
-
+重启错误
 
 ### freeradius
 
-
+超时
 
 ### ganglia
 
 
 
+```
++ journalctl --since '2023-05-31 05:16:25' -u gmetad.service
++ grep -i 'fail\|error'
++ grep -v -i 'DEBUG\|INFO\|WARNING'
+May 31 05:16:27 openeuler-riscv64 gmetad[531]: Process XML (my cluster): XML_ParseBuffer() error at line 91:
+May 31 05:16:42 openeuler-riscv64 gmetad[549]: Process XML (my cluster): XML_ParseBuffer() error at line 91:
+May 31 05:16:57 openeuler-riscv64 gmetad[549]: Process XML (my cluster): XML_ParseBuffer() error at line 91:
++ CHECK_RESULT 0 0 1 'There is an error message for the log of gmetad.service'
++ actual_result=0
++ expect_result=0
++ mode=1
++ error_log='There is an error message for the log of gmetad.service'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 1 -eq 0 ']'
++ test 0x == 0x
++ test -n 'There is an error message for the log of gmetad.service'
++ LOG_ERROR 'There is an error message for the log of gmetad.service'
++ message='There is an error message for the log of gmetad.service'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'There is an error message for the log of gmetad.service'
+Wed May 31 05:17:13 2023 - ERROR - There is an error message for the log of gmetad.service
+```
+
+
+
 ### gradle
 
-
+gradle安装失败
 
 ### groovy
 
-
+groovy安装失败
 
 ### iftop
 
 
 
+```
++ grep :22
++ iftop -t -s 1 -P -c ./iftoprc
+Wed May 31 08:08:06 2023 - ERROR - Timeout : Command 'bash -x oe_test_iftop_config.sh' timed out after 1799.9985311 seconds
+```
+
+
+
+
+
 ### initscrpits
 
-
+服务启动不了
 
 ### iSulad
+
+
+
+```
++ journalctl --since '2023-05-31 07:49:33' -u isulad.service
++ grep -i 'fail\|error'
++ grep -v -i 'DEBUG\|INFO\|WARNING'
+May 31 07:49:35 openeuler-riscv64 isulad[535]:          isulad 20230530234935.230 ERROR    /home/abuild/rpmbuild/BUILD/iSulad-v2.1.1/src/utils/cutils/utils_file.c:util_list_all_subdir:953 - Failed to open directory: /var/lib/isulad/engines error:No such file or directory
+May 31 07:49:35 openeuler-riscv64 isulad[535]:          isulad 20230530234935.234 ERROR    /home/abuild/rpmbuild/BUILD/iSulad-v2.1.1/src/daemon/modules/container/restore/restore.c:containers_restore:549 - Failed to list engines
+May 31 07:49:51 openeuler-riscv64 isulad[561]:          isulad 20230530234951.703 ERROR    /home/abuild/rpmbuild/BUILD/iSulad-v2.1.1/src/utils/cutils/utils_file.c:util_list_all_subdir:953 - Failed to open directory: /var/lib/isulad/engines error:No such file or directory
+May 31 07:49:51 openeuler-riscv64 isulad[561]:          isulad 20230530234951.705 ERROR    /home/abuild/rpmbuild/BUILD/iSulad-v2.1.1/src/daemon/modules/container/restore/restore.c:containers_restore:549 - Failed to list engines
++ CHECK_RESULT 0 0 1 'There is an error message for the log of isulad.service'
++ actual_result=0
++ expect_result=0
++ mode=1
+```
 
