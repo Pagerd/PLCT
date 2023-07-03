@@ -17,3 +17,75 @@
 - 并排查出若干测试例为复测可通过测试例，目前最新整理结果如:[commit](https://github.com/KotorinMinami/res_list/commit/12f7c455eada14b1be5d4e578dad2f1c790e57bd)
 - 筛选baseOS相关测试例中在x86上成功但在riscv上失败的测试例共190个,[pr](https://gitee.com/yunxiangluo/openeuler-riscv-2303-test/pulls/82/files)
 
+### 部分缺陷
+
+#### smoke-basic-os
+
+- oe_test_rpm_suffix_name
+- - dnf list 获取的oetestsuite 软件仓中软件包版本号不带有oe2303的规范
+- oe_test_yumgroup_001
+- - oe-rv目前软件仓内并没有划分软件包组
+
+#### podman
+
+- oe_test_podman_25
+- - 运行docker相关指令时 fatal error: lfstack.push
+- oe_test_podman_28
+- - 同上
+- oe_test_podman_DK_25
+- - 同上
+- oe_test_podman_DK_28
+- - 同上
+
+### mugen测试例问题
+
+#### os-storage
+
+- oe_test_storage_ext3_mount_write
+- - 在分盘后使用相应盘块的变量名引用错误
+- oe_test_storage_ext4_mount
+- - 同上
+- oe_test_storage_fileCMD_mkfs
+- - 同上
+
+#### smoke-basic-os
+
+- oe_test_rollback
+- - mugen 测试代码并没有考虑到git软件包已安装时的情况
+
+### 软件包没有预装
+
+#### spawm-fcgi
+
+- oe_test_service_spawn-fcgi
+- - 未安装initscripts
+
+### 软件包不在源中
+
+#### storm
+
+- 测试需要apache-zookeeper软件包，但其并不在源中
+
+### 内核问题
+
+#### smoke-basic-os
+
+- oe_test_ip_rule_01
+- - 内核编译时CONFIG_IP_MULTIPLE_TABLES is not set
+- oe_test_ip_rule_02
+- - 同上
+- oe_test_rule_ipv6
+- - 同上
+- oe_test_iscsi
+- - 内核编译时CONFIG_CONFIGFS_FS is not set
+- oe_test_iscsid
+- - can not create NETLINK_ISCSI socket [Protocol not supported]可能为内核问题
+- oe_test_numactl
+- - 内核编译时CONFIG_NUMA is not set
+
+### 不属于base test 测试
+
+#### qt5-qttools
+
+- oe_test_qt5-qttools_qdbus-qt5
+- - Unable to autolaunch a dbus-daemon without a $DISPLAY for X11，没有使用有gui的镜像，不支持测试
