@@ -418,27 +418,6 @@ Segmentation fault (core dumped)
 Segmentation fault (core dumped)
 ```
 
-
-
-### x86 fail
-
-
-
-
-
-### embedded_os_basic_extra_test
-
-报错log均为尝试给/bin/文件夹内文件添加权限时报错，bin内均无所需文件
-
-例：
-
-```
-+ setcap cap_linux_immutable=eip /bin/chattr.e2fsprogs
-Failed to set capabilities on file '/bin/chattr.e2fsprogs': No such file or directory
-```
-
-
-
 #### oe_test_postgresql_vacuumdb:测试套编写错误
 
 测试套内对应代码如下
@@ -481,10 +460,6 @@ Failed to set capabilities on file '/bin/chattr.e2fsprogs': No such file or dire
 + expect_result=0
 ```
 
-
-
-
-
 ### ocaml-20.03
 
 #### oe_test_ocaml_davail:unsafe-string is not available.
@@ -508,6 +483,35 @@ oe_test_ocaml_ocaml-instr-report.sh: line 29: ocaml-instr-report: command not fo
 + CHECK_RESULT 127
 + actual_result=127
 ```
+
+
+
+### x86 fail
+
+
+
+
+
+### embedded_os_basic_extra_test
+
+报错log均为尝试给/bin/文件夹内文件添加权限时报错，bin内均无所需文件
+
+例：
+
+```
++ setcap cap_linux_immutable=eip /bin/chattr.e2fsprogs
+Failed to set capabilities on file '/bin/chattr.e2fsprogs': No such file or directory
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
