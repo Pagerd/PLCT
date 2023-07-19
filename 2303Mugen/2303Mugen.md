@@ -1,21 +1,3 @@
-# 目录
-
-- 摘要
-- 第一阶段测试
-  - 测试配置
-  - 测试套遴选
-  - 运行测试
-  - 测试结果
-- BaseOS测试
-  - 分级测试策略
-  - 测试套遴选
-  - 运行测试
-  - 测试未通过原因分析和归类说明
-  - 测试未通过原因类型说明
-  - riscv fail
-  - x86 fail
-  - success
-
 # 摘要
 
 openEuler 是一款开源操作系统。当前 openEuler 内核源于 Linux ，支持多种处理器架构，是由全球开源贡献者构建的高效、稳定、安全的开源操作系统。 
@@ -23,8 +5,6 @@ openEuler 是一款开源操作系统。当前 openEuler 内核源于 Linux ，�
 本文主要描述 openEuler RISC-V 23.03 版本自动化mugen测试结果，为下一步工作提供一个较为详细的文档
 
 **关键词**：RISC-V，自动化测试，mugen
-
-
 
 ## 测试配置
 
@@ -123,29 +103,6 @@ qemu-system-riscv64 \
 
 - mugen_ready.qcow2处理
   mugen_ready.qcow2由原始镜像openEuler-23.03-V1-base-qemu-preview.qcow2安装git和mugen依赖而来
-  
-    
-
-## 测试范围
-
-- 共399个（相相比22.03 preview V2测试增加了70个）测试套(396个软件包+systemd+os-basic+os-storage)，2127个测试用例（相比22.03 preview V2测试增加了701个）
-
-## 运行测试
-
-在host上利用qemu_test.py脚本对测试套进行测试并获得结果
-
-## 测试结果
-
-- 测试通过1405个测试用例，未通过722个测试用例 [仓库地址](https://gitee.com/yunxiangluo/openeuler-riscv-2303-test/tree/master/Automated_Test/Mugen)
-
-- 测试结果文件结构
-
-  - [logs文件夹](https://gitee.com/yunxiangluo/openeuler-riscv-2303-test/tree/master/Automated_Test/Mugen/logs)：所有测试用例的日志文件
-  - [logs_failed文件夹](https://gitee.com/yunxiangluo/openeuler-riscv-2303-test/tree/master/Automated_Test/Mugen/logs_failed)：所有未通过测试用例的日志文件
-  - [result.csv](https://gitee.com/yunxiangluo/openeuler-riscv-2303-test/blob/master/Automated_Test/Mugen/result.csv):测试结果的详细数据统计
-  - [failureCause.csv](https://gitee.com/yunxiangluo/openeuler-riscv-2303-test/blob/master/Automated_Test/Mugen/failureCause.csv)：测试未通过原因的初步分析和归类
-
-  
 
 ## 分级测试策略
 
@@ -173,11 +130,9 @@ qemu-system-riscv64 \
 - 在X86和RISCV上均失败的测试用例
 - 在x86上成功，但是在RISCV上失败的用例
 
-
-
 ## 测试结果
 
-本次测试基于mugen2023年4月23日测试套仓库中包含的所有测试套及测试用例
+本次测试基于mugen2023年4月23日测试套仓库中包含的所有测试套及测试用例,测试进度为100%
 
 共测试了558个测试套，4259个测试用例，其中
 
@@ -190,10 +145,6 @@ qemu-system-riscv64 \
 - 1311个测试用例在RISCV上成功
 - 494个测试用例在x86和RISCV上均失败
 - 175个测试用例在RISCV上失败，在x86上成功
-
-
-
-
 
 ## 分析测试用例失败原因
 
@@ -447,15 +398,9 @@ qemu-system-riscv64 \
 |                    | oe_test_openssh_scp_q                                        | fail | [log](https://github.com/KotorinMinami/res_list/tree/master/mugen-riscv/logs/openssh/oe_test_openssh_scp_q/2023-06-16-04:16:05.log) | preinstall absent/timeout                                    |
 | python-rtslib      | oe_test_service_target                                       | fail | [log](https://github.com/KotorinMinami/res_list/tree/master/mugen-riscv/logs/python-rtslib/oe_test_service_target/2023-06-16-04:21:37.log) | 内核模块缺失 configfs 导致启动出错 Could not load module: configfs |
 
-
-
-
-
 ## x86 fail
 
 此表内的测试套和测试用例均为在x86上和riscv上均失败的BaseOS测试用例
-
-
 
 | 测试套/软件包名    | 测试用例名                                             | 状态     | 日志文件                                                     | 原因                                                         |
 | ------------------ | ------------------------------------------------------ | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |

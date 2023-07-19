@@ -13,7 +13,7 @@
 
 - 整理并编写出mugen baseos的测试结果文档[report](https://github.com/Pagerd/PLCT/blob/main/2303Mugen/2303Mugen.md)
 
-- 将之前的详细分析以测试用例为单位进行编排并添加进总文档 [RISCVfail](https://github.com/Pagerd/PLCT/blob/main/2303Mugen/RISCVfail/) [x86fail](https://github.com/Pagerd/PLCT/blob/main/2303Mugen/x86Fail/)
+- 将之前的详细分析以测试用例为单位进行重新编排并添加进总文档 [RISCVfail](https://github.com/Pagerd/PLCT/blob/main/2303Mugen/RISCVfail/) [x86fail](https://github.com/Pagerd/PLCT/blob/main/2303Mugen/x86Fail/)
 
   
 
