@@ -1,4 +1,4 @@
-### oe_test_tpm-tools_01
+### oe_test_tpm-tools_01:未开启tpmd和tcsd
 
 riscv与x86均报相同错误：
 

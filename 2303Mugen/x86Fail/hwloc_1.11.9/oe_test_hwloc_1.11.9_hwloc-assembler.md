@@ -9,3 +9,4 @@ oe_test_hwloc_1.11.9_hwloc-assembler.sh: line 31: hwloc-assembler: command not f
 + actual_result=127
 ```
 
+推测为当前版本不支持hwloc-assembler命令

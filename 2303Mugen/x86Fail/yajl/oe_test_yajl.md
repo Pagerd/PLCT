@@ -1,6 +1,10 @@
-### oe_test_yajl:
+### oe_test_yajl:缺乏对应的软件包
 
+x86与riscv报错均相同
 
+在安装软件时显示没有对应软件包
+
+报错内容如下
 
 ```
 + DNF_INSTALL 'yaji yaji-devel'
