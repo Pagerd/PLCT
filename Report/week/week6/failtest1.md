@@ -175,14 +175,14 @@
 |                 | oe_test_mtr                                | 相同               | ./mugen-riscv/logs/smoke-basic-os/oe_test_mtr/2023-04-29-09:12:00.log | dns错误                                     |
 |                 | oe_test_network_001                        | 不太相同           | ./mugen-riscv/logs/smoke-basic-os/oe_test_network_001/2023-04-29-05:56:26.log | ethtool错误                                 |
 |                 | oe_test_normal_tcpdump_02                  | 相同               | ./mugen-riscv/logs/smoke-basic-os/oe_test_normal_tcpdump_02/2023-04-29-10:01:02.log | 测试套编写错误                              |
-|                 | oe_test_normal_tcpdump_03                  | 相同               | ./mugen-riscv/logs/smoke-basic-os/oe_test_normal_tcpdump_03/2023-04-29-08:01:26.log | tcpdump 错误【】                            |
+|                 | oe_test_normal_tcpdump_03                  | 相同               | ./mugen-riscv/logs/smoke-basic-os/oe_test_normal_tcpdump_03/2023-04-29-08:01:26.log | tcpdump 错误                                |
 |                 | oe_test_normal_tcpdump_04                  | 相同               | ./mugen-riscv/logs/smoke-basic-os/oe_test_normal_tcpdump_04/2023-04-29-10:01:52.log | 测试套编写错误                              |
 |                 | oe_test_route_ipv6                         | 相同               | ./mugen-riscv/logs/smoke-basic-os/oe_test_route_ipv6/2023-04-29-08:12:16.log | 不支持指定的指令                            |
-|                 | oe_test_setools                            | 相同               | ./mugen-riscv/logs/smoke-basic-os/oe_test_setools/2023-04-29-08:40:50.log | seinfo错误【】                              |
-|                 | oe_test_sevice_001                         | 相同               | ./mugen-riscv/logs/smoke-basic-os/oe_test_sevice_001/2023-04-29-06:04:10.log | systemctl指令错误【】                       |
-|                 | oe_test_stat                               | 相同               | ./mugen-riscv/logs/smoke-basic-os/oe_test_stat/2023-04-29-08:42:30.log | 没有/passswd【】                            |
+|                 | oe_test_setools                            | 相同               | ./mugen-riscv/logs/smoke-basic-os/oe_test_setools/2023-04-29-08:40:50.log | seinfo错误                                  |
+|                 | oe_test_sevice_001                         | 相同               | ./mugen-riscv/logs/smoke-basic-os/oe_test_sevice_001/2023-04-29-06:04:10.log | systemctl指令错误                           |
+|                 | oe_test_stat                               | 相同               | ./mugen-riscv/logs/smoke-basic-os/oe_test_stat/2023-04-29-08:42:30.log | 没有/passswd                                |
 |                 | oe_test_systemd_journald                   | 相同               | ./mugen-riscv/logs/smoke-basic-os/oe_test_systemd_journald/2023-04-29-08:49:27.log | journalctl错误                              |
-|                 | oe_test_tftp_ipv6                          | 相同               | ./mugen-riscv/logs/smoke-basic-os/oe_test_tftp_ipv6/2023-04-29-08:57:38.log | 传输超时【】                                |
+|                 | oe_test_tftp_ipv6                          | 相同               | ./mugen-riscv/logs/smoke-basic-os/oe_test_tftp_ipv6/2023-04-29-08:57:38.log | 传输超时                                    |
 | strongswan      | oe_test_service_strongswan                 | 相同               | ./mugen-riscv/logs/strongswan/oe_test_service_strongswan/2023-04-27-03:21:58.log | riscv堆栈错误，x86unroute shared命令失败    |
 |                 | oe_test_service_strongswan-swanctl         | 不同               | ./mugen-riscv/logs/strongswan/oe_test_service_strongswan-swanctl/2023-04-27-03:24:32.log | 服务项命令失败                              |
 |                 | oe_test_service_strongswan_01              | 不同               | ./mugen-riscv/logs/strongswan/oe_test_service_strongswan_01/2023-04-27-03:26:48.log | riscv堆栈错误，x86 openssl加载失败          |
