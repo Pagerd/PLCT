@@ -1,8 +1,0 @@
-测试套名,测试用例名,状态,与2303对比,是否一致
-open-iscsi,oe_test_open-iscsi_iscsiadm,fail,无变化,一致
-,oe_test_open-iscsi_iscsistart_iscsiuio,fail,无变化,一致
-,oe_test_service_iscsiuio,fail,无变化,一致
-,oe_test_service_iscsid,succeed,修复,
-,oe_test_socket_iscsiuio,succeed,修复,
-,oe_test_service_iscsi,succeed,无变化,
-,oe_test_socket_iscsid,succeed,无变化,
