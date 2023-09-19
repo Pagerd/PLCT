@@ -1,0 +1,565 @@
+测试套/软件包名,测试用例名,状态,日志文件,原因
+xz,oe_test_xz_xz_04,success,./mugen-riscv/logs/xz/oe_test_xz_xz_04/2023-09-12-12:06:17.log,None
+,oe_test_xz,success,./mugen-riscv/logs/xz/oe_test_xz/2023-09-12-12:10:30.log,None
+,oe_test_xz_xzdiff_01,success,./mugen-riscv/logs/xz/oe_test_xz_xzdiff_01/2023-09-12-12:10:07.log,None
+,oe_test_xz_xzcat_01,success,./mugen-riscv/logs/xz/oe_test_xz_xzcat_01/2023-09-12-12:08:12.log,None
+,oe_test_xz_xzdiff_02,success,./mugen-riscv/logs/xz/oe_test_xz_xzdiff_02/2023-09-12-12:10:52.log,None
+,oe_test_xz_xz_01,success,./mugen-riscv/logs/xz/oe_test_xz_xz_01/2023-09-12-12:05:12.log,None
+,oe_test_xz_xzcmp,success,./mugen-riscv/logs/xz/oe_test_xz_xzcmp/2023-09-12-12:09:21.log,None
+,oe_test_xz_unxz_03,success,./mugen-riscv/logs/xz/oe_test_xz_unxz_03/2023-09-12-12:07:26.log,None
+,oe_test_xz_unxz_04,success,./mugen-riscv/logs/xz/oe_test_xz_unxz_04/2023-09-12-12:07:48.log,None
+,oe_test_xz_xzcat_03,success,./mugen-riscv/logs/xz/oe_test_xz_xzcat_03/2023-09-12-12:08:56.log,None
+,oe_test_xz_unxz_01,success,./mugen-riscv/logs/xz/oe_test_xz_unxz_01/2023-09-12-12:06:40.log,None
+,oe_test_xz_unxz_02,success,./mugen-riscv/logs/xz/oe_test_xz_unxz_02/2023-09-12-12:07:03.log,None
+,oe_test_xz_xzcat_02,success,./mugen-riscv/logs/xz/oe_test_xz_xzcat_02/2023-09-12-12:08:33.log,None
+,oe_test_xz_xz_02,success,./mugen-riscv/logs/xz/oe_test_xz_xz_02/2023-09-12-12:05:35.log,None
+,oe_test_xz_xz_03,success,./mugen-riscv/logs/xz/oe_test_xz_xz_03/2023-09-12-12:05:55.log,None
+,oe_test_xz_xzdec,success,./mugen-riscv/logs/xz/oe_test_xz_xzdec/2023-09-12-12:09:43.log,None
+rsync,oe_test_service_rsyncd,success,./mugen-riscv/logs/rsync/oe_test_service_rsyncd/2023-09-12-15:36:19.log,None
+,oe_test_socket_rsyncd,success,./mugen-riscv/logs/rsync/oe_test_socket_rsyncd/2023-09-12-15:37:02.log,None
+rdate,oe_test_rdate,success,./mugen-riscv/logs/rdate/oe_test_rdate/2023-09-12-16:43:06.log,None
+ebtables,oe_test_service_ebtables,success,./mugen-riscv/logs/ebtables/oe_test_service_ebtables/2023-09-12-16:04:49.log,None
+cyrus-sasl,oe_test_service_saslauthd,success,./mugen-riscv/logs/cyrus-sasl/oe_test_service_saslauthd/2023-09-12-16:00:11.log,None
+diffutils,oe_test_diffutils_004,success,./mugen-riscv/logs/diffutils/oe_test_diffutils_004/2023-09-12-14:03:27.log,None
+,oe_test_diffutils_002,success,./mugen-riscv/logs/diffutils/oe_test_diffutils_002/2023-09-12-14:02:43.log,None
+,oe_test_diffutils_003,success,./mugen-riscv/logs/diffutils/oe_test_diffutils_003/2023-09-12-14:03:05.log,None
+,oe_test_diffutils_001,success,./mugen-riscv/logs/diffutils/oe_test_diffutils_001/2023-09-12-14:02:19.log,None
+libarchive,oe_test_libarchive_bsdtar,success,./mugen-riscv/logs/libarchive/oe_test_libarchive_bsdtar/2023-09-12-15:26:31.log,None
+,oe_test_libarchive_bsdcpio,success,./mugen-riscv/logs/libarchive/oe_test_libarchive_bsdcpio/2023-09-12-15:27:19.log,None
+createrepo_c,oe_test_createrepo_c_local_repo,success,./mugen-riscv/logs/createrepo_c/oe_test_createrepo_c_local_repo/2023-09-12-17:57:49.log,None
+cgdcbxd,oe_test_service_cgdcbxd,success,./mugen-riscv/logs/cgdcbxd/oe_test_service_cgdcbxd/2023-09-12-15:54:52.log,None
+nss,oe_test_nss,success,./mugen-riscv/logs/nss/oe_test_nss/2023-09-12-15:45:00.log,None
+tigervnc,oe_test_socket_xvnc,success,./mugen-riscv/logs/tigervnc/oe_test_socket_xvnc/2023-09-12-16:51:41.log,None
+pcre2,oe_test_pcre2grep,success,./mugen-riscv/logs/pcre2/oe_test_pcre2grep/2023-09-12-16:34:27.log,None
+sane-backends,oe_test_socket_saned,success,./mugen-riscv/logs/sane-backends/oe_test_socket_saned/2023-09-12-16:45:41.log,None
+numad,oe_test_service_numad,success,./mugen-riscv/logs/numad/oe_test_service_numad/2023-09-12-16:29:41.log,None
+byacc,oe_test_byacc_yacc_02,success,./mugen-riscv/logs/byacc/oe_test_byacc_yacc_02/2023-09-12-14:07:03.log,None
+,oe_test_byacc_byacc_02,success,./mugen-riscv/logs/byacc/oe_test_byacc_byacc_02/2023-09-12-14:06:18.log,None
+,oe_test_byacc_byacc_01,success,./mugen-riscv/logs/byacc/oe_test_byacc_byacc_01/2023-09-12-14:05:54.log,None
+,oe_test_byacc_yacc_01,success,./mugen-riscv/logs/byacc/oe_test_byacc_yacc_01/2023-09-12-14:06:40.log,None
+attr,oe_test_attr,success,./mugen-riscv/logs/attr/oe_test_attr/2023-09-12-15:49:57.log,None
+cvs,oe_test_socket_cvs,success,./mugen-riscv/logs/cvs/oe_test_socket_cvs/2023-09-12-12:56:25.log,None
+,oe_test_cvs_cvs_06,success,./mugen-riscv/logs/cvs/oe_test_cvs_cvs_06/2023-09-12-12:59:31.log,None
+,oe_test_cvs_cvs_01,success,./mugen-riscv/logs/cvs/oe_test_cvs_cvs_01/2023-09-12-12:57:16.log,None
+,oe_test_cvs_cvs_02,success,./mugen-riscv/logs/cvs/oe_test_cvs_cvs_02/2023-09-12-12:57:42.log,None
+,oe_test_cvs_cvs_04,success,./mugen-riscv/logs/cvs/oe_test_cvs_cvs_04/2023-09-12-12:58:44.log,None
+,oe_test_cvs_cvs_05,success,./mugen-riscv/logs/cvs/oe_test_cvs_cvs_05/2023-09-12-12:59:09.log,None
+,oe_test_target_cvs,success,./mugen-riscv/logs/cvs/oe_test_target_cvs/2023-09-12-12:56:52.log,None
+,oe_test_cvs_cvs_03,success,./mugen-riscv/logs/cvs/oe_test_cvs_cvs_03/2023-09-12-12:58:11.log,None
+sudo,oe_test_sudo_cvtsudoers,success,./mugen-riscv/logs/sudo/oe_test_sudo_cvtsudoers/2023-09-12-16:49:17.log,None
+libmicrohttpd,oe_test_libmicrohttpd,success,./mugen-riscv/logs/libmicrohttpd/oe_test_libmicrohttpd/2023-09-12-16:21:21.log,None
+gdbm,oe_test_gdbm_02,success,./mugen-riscv/logs/gdbm/oe_test_gdbm_02/2023-09-12-15:43:02.log,None
+,oe_test_gdbm_01,success,./mugen-riscv/logs/gdbm/oe_test_gdbm_01/2023-09-12-15:42:54.log,None
+libaec,oe_test_libaec_aec,success,./mugen-riscv/logs/libaec/oe_test_libaec_aec/2023-09-12-18:01:02.log,None
+lksctp-tools,oe_test_lksctp-tools_sctp_test,success,./mugen-riscv/logs/lksctp-tools/oe_test_lksctp-tools_sctp_test/2023-09-12-13:34:32.log,None
+,oe_test_lksctp-tools_sctp_darn_02,success,./mugen-riscv/logs/lksctp-tools/oe_test_lksctp-tools_sctp_darn_02/2023-09-12-13:33:27.log,None
+,oe_test_lksctp-tools_sctp_status,success,./mugen-riscv/logs/lksctp-tools/oe_test_lksctp-tools_sctp_status/2023-09-12-13:33:54.log,None
+,oe_test_lksctp-tools_checksctp,success,./mugen-riscv/logs/lksctp-tools/oe_test_lksctp-tools_checksctp/2023-09-12-13:32:14.log,None
+,oe_test_lksctp-tools_sctp_darn_01,success,./mugen-riscv/logs/lksctp-tools/oe_test_lksctp-tools_sctp_darn_01/2023-09-12-13:32:38.log,None
+lxcfs,oe_test_service_lxcfs,success,./mugen-riscv/logs/lxcfs/oe_test_service_lxcfs/2023-09-12-16:24:26.log,None
+flatpak,oe_test_service_flatpak-system-helper,success,./mugen-riscv/logs/flatpak/oe_test_service_flatpak-system-helper/2023-09-12-16:07:13.log,None
+glib2,oe_test_glib2,success,./mugen-riscv/logs/glib2/oe_test_glib2/2023-09-12-16:12:41.log,None
+iprutils,oe_test_target_iprutils,success,./mugen-riscv/logs/iprutils/oe_test_target_iprutils/2023-09-12-14:11:10.log,None
+,oe_test_service_iprupdate,success,./mugen-riscv/logs/iprutils/oe_test_service_iprupdate/2023-09-12-14:10:36.log,None
+,oe_test_service_iprdump,success,./mugen-riscv/logs/iprutils/oe_test_service_iprdump/2023-09-12-14:09:28.log,None
+,oe_test_service_iprinit,success,./mugen-riscv/logs/iprutils/oe_test_service_iprinit/2023-09-12-14:10:03.log,None
+poppler,oe_test_poppler,success,./mugen-riscv/logs/poppler/oe_test_poppler/2023-09-12-16:37:08.log,None
+cracklib,oe_test_cracklib,success,./mugen-riscv/logs/cracklib/oe_test_cracklib/2023-09-12-15:57:28.log,None
+vsftpd,oe_test_service_vsftpd,success,./mugen-riscv/logs/vsftpd/oe_test_service_vsftpd/2023-09-12-15:39:31.log,None
+,oe_test_target_vsftpd,success,./mugen-riscv/logs/vsftpd/oe_test_target_vsftpd/2023-09-12-15:40:13.log,None
+fakeroot,oe_test_fakeroot_faked,success,./mugen-riscv/logs/fakeroot/oe_test_fakeroot_faked/2023-09-12-15:24:17.log,None
+,oe_test_fakeroot_base,success,./mugen-riscv/logs/fakeroot/oe_test_fakeroot_base/2023-09-12-15:23:57.log,None
+openblas,oe_test_openblas,success,./mugen-riscv/logs/openblas/oe_test_openblas/2023-09-12-16:32:15.log,None
+binutils,oe_test_binutils_addr2line,success,./mugen-riscv/logs/binutils/oe_test_binutils_addr2line/2023-09-12-12:50:50.log,None
+,oe_test_binutils_objcopy,success,./mugen-riscv/logs/binutils/oe_test_binutils_objcopy/2023-09-12-12:46:56.log,None
+,oe_test_binutils_ar,success,./mugen-riscv/logs/binutils/oe_test_binutils_ar/2023-09-12-12:52:07.log,None
+,oe_test_binutils_nm,success,./mugen-riscv/logs/binutils/oe_test_binutils_nm/2023-09-12-12:52:29.log,None
+,oe_test_binutils_strip,success,./mugen-riscv/logs/binutils/oe_test_binutils_strip/2023-09-12-12:49:33.log,None
+,oe_test_binutils_size,success,./mugen-riscv/logs/binutils/oe_test_binutils_size/2023-09-12-12:48:18.log,None
+,oe_test_binutils_readelf,success,./mugen-riscv/logs/binutils/oe_test_binutils_readelf/2023-09-12-12:54:04.log,None
+,oe_test_binutils_objdump,success,./mugen-riscv/logs/binutils/oe_test_binutils_objdump/2023-09-12-12:52:51.log,None
+python-rtslib,oe_test_service_target,success,./mugen-riscv/logs/python-rtslib/oe_test_service_target/2023-09-12-16:39:28.log,None
+yajl,oe_test_yajl,x86 fail,./mugen-riscv/logs/yajl/oe_test_yajl/2023-09-12-17:55:04.log,x86 fail
+os-basic,oe_test_server_openssh_key,success,./mugen-riscv/logs/os-basic/oe_test_server_openssh_key/2023-09-13-13:13:52.log,None
+,oe_test_chrony_Manuall,success,./mugen-riscv/logs/os-basic/oe_test_chrony_Manuall/2023-09-13-14:08:25.log,None
+,oe_test_bzcmp,success,./mugen-riscv/logs/os-basic/oe_test_bzcmp/2023-09-13-11:15:21.log,None
+,oe_test_net_scriprts,success,./mugen-riscv/logs/os-basic/oe_test_net_scriprts/2023-09-13-13:29:19.log,None
+,oe_test_whereis,success,./mugen-riscv/logs/os-basic/oe_test_whereis/2023-09-13-13:56:05.log,None
+,oe_test_history,success,./mugen-riscv/logs/os-basic/oe_test_history/2023-09-13-12:04:50.log,None
+,oe_test_server_openssh_secure,success,./mugen-riscv/logs/os-basic/oe_test_server_openssh_secure/2023-09-13-12:30:18.log,None
+,oe_test_comm,success,./mugen-riscv/logs/os-basic/oe_test_comm/2023-09-13-12:33:28.log,None
+,oe_test_tcl,success,./mugen-riscv/logs/os-basic/oe_test_tcl/2023-09-13-12:10:32.log,None
+,oe_test_diff3,success,./mugen-riscv/logs/os-basic/oe_test_diff3/2023-09-13-11:01:00.log,None
+,oe_test_server_openssh_restart,success,./mugen-riscv/logs/os-basic/oe_test_server_openssh_restart/2023-09-13-13:44:30.log,None
+,oe_test_power_powertop_startup,success,./mugen-riscv/logs/os-basic/oe_test_power_powertop_startup/2023-09-13-12:26:52.log,None
+,oe_test_fold,success,./mugen-riscv/logs/os-basic/oe_test_fold/2023-09-13-12:01:43.log,None
+,oe_test_server_mariadb_dump,success,./mugen-riscv/logs/os-basic/oe_test_server_mariadb_dump/2023-09-13-12:19:40.log,None
+,oe_test_basic_modify_user,success,./mugen-riscv/logs/os-basic/oe_test_basic_modify_user/2023-09-13-11:00:21.log,None
+,oe_test_uniq,success,./mugen-riscv/logs/os-basic/oe_test_uniq/2023-09-13-13:17:39.log,None
+,oe_test_envsubst,success,./mugen-riscv/logs/os-basic/oe_test_envsubst/2023-09-13-12:29:45.log,None
+,oe_test_groupdel,success,./mugen-riscv/logs/os-basic/oe_test_groupdel/2023-09-13-13:24:57.log,None
+,oe_test_server_squid_ip,success,./mugen-riscv/logs/os-basic/oe_test_server_squid_ip/2023-09-13-12:23:51.log,None
+,oe_test_pcre_use,success,./mugen-riscv/logs/os-basic/oe_test_pcre_use/2023-09-13-12:01:07.log,None
+,oe_test_libunistring,success,./mugen-riscv/logs/os-basic/oe_test_libunistring/2023-09-13-12:04:56.log,None
+,oe_test_nmcli_cancel_auto,success,./mugen-riscv/logs/os-basic/oe_test_nmcli_cancel_auto/2023-09-13-10:56:27.log,None
+,oe_test_ProcMgmt_ps,success,./mugen-riscv/logs/os-basic/oe_test_ProcMgmt_ps/2023-09-13-10:56:36.log,None
+,oe_test_hwclock,success,./mugen-riscv/logs/os-basic/oe_test_hwclock/2023-09-13-12:04:27.log,None
+,oe_test_uid_old_uid,success,./mugen-riscv/logs/os-basic/oe_test_uid_old_uid/2023-09-13-12:16:22.log,None
+,oe_test_auditc_01,success,./mugen-riscv/logs/os-basic/oe_test_auditc_01/2023-09-13-13:40:32.log,None
+,oe_test_patch,success,./mugen-riscv/logs/os-basic/oe_test_patch/2023-09-13-11:07:25.log,None
+,oe_test_auditctl_02,success,./mugen-riscv/logs/os-basic/oe_test_auditctl_02/2023-09-13-10:56:45.log,None
+,oe_test_zgrep,success,./mugen-riscv/logs/os-basic/oe_test_zgrep/2023-09-13-11:08:01.log,None
+,oe_test_server_subversion,success,./mugen-riscv/logs/os-basic/oe_test_server_subversion/2023-09-13-13:17:17.log,None
+,oe_test_json-c,success,./mugen-riscv/logs/os-basic/oe_test_json-c/2023-09-13-11:14:01.log,None
+,oe_test_md5sum,success,./mugen-riscv/logs/os-basic/oe_test_md5sum/2023-09-13-12:10:42.log,None
+,oe_test_power_powertop_powerup,success,./mugen-riscv/logs/os-basic/oe_test_power_powertop_powerup/2023-09-13-11:10:04.log,None
+,oe_test_ProcMgmt_crontab_cmd,success,./mugen-riscv/logs/os-basic/oe_test_ProcMgmt_crontab_cmd/2023-09-13-13:43:04.log,None
+,oe_test_ProcMgmt_pgrep,success,./mugen-riscv/logs/os-basic/oe_test_ProcMgmt_pgrep/2023-09-13-11:07:18.log,None
+,oe_test_server_mariadb_stop,success,./mugen-riscv/logs/os-basic/oe_test_server_mariadb_stop/2023-09-13-12:10:51.log,None
+,oe_test_password_blank,success,./mugen-riscv/logs/os-basic/oe_test_password_blank/2023-09-13-10:36:42.log,None
+,oe_test_server_mariadb_dumpMulDB,success,./mugen-riscv/logs/os-basic/oe_test_server_mariadb_dumpMulDB/2023-09-13-14:03:20.log,None
+,oe_test_systool,success,./mugen-riscv/logs/os-basic/oe_test_systool/2023-09-13-12:26:18.log,None
+,oe_test_base32,success,./mugen-riscv/logs/os-basic/oe_test_base32/2023-09-13-13:24:50.log,None
+,oe_test_server_squid_proxy,success,./mugen-riscv/logs/os-basic/oe_test_server_squid_proxy/2023-09-13-10:57:08.log,None
+,oe_test_lua,success,./mugen-riscv/logs/os-basic/oe_test_lua/2023-09-13-11:58:59.log,None
+,oe_test_autoscan,success,./mugen-riscv/logs/os-basic/oe_test_autoscan/2023-09-13-12:16:34.log,None
+,oe_test_rev,success,./mugen-riscv/logs/os-basic/oe_test_rev/2023-09-13-12:00:01.log,None
+,oe_test_fuse,success,./mugen-riscv/logs/os-basic/oe_test_fuse/2023-09-13-13:25:04.log,None
+,oe_test_aureport,success,./mugen-riscv/logs/os-basic/oe_test_aureport/2023-09-13-11:00:32.log,None
+,oe_test_exiv2,success,./mugen-riscv/logs/os-basic/oe_test_exiv2/2023-09-13-14:11:04.log,None
+,oe_test_lastb,success,./mugen-riscv/logs/os-basic/oe_test_lastb/2023-09-13-14:03:07.log,None
+,oe_test_gsettings,success,./mugen-riscv/logs/os-basic/oe_test_gsettings/2023-09-13-11:13:50.log,None
+,oe_test_server_mariadb_onlinebackup,success,./mugen-riscv/logs/os-basic/oe_test_server_mariadb_onlinebackup/2023-09-13-12:01:50.log,None
+,oe_test_basename,success,./mugen-riscv/logs/os-basic/oe_test_basename/2023-09-13-13:31:10.log,None
+,oe_test_tail,success,./mugen-riscv/logs/os-basic/oe_test_tail/2023-09-13-12:31:52.log,None
+,oe_test_power_output_HTML,success,./mugen-riscv/logs/os-basic/oe_test_power_output_HTML/2023-09-13-12:35:58.log,None
+,oe_test_cmd_su_user,success,./mugen-riscv/logs/os-basic/oe_test_cmd_su_user/2023-09-13-12:29:53.log,None
+,oe_test_server_mariadb_backup,success,./mugen-riscv/logs/os-basic/oe_test_server_mariadb_backup/2023-09-13-11:52:10.log,None
+,oe_test_ProcMgmt_top,success,./mugen-riscv/logs/os-basic/oe_test_ProcMgmt_top/2023-09-13-11:03:28.log,None
+,oe_test_server_mariadb_backuptable,success,./mugen-riscv/logs/os-basic/oe_test_server_mariadb_backuptable/2023-09-13-13:14:15.log,None
+,oe_test_cmd_sudo,success,./mugen-riscv/logs/os-basic/oe_test_cmd_sudo/2023-09-13-12:34:09.log,None
+,oe_test_groff,success,./mugen-riscv/logs/os-basic/oe_test_groff/2023-09-13-13:30:31.log,None
+,oe_test_disk_io_sched,success,./mugen-riscv/logs/os-basic/oe_test_disk_io_sched/2023-09-13-12:00:56.log,None
+,oe_test_chgrp,success,./mugen-riscv/logs/os-basic/oe_test_chgrp/2023-09-13-13:31:16.log,None
+,oe_test_chrony_chronyc_ntpstat,success,./mugen-riscv/logs/os-basic/oe_test_chrony_chronyc_ntpstat/2023-09-13-11:08:09.log,None
+,oe_test_ProcMgmt_crontab_cronfile,success,./mugen-riscv/logs/os-basic/oe_test_ProcMgmt_crontab_cronfile/2023-09-13-11:55:50.log,None
+,oe_test_xzmore,success,./mugen-riscv/logs/os-basic/oe_test_xzmore/2023-09-13-11:59:35.log,None
+,oe_test_vim,success,./mugen-riscv/logs/os-basic/oe_test_vim/2023-09-13-10:40:31.log,None
+,oe_test_basic_create_group,success,./mugen-riscv/logs/os-basic/oe_test_basic_create_group/2023-09-13-11:00:40.log,None
+,oe_test_xzless,success,./mugen-riscv/logs/os-basic/oe_test_xzless/2023-09-13-12:37:01.log,None
+,oe_test_bzless,success,./mugen-riscv/logs/os-basic/oe_test_bzless/2023-09-13-10:36:32.log,None
+,oe_test_locate_001,success,./mugen-riscv/logs/os-basic/oe_test_locate_001/2023-09-13-13:41:55.log,None
+,oe_test_IOaccess_1Gfile,success,./mugen-riscv/logs/os-basic/oe_test_IOaccess_1Gfile/2023-09-13-10:40:55.log,None
+,oe_test_chsh,success,./mugen-riscv/logs/os-basic/oe_test_chsh/2023-09-13-13:34:46.log,None
+,oe_test_base64,success,./mugen-riscv/logs/os-basic/oe_test_base64/2023-09-13-13:46:11.log,None
+,oe_test_zcat,success,./mugen-riscv/logs/os-basic/oe_test_zcat/2023-09-13-12:33:37.log,None
+,oe_test_popd_001,success,./mugen-riscv/logs/os-basic/oe_test_popd_001/2023-09-13-13:09:53.log,None
+,oe_test_expand,success,./mugen-riscv/logs/os-basic/oe_test_expand/2023-09-13-12:17:29.log,None
+,oe_test_ProcMgmt_start_kill,success,./mugen-riscv/logs/os-basic/oe_test_ProcMgmt_start_kill/2023-09-13-13:30:14.log,None
+,oe_test_system_log_process,success,./mugen-riscv/logs/os-basic/oe_test_system_log_process/2023-09-13-14:05:58.log,None
+,oe_test_namei,success,./mugen-riscv/logs/os-basic/oe_test_namei/2023-09-13-11:46:06.log,None
+,oe_test_group_access,success,./mugen-riscv/logs/os-basic/oe_test_group_access/2023-09-13-13:44:09.log,None
+,oe_test_accessdb,success,./mugen-riscv/logs/os-basic/oe_test_accessdb/2023-09-13-12:04:20.log,None
+,oe_test_man,success,./mugen-riscv/logs/os-basic/oe_test_man/2023-09-13-13:47:27.log,None
+,oe_test_date,success,./mugen-riscv/logs/os-basic/oe_test_date/2023-09-13-13:12:40.log,None
+,oe_test_power_powertop_calibrate,success,./mugen-riscv/logs/os-basic/oe_test_power_powertop_calibrate/2023-09-13-12:33:08.log,None
+,oe_test_libffi,success,./mugen-riscv/logs/os-basic/oe_test_libffi/2023-09-13-11:01:58.log,None
+,oe_test_server_fontconfig,success,./mugen-riscv/logs/os-basic/oe_test_server_fontconfig/2023-09-13-14:08:00.log,None
+,oe_test_ar,success,./mugen-riscv/logs/os-basic/oe_test_ar/2023-09-13-12:26:36.log,None
+,oe_test_ACL_dir,success,./mugen-riscv/logs/os-basic/oe_test_ACL_dir/2023-09-13-13:30:52.log,None
+,oe_test_net_cmd_ping,success,./mugen-riscv/logs/os-basic/oe_test_net_cmd_ping/2023-09-13-14:08:17.log,None
+,oe_test_look,success,./mugen-riscv/logs/os-basic/oe_test_look/2023-09-13-13:09:45.log,None
+,oe_test_expr,success,./mugen-riscv/logs/os-basic/oe_test_expr/2023-09-13-12:17:38.log,None
+,oe_test_IOaccess_100Mfile,success,./mugen-riscv/logs/os-basic/oe_test_IOaccess_100Mfile/2023-09-13-11:11:53.log,None
+,oe_test_dircolors,success,./mugen-riscv/logs/os-basic/oe_test_dircolors/2023-09-13-13:41:40.log,None
+,oe_test_system_log_security,success,./mugen-riscv/logs/os-basic/oe_test_system_log_security/2023-09-13-11:15:11.log,None
+,oe_test_ulimit,success,./mugen-riscv/logs/os-basic/oe_test_ulimit/2023-09-13-13:25:50.log,None
+,oe_test_xmlsec,success,./mugen-riscv/logs/os-basic/oe_test_xmlsec/2023-09-13-12:18:10.log,None
+,oe_test_whatis,success,./mugen-riscv/logs/os-basic/oe_test_whatis/2023-09-13-13:13:32.log,None
+,oe_test_lsscsi_2,success,./mugen-riscv/logs/os-basic/oe_test_lsscsi_2/2023-09-13-11:48:37.log,None
+,oe_test_zipdetails,success,./mugen-riscv/logs/os-basic/oe_test_zipdetails/2023-09-13-11:49:47.log,None
+,oe_test_server_postgresql,success,./mugen-riscv/logs/os-basic/oe_test_server_postgresql/2023-09-13-13:51:25.log,None
+,oe_test_zlib,success,./mugen-riscv/logs/os-basic/oe_test_zlib/2023-09-13-12:22:48.log,None
+,oe_test_chrony_chronyd,success,./mugen-riscv/logs/os-basic/oe_test_chrony_chronyd/2023-09-13-12:27:15.log,None
+,oe_test_gmp,success,./mugen-riscv/logs/os-basic/oe_test_gmp/2023-09-13-14:11:19.log,None
+,oe_test_lsscsi_3,success,./mugen-riscv/logs/os-basic/oe_test_lsscsi_3/2023-09-13-12:23:44.log,None
+,oe_test_localectl,success,./mugen-riscv/logs/os-basic/oe_test_localectl/2023-09-13-13:53:30.log,None
+,oe_test_unlink,success,./mugen-riscv/logs/os-basic/oe_test_unlink/2023-09-13-13:09:37.log,None
+,oe_test_basic_set_account_expiration_time,success,./mugen-riscv/logs/os-basic/oe_test_basic_set_account_expiration_time/2023-09-13-13:13:21.log,None
+,oe_test_net_cmd_telnet,success,./mugen-riscv/logs/os-basic/oe_test_net_cmd_telnet/2023-09-13-11:59:12.log,None
+,oe_test_du,success,./mugen-riscv/logs/os-basic/oe_test_du/2023-09-13-10:40:46.log,None
+,oe_test_lsusb,success,./mugen-riscv/logs/os-basic/oe_test_lsusb/2023-09-13-12:32:49.log,None
+,oe_test_lz4,success,./mugen-riscv/logs/os-basic/oe_test_lz4/2023-09-13-14:10:49.log,None
+,oe_test_true,success,./mugen-riscv/logs/os-basic/oe_test_true/2023-09-13-11:59:05.log,None
+,oe_test_lsattr,success,./mugen-riscv/logs/os-basic/oe_test_lsattr/2023-09-13-12:26:45.log,None
+,oe_test_cmd_id,success,./mugen-riscv/logs/os-basic/oe_test_cmd_id/2023-09-13-13:55:44.log,None
+,oe_test_server_git_install,success,./mugen-riscv/logs/os-basic/oe_test_server_git_install/2023-09-13-12:35:37.log,None
+,oe_test_system_monitor_process,success,./mugen-riscv/logs/os-basic/oe_test_system_monitor_process/2023-09-13-14:10:42.log,None
+,oe_test_disk_tuned_new,success,./mugen-riscv/logs/os-basic/oe_test_disk_tuned_new/2023-09-13-10:29:54.log,None
+,oe_test_performance_monitor_pcp,success,./mugen-riscv/logs/os-basic/oe_test_performance_monitor_pcp/2023-09-13-11:49:57.log,None
+,oe_test_server_mariadb_copy,success,./mugen-riscv/logs/os-basic/oe_test_server_mariadb_copy/2023-09-13-10:36:55.log,None
+,oe_test_nmcli_systemd_resolved,success,./mugen-riscv/logs/os-basic/oe_test_nmcli_systemd_resolved/2023-09-13-13:40:39.log,None
+,oe_test_USBinfo,success,./mugen-riscv/logs/os-basic/oe_test_USBinfo/2023-09-13-12:31:34.log,None
+,oe_test_bsdcat,success,./mugen-riscv/logs/os-basic/oe_test_bsdcat/2023-09-13-12:28:53.log,None
+,oe_test_virt-what,success,./mugen-riscv/logs/os-basic/oe_test_virt-what/2023-09-13-13:55:26.log,None
+,oe_test_ProcMgmt_sar,success,./mugen-riscv/logs/os-basic/oe_test_ProcMgmt_sar/2023-09-13-14:09:16.log,None
+,oe_test_server_mariadb_backupDB,success,./mugen-riscv/logs/os-basic/oe_test_server_mariadb_backupDB/2023-09-13-13:10:00.log,None
+,oe_test_cksum,success,./mugen-riscv/logs/os-basic/oe_test_cksum/2023-09-13-11:00:51.log,None
+,oe_test_c_stat,success,./mugen-riscv/logs/os-basic/oe_test_c_stat/2023-09-13-13:30:43.log,None
+,oe_test_seq,success,./mugen-riscv/logs/os-basic/oe_test_seq/2023-09-13-12:17:22.log,None
+,oe_test_net_conninfo_lsof,success,./mugen-riscv/logs/os-basic/oe_test_net_conninfo_lsof/2023-09-13-11:49:28.log,None
+,oe_test_ProcMgmt_at,success,./mugen-riscv/logs/os-basic/oe_test_ProcMgmt_at/2023-09-13-11:57:44.log,None
+,oe_test_kernel_cgroup,success,./mugen-riscv/logs/os-basic/oe_test_kernel_cgroup/2023-09-13-11:09:53.log,None
+,oe_test_zgrep_002,success,./mugen-riscv/logs/os-basic/oe_test_zgrep_002/2023-09-13-11:09:24.log,None
+,oe_test_glibc,success,./mugen-riscv/logs/os-basic/oe_test_glibc/2023-09-13-12:33:59.log,None
+,oe_test_cairo,success,./mugen-riscv/logs/os-basic/oe_test_cairo/2023-09-13-12:05:49.log,None
+,oe_test_server_vsftpd_restart,success,./mugen-riscv/logs/os-basic/oe_test_server_vsftpd_restart/2023-09-13-13:25:58.log,None
+,oe_test_python3-kmod,success,./mugen-riscv/logs/os-basic/oe_test_python3-kmod/2023-09-13-11:11:03.log,None
+,oe_test_cal,success,./mugen-riscv/logs/os-basic/oe_test_cal/2023-09-13-12:06:49.log,None
+,oe_test_ctags,success,./mugen-riscv/logs/os-basic/oe_test_ctags/2023-09-13-11:10:31.log,None
+,oe_test_server_httpd_checkfirewall,success,./mugen-riscv/logs/os-basic/oe_test_server_httpd_checkfirewall/2023-09-13-13:48:53.log,None
+,oe_test_power_measurement_internal,success,./mugen-riscv/logs/os-basic/oe_test_power_measurement_internal/2023-09-13-13:39:48.log,None
+,oe_test_cut,success,./mugen-riscv/logs/os-basic/oe_test_cut/2023-09-13-11:57:34.log,None
+,oe_test_system_log_device,success,./mugen-riscv/logs/os-basic/oe_test_system_log_device/2023-09-13-13:55:58.log,None
+,oe_test_ProcMgmt_vmstat,success,./mugen-riscv/logs/os-basic/oe_test_ProcMgmt_vmstat/2023-09-13-11:46:13.log,None
+,oe_test_xargs,success,./mugen-riscv/logs/os-basic/oe_test_xargs/2023-09-13-13:41:47.log,None
+,oe_test_chrony_chronyc_cmd,success,./mugen-riscv/logs/os-basic/oe_test_chrony_chronyc_cmd/2023-09-13-13:52:40.log,None
+,oe_test_brotli,success,./mugen-riscv/logs/os-basic/oe_test_brotli/2023-09-13-12:39:18.log,None
+,oe_test_paste,success,./mugen-riscv/logs/os-basic/oe_test_paste/2023-09-13-13:39:41.log,None
+,oe_test_basic_modify_group,success,./mugen-riscv/logs/os-basic/oe_test_basic_modify_group/2023-09-13-11:06:23.log,None
+,oe_test_split,success,./mugen-riscv/logs/os-basic/oe_test_split/2023-09-13-13:30:37.log,None
+,oe_test_chrony_chronyc_hardwaretime,success,./mugen-riscv/logs/os-basic/oe_test_chrony_chronyc_hardwaretime/2023-09-13-13:46:19.log,None
+,oe_test_whoami,success,./mugen-riscv/logs/os-basic/oe_test_whoami/2023-09-13-13:25:44.log,None
+,oe_test_nmcli_general,success,./mugen-riscv/logs/os-basic/oe_test_nmcli_general/2023-09-13-11:05:47.log,None
+,oe_test_c++,success,./mugen-riscv/logs/os-basic/oe_test_c++/2023-09-13-12:34:21.log,None
+,oe_test_factor,success,./mugen-riscv/logs/os-basic/oe_test_factor/2023-09-13-12:30:10.log,None
+,oe_test_b2sum,success,./mugen-riscv/logs/os-basic/oe_test_b2sum/2023-09-13-13:55:51.log,None
+,oe_test_lsscsi_1,success,./mugen-riscv/logs/os-basic/oe_test_lsscsi_1/2023-09-13-14:08:10.log,None
+,oe_test_server_mariadb_loadfile,success,./mugen-riscv/logs/os-basic/oe_test_server_mariadb_loadfile/2023-09-13-12:07:35.log,None
+,oe_test_indent,success,./mugen-riscv/logs/os-basic/oe_test_indent/2023-09-13-11:47:24.log,None
+,oe_test_ProcMgmt_iostat,success,./mugen-riscv/logs/os-basic/oe_test_ProcMgmt_iostat/2023-09-13-10:59:47.log,None
+,oe_test_shred,success,./mugen-riscv/logs/os-basic/oe_test_shred/2023-09-13-11:10:54.log,None
+,oe_test_system_log_basic,success,./mugen-riscv/logs/os-basic/oe_test_system_log_basic/2023-09-13-12:22:39.log,None
+,oe_test_server_libtasn1,success,./mugen-riscv/logs/os-basic/oe_test_server_libtasn1/2023-09-13-13:42:23.log,None
+,oe_test_IOaccess_500Mfile,success,./mugen-riscv/logs/os-basic/oe_test_IOaccess_500Mfile/2023-09-13-13:56:13.log,None
+,oe_test_auditctl,success,./mugen-riscv/logs/os-basic/oe_test_auditctl/2023-09-13-11:59:28.log,None
+,oe_test_kernel_module_operation,success,./mugen-riscv/logs/os-basic/oe_test_kernel_module_operation/2023-09-13-11:06:32.log,None
+,oe_test_server_openssh_verifykey,success,./mugen-riscv/logs/os-basic/oe_test_server_openssh_verifykey/2023-09-13-13:29:35.log,None
+,oe_test_sha256sum,success,./mugen-riscv/logs/os-basic/oe_test_sha256sum/2023-09-13-12:07:26.log,None
+,oe_test_chroot,success,./mugen-riscv/logs/os-basic/oe_test_chroot/2023-09-13-11:03:35.log,None
+,oe_test_password_change,success,./mugen-riscv/logs/os-basic/oe_test_password_change/2023-09-13-11:09:35.log,None
+,oe_test_basic_set_permissions,success,./mugen-riscv/logs/os-basic/oe_test_basic_set_permissions/2023-09-13-12:39:08.log,None
+,oe_test_zstd,success,./mugen-riscv/logs/os-basic/oe_test_zstd/2023-09-13-13:29:59.log,None
+,oe_test_sdiff,success,./mugen-riscv/logs/os-basic/oe_test_sdiff/2023-09-13-13:17:50.log,None
+,oe_test_versioninfo,success,./mugen-riscv/logs/os-basic/oe_test_versioninfo/2023-09-13-13:09:30.log,None
+,oe_test_net_mtr,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_mtr/2023-09-13-12:37:09.log,x86 fail
+,oe_test_expect,x86 fail,./mugen-riscv/logs/os-basic/oe_test_expect/2023-09-13-13:12:46.log,x86 fail
+,oe_test_nmcli_Mgntconnect,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_Mgntconnect/2023-09-13-11:07:41.log,x86 fail
+,oe_test_reboot,x86 fail,./mugen-riscv/logs/os-basic/oe_test_reboot/2023-09-13-10:31:08.log,x86 fail
+,oe_test_catman,x86 fail,./mugen-riscv/logs/os-basic/oe_test_catman/2023-09-13-13:18:12.log,x86 fail
+,oe_test_nmcli_8023link,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_8023link/2023-09-13-11:59:42.log,x86 fail
+,oe_test_nmcli_con_reload,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_con_reload/2023-09-13-11:48:45.log,x86 fail
+,oe_test_gcc_01,x86 fail,./mugen-riscv/logs/os-basic/oe_test_gcc_01/2023-09-13-11:45:38.log,x86 fail
+,oe_test_nmcli_route,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_route/2023-09-13-12:16:58.log,x86 fail
+,oe_test_ethtool,x86 fail,./mugen-riscv/logs/os-basic/oe_test_ethtool/2023-09-13-11:49:06.log,x86 fail
+,oe_test_net_ncat,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_ncat/2023-09-13-10:30:40.log,x86 fail
+,oe_test_count_gperftools_function,x86 fail,./mugen-riscv/logs/os-basic/oe_test_count_gperftools_function/2023-09-13-13:47:09.log,x86 fail
+,oe_test_nmcli_add_connect,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_add_connect/2023-09-13-12:36:38.log,x86 fail
+,oe_test_csplit,x86 fail,./mugen-riscv/logs/os-basic/oe_test_csplit/2023-09-13-13:13:40.log,x86 fail
+,oe_test_nmcli_vlan,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_vlan/2023-09-13-13:53:50.log,x86 fail
+,oe_test_xzcmp,x86 fail,./mugen-riscv/logs/os-basic/oe_test_xzcmp/2023-09-13-11:05:54.log,x86 fail
+,oe_test_timedatectl,x86 fail,./mugen-riscv/logs/os-basic/oe_test_timedatectl/2023-09-13-12:26:12.log,x86 fail
+,oe_test_sos,x86 fail,./mugen-riscv/logs/os-basic/oe_test_sos/2023-09-13-12:39:27.log,x86 fail
+,oe_test_bunzip2,x86 fail,./mugen-riscv/logs/os-basic/oe_test_bunzip2/2023-09-13-11:48:24.log,x86 fail
+,oe_test_server_httpd_tls,x86 fail,./mugen-riscv/logs/os-basic/oe_test_server_httpd_tls/2023-09-13-13:54:08.log,x86 fail
+,oe_test_server_mariadb_compatibilty,x86 fail,./mugen-riscv/logs/os-basic/oe_test_server_mariadb_compatibilty/2023-09-13-13:31:23.log,x86 fail
+,oe_test_nmcli_set_bond,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_set_bond/2023-09-13-13:13:06.log,x86 fail
+,oe_test_kernel_sysctl,x86 fail,./mugen-riscv/logs/os-basic/oe_test_kernel_sysctl/2023-09-13-11:55:38.log,x86 fail
+,oe_test_system_monitor_share_total,x86 fail,./mugen-riscv/logs/os-basic/oe_test_system_monitor_share_total/2023-09-13-11:00:04.log,x86 fail
+,oe_test_nmcli_config_connect,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_config_connect/2023-09-13-12:04:33.log,x86 fail
+,oe_test_nmcli_bridge,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_bridge/2023-09-13-10:56:06.log,x86 fail
+,oe_test_nmcli_macsec,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_macsec/2023-09-13-11:51:42.log,x86 fail
+,oe_test_dmraid,x86 fail,./mugen-riscv/logs/os-basic/oe_test_dmraid/2023-09-13-12:00:08.log,x86 fail
+,oe_test_nmcli_config_gw,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_config_gw/2023-09-13-12:17:47.log,x86 fail
+,oe_test_system_monitor_login,x86 fail,./mugen-riscv/logs/os-basic/oe_test_system_monitor_login/2023-09-13-12:33:45.log,x86 fail
+,oe_test_net_setmode,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_setmode/2023-09-13-11:06:03.log,x86 fail
+,oe_test_net_IPVLAN,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_IPVLAN/2023-09-13-11:11:26.log,x86 fail
+,oe_test_net_VRF,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_VRF/2023-09-13-10:35:48.log,x86 fail
+,oe_test_disk_graphics_card,x86 fail,./mugen-riscv/logs/os-basic/oe_test_disk_graphics_card/2023-09-13-10:59:17.log,x86 fail
+,oe_test_server_squid_blacklist,x86 fail,./mugen-riscv/logs/os-basic/oe_test_server_squid_blacklist/2023-09-13-14:06:04.log,x86 fail
+,oe_test_nmcli_device,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_device/2023-09-13-14:10:17.log,x86 fail
+,oe_test_server_vsftpd_NKdelay,x86 fail,./mugen-riscv/logs/os-basic/oe_test_server_vsftpd_NKdelay/2023-09-13-11:56:57.log,x86 fail
+,oe_test_net_cmd_scp,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_cmd_scp/2023-09-13-14:07:48.log,x86 fail
+,oe_test_nmcli_set_team,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_set_team/2023-09-13-13:53:38.log,x86 fail
+,oe_test_libsecret,x86 fail,./mugen-riscv/logs/os-basic/oe_test_libsecret/2023-09-13-11:00:11.log,x86 fail
+,oe_test_hostnamectl,x86 fail,./mugen-riscv/logs/os-basic/oe_test_hostnamectl/2023-09-13-11:01:43.log,x86 fail
+,oe_test_net_cmd_ifconfig,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_cmd_ifconfig/2023-09-13-12:07:02.log,x86 fail
+,oe_test_system_monitor_reboot,x86 fail,./mugen-riscv/logs/os-basic/oe_test_system_monitor_reboot/2023-09-13-13:48:10.log,x86 fail
+,oe_test_system_log_recorded,x86 fail,./mugen-riscv/logs/os-basic/oe_test_system_log_recorded/2023-09-13-14:05:50.log,x86 fail
+,oe_test_server_vsftpd_transfer,x86 fail,./mugen-riscv/logs/os-basic/oe_test_server_vsftpd_transfer/2023-09-13-13:51:16.log,x86 fail
+,oe_test_who,x86 fail,./mugen-riscv/logs/os-basic/oe_test_who/2023-09-13-11:15:02.log,x86 fail
+,oe_test_net_config,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_config/2023-09-13-11:15:33.log,x86 fail
+,oe_test_server_httpd_recover,fail,./mugen-riscv/logs/os-basic/oe_test_server_httpd_recover/2023-09-13-13:34:01.log,
+,oe_test_disk_schedule_udev,fail,./mugen-riscv/logs/os-basic/oe_test_disk_schedule_udev/2023-09-13-11:07:02.log,preinstall absent
+,oe_test_disk_schedule_specific,fail,./mugen-riscv/logs/os-basic/oe_test_disk_schedule_specific/2023-09-13-10:56:54.log,preinstall absent
+,oe_test_disk_tuned_disable,fail,./mugen-riscv/logs/os-basic/oe_test_disk_tuned_disable/2023-09-13-13:40:07.log,file missing
+,oe_test_disk_tuned_install,fail,./mugen-riscv/logs/os-basic/oe_test_disk_tuned_install/2023-09-13-13:25:19.log,file missing
+,oe_test_disk_tuned_modify,fail,./mugen-riscv/logs/os-basic/oe_test_disk_tuned_modify/2023-09-13-13:48:26.log,file missing/timeout
+,oe_test_basic_UserMgmt_permission,fail,./mugen-riscv/logs/os-basic/oe_test_basic_UserMgmt_permission/2023-09-13-11:06:39.log,
+,oe_test_server_mysql,fail,./mugen-riscv/logs/os-basic/oe_test_server_mysql/2023-09-13-13:49:23.log,file missing
+,oe_test_kernel_kdump,fail,./mugen-riscv/logs/os-basic/oe_test_kernel_kdump/2023-09-13-10:36:12.log,preinstall absent
+,oe_test_system_log_view,fail,./mugen-riscv/logs/os-basic/oe_test_system_log_view/2023-09-13-10:40:16.log,preinstall absent
+,oe_test_server_httpd_restart,fail,./mugen-riscv/logs/os-basic/oe_test_server_httpd_restart/2023-09-13-13:35:35.log,
+,oe_test_server_httpd_port,fail,./mugen-riscv/logs/os-basic/oe_test_server_httpd_port/2023-09-13-11:02:56.log,
+,oe_test_disk_tuned_set,fail,./mugen-riscv/logs/os-basic/oe_test_disk_tuned_set/2023-09-13-12:28:14.log,file missing/timeout
+,oe_test_home_directory,fail,./mugen-riscv/logs/os-basic/oe_test_home_directory/2023-09-13-13:44:20.log,preinstall absent
+,oe_test_power_powertop2tuned_optimize,fail,./mugen-riscv/logs/os-basic/oe_test_power_powertop2tuned_optimize/2023-09-13-11:01:18.log,file missing
+,oe_test_awk,fail,./mugen-riscv/logs/os-basic/oe_test_awk/2023-09-13-10:55:58.log,
+,oe_test_system_log_dmesg,fail,./mugen-riscv/logs/os-basic/oe_test_system_log_dmesg/2023-09-13-14:10:35.log,
+,oe_test_uname,fail,./mugen-riscv/logs/os-basic/oe_test_uname/2023-09-13-14:03:13.log,
+lvm2,oe_test_service_lvm2-lvmpolld,success,./mugen-riscv/logs/lvm2/oe_test_service_lvm2-lvmpolld/2023-09-12-17:26:25.log,None
+,oe_test_service_dm-event,success,./mugen-riscv/logs/lvm2/oe_test_service_dm-event/2023-09-12-17:24:59.log,None
+,oe_test_service_blk-availability,success,./mugen-riscv/logs/lvm2/oe_test_service_blk-availability/2023-09-12-17:24:23.log,None
+,oe_test_service_lvm2-lvmdbusd,success,./mugen-riscv/logs/lvm2/oe_test_service_lvm2-lvmdbusd/2023-09-12-17:25:28.log,None
+,oe_test_lvm2_vgrename_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgrename_001/2023-09-12-17:35:11.log,x86 fail
+,oe_test_lvm2_vgchange_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgchange_001/2023-09-12-17:37:41.log,x86 fail
+,oe_test_lvm2_pvdisplay_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_pvdisplay_001/2023-09-12-17:35:46.log,x86 fail
+,oe_test_lvm2_vgextend_002,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgextend_002/2023-09-12-17:38:19.log,x86 fail
+,oe_test_lvm2_pvmove_002,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_pvmove_002/2023-09-12-17:36:19.log,x86 fail
+,oe_test_lvm2_pvcreate_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_pvcreate_001/2023-09-12-17:31:56.log,x86 fail
+,oe_test_lvm2_pvremove_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_pvremove_001/2023-09-12-17:30:14.log,x86 fail
+,oe_test_lvm2_vgexport_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgexport_001/2023-09-12-17:39:45.log,x86 fail
+,oe_test_lvm2_vgextend_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgextend_001/2023-09-12-17:38:58.log,x86 fail
+,oe_test_lvm2_vgchange_002,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgchange_002/2023-09-12-17:40:24.log,x86 fail
+,oe_test_lvm2_vgdisplay_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgdisplay_001/2023-09-12-17:34:35.log,x86 fail
+,oe_test_lvm2_pvchange_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_pvchange_001/2023-09-12-17:37:14.log,x86 fail
+,oe_test_lvm2_vgcreate_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgcreate_001/2023-09-12-17:33:12.log,x86 fail
+,oe_test_socket_lvm2-lvmpolld,x86 fail,./mugen-riscv/logs/lvm2/oe_test_socket_lvm2-lvmpolld/2023-09-12-17:29:39.log,x86 fail
+,oe_test_lvm2_pvdisplay_002,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_pvdisplay_002/2023-09-12-17:33:58.log,x86 fail
+,oe_test_lvm2_pvresize_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_pvresize_001/2023-09-12-17:31:23.log,x86 fail
+,oe_test_socket_dm-event,x86 fail,./mugen-riscv/logs/lvm2/oe_test_socket_dm-event/2023-09-12-17:29:06.log,x86 fail
+,oe_test_lvm2_pvmove_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_pvmove_001/2023-09-12-17:32:31.log,x86 fail
+,oe_test_service_lvm2-monitor,x86 fail,./mugen-riscv/logs/lvm2/oe_test_service_lvm2-monitor/2023-09-12-17:26:54.log,x86 fail
+,oe_test_lvm2_pvcreate_002,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_pvcreate_002/2023-09-12-17:30:51.log,x86 fail
+,oe_test_service_lvmlocks,fail,./mugen-riscv/logs/lvm2/oe_test_service_lvmlocks/2023-09-12-17:28:19.log,pkg not found/file missing/systemd unit restart failure/systemd unit runtime error
+,oe_test_service_lvmlockd,fail,./mugen-riscv/logs/lvm2/oe_test_service_lvmlockd/2023-09-12-17:27:29.log,pkg not found/file missing/systemd unit restart failure/systemd unit runtime error
+accountsservice,oe_test_service_accounts-daemon,x86 fail,./mugen-riscv/logs/accountsservice/oe_test_service_accounts-daemon/2023-09-12-15:47:22.log,x86 fail
+openssl,oe_test_openssl_related_concurrent_operations,success,./mugen-riscv/logs/openssl/oe_test_openssl_related_concurrent_operations/2023-09-12-17:10:17.log,None
+,oe_test_openssl_one_way_encryption,success,./mugen-riscv/logs/openssl/oe_test_openssl_one_way_encryption/2023-09-12-17:10:07.log,None
+,oe_test_openssl_sm2,success,./mugen-riscv/logs/openssl/oe_test_openssl_sm2/2023-09-12-17:20:20.log,None
+,oe_test_openssl_generate_random_number,success,./mugen-riscv/logs/openssl/oe_test_openssl_generate_random_number/2023-09-12-17:08:11.log,None
+,oe_test_openssl_symmetrically_encrypts_decrypts_files,success,./mugen-riscv/logs/openssl/oe_test_openssl_symmetrically_encrypts_decrypts_files/2023-09-12-17:18:45.log,None
+,oe_test_openssl_repeated_execution,success,./mugen-riscv/logs/openssl/oe_test_openssl_repeated_execution/2023-09-12-17:13:24.log,None
+,oe_test_openssl_enc,success,./mugen-riscv/logs/openssl/oe_test_openssl_enc/2023-09-12-17:19:35.log,None
+,oe_test_openssl_symmetric_encryption_decryption,success,./mugen-riscv/logs/openssl/oe_test_openssl_symmetric_encryption_decryption/2023-09-12-17:19:26.log,None
+,oe_test_openssl_concurrent_operations,success,./mugen-riscv/logs/openssl/oe_test_openssl_concurrent_operations/2023-09-12-16:58:13.log,None
+,oe_test_openssl_sm4,success,./mugen-riscv/logs/openssl/oe_test_openssl_sm4/2023-09-12-17:20:31.log,None
+,oe_test_openssl_message_digest,success,./mugen-riscv/logs/openssl/oe_test_openssl_message_digest/2023-09-12-17:09:58.log,None
+,oe_test_openssl_hmac,success,./mugen-riscv/logs/openssl/oe_test_openssl_hmac/2023-09-12-17:20:42.log,None
+,oe_test_openssl_encrypting_character_string,success,./mugen-riscv/logs/openssl/oe_test_openssl_encrypting_character_string/2023-09-12-17:05:46.log,None
+,oe_test_openssl_DSA_algorithm,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_DSA_algorithm/2023-09-12-17:04:21.log,x86 fail
+,oe_test_openssl_incorrect_public_private_key,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_incorrect_public_private_key/2023-09-12-17:09:43.log,x86 fail
+,oe_test_openssl_generate_key_pair,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_generate_key_pair/2023-09-12-17:07:38.log,x86 fail
+,oe_test_openssl_speed,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_speed/2023-09-12-17:20:52.log,x86 fail
+,oe_test_openssl_create_CA_applying_certificate,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_create_CA_applying_certificate/2023-09-12-16:58:35.log,x86 fail
+,oe_test_openssl_RSA_algorithm,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_RSA_algorithm/2023-09-12-17:18:35.log,x86 fail
+,oe_test_openssl_repeat_restart,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_repeat_restart/2023-09-12-17:14:10.log,x86 fail
+,oe_test_openssl_delete_configuration_file,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_delete_configuration_file/2023-09-12-17:02:07.log,x86 fail
+,oe_test_openssl_encrypt_decrypt_file_asymmetrically,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_encrypt_decrypt_file_asymmetrically/2023-09-12-17:05:17.log,x86 fail
+,oe_test_openssl_rc4_encryption_file,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_rc4_encryption_file/2023-09-12-17:19:56.log,x86 fail
+,oe_test_openssl_empty_private_key,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_empty_private_key/2023-09-12-17:04:45.log,x86 fail
+,oe_test_openssl_encrypte_decrypte_emails,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_encrypte_decrypte_emails/2023-09-12-17:05:30.log,x86 fail
+,oe_test_openssl_reliability,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_reliability/2023-09-12-17:10:46.log,x86 fail
+,oe_test_openssl_expired_certificate,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_expired_certificate/2023-09-12-17:05:55.log,x86 fail
+,oe_test_openssl_Diffie_Hellman,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_Diffie_Hellman/2023-09-12-17:03:25.log,x86 fail
+,oe_test_openssl_file_signature_verification,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_file_signature_verification/2023-09-12-17:07:14.log,x86 fail
+,oe_test_openssl_generate_password,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_generate_password/2023-09-12-17:07:49.log,x86 fail
+,oe_test_openssl_empty_public_key,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_empty_public_key/2023-09-12-17:05:00.log,x86 fail
+,oe_test_openssl_Implements_https,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_Implements_https/2023-09-12-17:08:20.log,x86 fail
+,oe_test_openssl_remove_mod_ssl,x86 fail,./mugen-riscv/logs/openssl/oe_test_openssl_remove_mod_ssl/2023-09-12-17:12:05.log,x86 fail
+dbus,oe_test_dbus_dbus-x11,success,./mugen-riscv/logs/dbus/oe_test_dbus_dbus-x11/2023-09-12-13:20:28.log,None
+,oe_test_socket_dbus,success,./mugen-riscv/logs/dbus/oe_test_socket_dbus/2023-09-12-13:18:28.log,None
+,oe_test_dbus_dbus-run-session,success,./mugen-riscv/logs/dbus/oe_test_dbus_dbus-run-session/2023-09-12-13:19:23.log,None
+,oe_test_dbus_dbus-tools_001,success,./mugen-riscv/logs/dbus/oe_test_dbus_dbus-tools_001/2023-09-12-13:19:44.log,None
+,oe_test_dbus_dbus-tools_002,x86 fail,./mugen-riscv/logs/dbus/oe_test_dbus_dbus-tools_002/2023-09-12-13:20:02.log,x86 fail
+,oe_test_dbus_dbus-daemon,x86 fail,./mugen-riscv/logs/dbus/oe_test_dbus_dbus-daemon/2023-09-12-13:18:58.log,x86 fail
+,oe_test_service_dbus,fail,./mugen-riscv/logs/dbus/oe_test_service_dbus/2023-09-12-13:17:52.log,systemd unit restart failure/systemd unit runtime error
+asciidoc,oe_test_asciidoc_asciidoc_01,success,./mugen-riscv/logs/asciidoc/oe_test_asciidoc_asciidoc_01/2023-09-12-13:37:17.log,None
+,oe_test_asciidoc_a2x_02,success,./mugen-riscv/logs/asciidoc/oe_test_asciidoc_a2x_02/2023-09-12-13:49:53.log,None
+,oe_test_asciidoc_a2x_01,success,./mugen-riscv/logs/asciidoc/oe_test_asciidoc_a2x_01/2023-09-12-13:44:48.log,None
+,oe_test_asciidoc_asciidoc_02,success,./mugen-riscv/logs/asciidoc/oe_test_asciidoc_asciidoc_02/2023-09-12-13:41:04.log,None
+,oe_test_asciidoc_a2x_03,x86 fail,./mugen-riscv/logs/asciidoc/oe_test_asciidoc_a2x_03/2023-09-12-13:54:35.log,x86 fail
+ypserv,oe_test_service_yppasswdd,fail,./mugen-riscv/logs/ypserv/oe_test_service_yppasswdd/2023-09-12-14:55:22.log,
+,oe_test_service_ypserv,fail,./mugen-riscv/logs/ypserv/oe_test_service_ypserv/2023-09-12-15:14:21.log,
+,oe_test_service_ypxfrd,fail,./mugen-riscv/logs/ypserv/oe_test_service_ypxfrd/2023-09-12-15:15:07.log,
+gdm,oe_test_service_gdm,x86 fail,./mugen-riscv/logs/gdm/oe_test_service_gdm/2023-09-12-16:09:41.log,x86 fail
+brltty,oe_test_service_brltty,x86 fail,./mugen-riscv/logs/brltty/oe_test_service_brltty/2023-09-12-15:51:59.log,x86 fail
+openvpn,oe_test_openvpn,x86 fail,./mugen-riscv/logs/openvpn/oe_test_openvpn/2023-09-13-10:21:03.log,x86 fail
+dmidecode,oe_test_dmidecode,x86 fail,./mugen-riscv/logs/dmidecode/oe_test_dmidecode/2023-09-12-16:02:44.log,x86 fail
+ipmitool,oe_test_service_exchange-bmc-os-info,x86 fail,./mugen-riscv/logs/ipmitool/oe_test_service_exchange-bmc-os-info/2023-09-12-14:38:48.log,x86 fail
+,oe_test_service_ipmievd,x86 fail,./mugen-riscv/logs/ipmitool/oe_test_service_ipmievd/2023-09-12-14:40:25.log,x86 fail
+,oe_test_service_bmc-snmp-proxy,x86 fail,./mugen-riscv/logs/ipmitool/oe_test_service_bmc-snmp-proxy/2023-09-12-14:37:11.log,x86 fail
+tuned,oe_test_service_tuned,x86 fail,./mugen-riscv/logs/tuned/oe_test_service_tuned/2023-09-12-16:55:15.log,x86 fail
+lxc,oe_test_lxc_checkconfig_console,success,./mugen-riscv/logs/lxc/oe_test_lxc_checkconfig_console/2023-09-12-12:28:02.log,None
+,oe_test_service_lxc-net,success,./mugen-riscv/logs/lxc/oe_test_service_lxc-net/2023-09-12-12:13:18.log,None
+,oe_test_service_lxc,success,./mugen-riscv/logs/lxc/oe_test_service_lxc/2023-09-12-12:14:07.log,None
+,oe_test_lxc_execute_freeze,success,./mugen-riscv/logs/lxc/oe_test_lxc_execute_freeze/2023-09-12-12:29:37.log,None
+,oe_test_lxc_ls_monitor,x86 fail,./mugen-riscv/logs/lxc/oe_test_lxc_ls_monitor/2023-09-12-12:17:54.log,x86 fail
+,oe_test_lxc_device_copy,x86 fail,./mugen-riscv/logs/lxc/oe_test_lxc_device_copy/2023-09-12-12:22:55.log,x86 fail
+,oe_test_lxc_snapshot_start,x86 fail,./mugen-riscv/logs/lxc/oe_test_lxc_snapshot_start/2023-09-12-12:24:38.log,x86 fail
+,oe_test_lxc_autostart_cgroup,x86 fail,./mugen-riscv/logs/lxc/oe_test_lxc_autostart_cgroup/2023-09-12-12:21:17.log,x86 fail
+,oe_test_lxc_create_attach,x86 fail,./mugen-riscv/logs/lxc/oe_test_lxc_create_attach/2023-09-12-12:16:16.log,x86 fail
+,oe_test_lxc_stop_top,x86 fail,./mugen-riscv/logs/lxc/oe_test_lxc_stop_top/2023-09-12-12:31:04.log,x86 fail
+,oe_test_lxc_info,x86 fail,./mugen-riscv/logs/lxc/oe_test_lxc_info/2023-09-12-12:32:56.log,x86 fail
+,oe_test_lxc_unshare_update,x86 fail,./mugen-riscv/logs/lxc/oe_test_lxc_unshare_update/2023-09-12-12:26:18.log,x86 fail
+,oe_test_lxc_unfreeze_destroy,x86 fail,./mugen-riscv/logs/lxc/oe_test_lxc_unfreeze_destroy/2023-09-12-12:19:31.log,x86 fail
+usbmuxd,oe_test_service_usbmuxd,fail,./mugen-riscv/logs/usbmuxd/oe_test_service_usbmuxd/2023-09-12-17:52:04.log,
+mdadm,oe_test_service_mdcheck_start,success,./mugen-riscv/logs/mdadm/oe_test_service_mdcheck_start/2023-09-12-14:28:42.log,None
+,oe_test_service_mdcheck_continue,success,./mugen-riscv/logs/mdadm/oe_test_service_mdcheck_continue/2023-09-12-14:28:18.log,None
+,oe_test_service_mdmonitor-oneshot,success,./mugen-riscv/logs/mdadm/oe_test_service_mdmonitor-oneshot/2023-09-12-14:29:06.log,None
+,oe_test_service_mdmonitor,x86 fail,./mugen-riscv/logs/mdadm/oe_test_service_mdmonitor/2023-09-12-14:17:18.log,x86 fail
+nspr,oe_test_nspr_001,x86 fail,./mugen-riscv/logs/nspr/oe_test_nspr_001/2023-09-12-15:29:55.log,x86 fail
+,oe_test_nspr_002,x86 fail,./mugen-riscv/logs/nspr/oe_test_nspr_002/2023-09-12-15:30:47.log,x86 fail
+libsndfile,oe_test_libsndfile,x86 fail,./mugen-riscv/logs/libsndfile/oe_test_libsndfile/2023-09-13-16:00:50.log,x86 fail
+PackageKit,oe_test_service_packagekit,success,./mugen-riscv/logs/PackageKit/oe_test_service_packagekit/2023-09-12-15:18:04.log,None
+,oe_test_service_packagekit-offline-update,success,./mugen-riscv/logs/PackageKit/oe_test_service_packagekit-offline-update/2023-09-12-15:17:44.log,None
+,oe_test_packagekit_pkcon,x86 fail,./mugen-riscv/logs/PackageKit/oe_test_packagekit_pkcon/2023-09-12-15:19:19.log,x86 fail
+keepalived,oe_test_service_keepalived,x86 fail,./mugen-riscv/logs/keepalived/oe_test_service_keepalived/2023-09-12-16:18:32.log,x86 fail
+libtiff,oe_test_libtiff,x86 fail,./mugen-riscv/logs/libtiff/oe_test_libtiff/2023-09-12-18:03:31.log,x86 fail
+powertop,oe_test_powertop,success,./mugen-riscv/logs/powertop/oe_test_powertop/2023-09-12-15:33:42.log,None
+,oe_test_service_powertop,fail,./mugen-riscv/logs/powertop/oe_test_service_powertop/2023-09-12-15:33:26.log,
+kmod,oe_test_rmmod,success,./mugen-riscv/logs/kmod/oe_test_rmmod/2023-09-12-13:08:46.log,None
+,oe_test_depmod,success,./mugen-riscv/logs/kmod/oe_test_depmod/2023-09-12-13:02:24.log,None
+,oe_test_kmod,success,./mugen-riscv/logs/kmod/oe_test_kmod/2023-09-12-13:07:58.log,None
+,oe_test_weak-modules,success,./mugen-riscv/logs/kmod/oe_test_weak-modules/2023-09-12-13:08:55.log,None
+,oe_test_insmod-lsmod,x86 fail,./mugen-riscv/logs/kmod/oe_test_insmod-lsmod/2023-09-12-13:07:35.log,x86 fail
+,oe_test_modinfo,x86 fail,./mugen-riscv/logs/kmod/oe_test_modinfo/2023-09-12-13:08:07.log,x86 fail
+,oe_test_modprobe,x86 fail,./mugen-riscv/logs/kmod/oe_test_modprobe/2023-09-12-13:08:16.log,x86 fail
+acpid,oe_test_acpid_01,success,./mugen-riscv/logs/acpid/oe_test_acpid_01/2023-09-12-13:24:43.log,None
+,oe_test_acpid_02,success,./mugen-riscv/logs/acpid/oe_test_acpid_02/2023-09-12-13:25:14.log,None
+,oe_test_acpid_03,success,./mugen-riscv/logs/acpid/oe_test_acpid_03/2023-09-12-13:25:48.log,None
+,oe_test_socket_acpid,x86 fail,./mugen-riscv/logs/acpid/oe_test_socket_acpid/2023-09-12-13:23:53.log,x86 fail
+,oe_test_service_acpid,x86 fail,./mugen-riscv/logs/acpid/oe_test_service_acpid/2023-09-12-13:23:04.log,x86 fail
+plymouth,oe_test_service_plymouth-switch-root,success,./mugen-riscv/logs/plymouth/oe_test_service_plymouth-switch-root/2023-09-12-12:42:37.log,None
+,oe_test_service_plymouth-read-write,success,./mugen-riscv/logs/plymouth/oe_test_service_plymouth-read-write/2023-09-12-12:40:28.log,None
+,oe_test_service_plymouth-halt,success,./mugen-riscv/logs/plymouth/oe_test_service_plymouth-halt/2023-09-12-12:36:51.log,None
+,oe_test_service_plymouth-poweroff,success,./mugen-riscv/logs/plymouth/oe_test_service_plymouth-poweroff/2023-09-12-12:38:20.log,None
+,oe_test_service_plymouth-quit-wait,success,./mugen-riscv/logs/plymouth/oe_test_service_plymouth-quit-wait/2023-09-12-12:39:46.log,None
+,oe_test_service_plymouth-kexec,success,./mugen-riscv/logs/plymouth/oe_test_service_plymouth-kexec/2023-09-12-12:37:37.log,None
+,oe_test_service_plymouth-reboot,success,./mugen-riscv/logs/plymouth/oe_test_service_plymouth-reboot/2023-09-12-12:41:11.log,None
+,oe_test_service_plymouth-quit,success,./mugen-riscv/logs/plymouth/oe_test_service_plymouth-quit/2023-09-12-12:39:03.log,None
+,oe_test_service_systemd-ask-password-plymouth,success,./mugen-riscv/logs/plymouth/oe_test_service_systemd-ask-password-plymouth/2023-09-12-12:43:19.log,None
+,oe_test_service_plymouth-start,success,./mugen-riscv/logs/plymouth/oe_test_service_plymouth-start/2023-09-12-12:41:53.log,None
+,oe_test_service_plymouth-switch-root-initramfs,x86 fail,./mugen-riscv/logs/plymouth/oe_test_service_plymouth-switch-root-initramfs/2023-09-12-12:44:02.log,x86 fail
+FS_FileSystem,oe_test_FSIO_overlay_rename_1,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_overlay_rename_1/2023-09-13-15:39:38.log,None
+,oe_test_FSIO_overlay_rm_3,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_overlay_rm_3/2023-09-13-15:30:19.log,None
+,oe_test_FSIO_mount_xfs_xfsdump,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_xfs_xfsdump/2023-09-13-15:24:20.log,None
+,oe_test_FSIO_rw_mount,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_rw_mount/2023-09-13-15:30:28.log,None
+,oe_test_FSIO_overlay_rm_1,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_overlay_rm_1/2023-09-13-15:25:32.log,None
+,oe_test_FSIO_mount_ext3_setData,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext3_setData/2023-09-13-15:18:42.log,None
+,oe_test_FSIO_overlay_modify_2,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_overlay_modify_2/2023-09-13-15:21:21.log,None
+,oe_test_FSIO_check_fs_mounted,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_check_fs_mounted/2023-09-13-15:19:17.log,None
+,oe_test_FSIO_overlay_rename_3,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_overlay_rename_3/2023-09-13-15:23:27.log,None
+,oe_test_FSIO_overlay_mount,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_overlay_mount/2023-09-13-15:25:54.log,None
+,oe_test_FSIO_mount_ext4_setData,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext4_setData/2023-09-13-15:27:53.log,None
+,oe_test_FSIO_overlay_modify_3,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_overlay_modify_3/2023-09-13-15:24:56.log,None
+,oe_test_FSIO_overlay_rename_2,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_overlay_rename_2/2023-09-13-15:42:10.log,None
+,oe_test_FSIO_dd_mkfs,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_dd_mkfs/2023-09-13-15:29:03.log,None
+,oe_test_FSIO_overlay_modify_1,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_overlay_modify_1/2023-09-13-15:39:48.log,None
+,oe_test_FSIO_overlay_rm_2,success,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_overlay_rm_2/2023-09-13-15:24:11.log,None
+,oe_test_FSIO_mount_ext4_setErrors,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext4_setErrors/2023-09-13-15:28:06.log,x86 fail
+,oe_test_FSIO_mount_xfs_sync,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_xfs_sync/2023-09-13-15:40:18.log,x86 fail
+,oe_test_FSIO_ext4_e4defrag,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_ext4_e4defrag/2023-09-13-15:21:01.log,x86 fail
+,oe_test_FSIO_create_ext3,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_create_ext3/2023-09-13-15:25:41.log,x86 fail
+,oe_test_FSIO_mount_ext4_noblock_validity,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext4_noblock_validity/2023-09-13-15:25:20.log,x86 fail
+,oe_test_FSIO_mount_ext3_rw,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext3_rw/2023-09-13-15:22:41.log,x86 fail
+,oe_test_FSIO_mount_nonempty_dir,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_nonempty_dir/2023-09-13-15:42:40.log,x86 fail
+,oe_test_FSIO_xfs_resize2fs,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_xfs_resize2fs/2023-09-13-15:19:34.log,x86 fail
+,oe_test_FSIO_mount_xfs_nodiscard,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_xfs_nodiscard/2023-09-13-15:23:16.log,x86 fail
+,oe_test_FSIO_mount_automount,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_automount/2023-09-13-15:26:36.log,x86 fail
+,oe_test_FSIO_mount_reboot,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_reboot/2023-09-13-15:26:04.log,x86 fail
+,oe_test_FSIO_change_fs,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_change_fs/2023-09-13-15:40:44.log,x86 fail
+,oe_test_FSIO_mount_block_dir,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_block_dir/2023-09-13-15:19:46.log,x86 fail
+,oe_test_FSIO_mount_ext3_sync,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext3_sync/2023-09-13-15:21:30.log,x86 fail
+,oe_test_FSIO_mount_xfs_discard,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_xfs_discard/2023-09-13-15:40:08.log,x86 fail
+,oe_test_FSIO_loop_fs,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_loop_fs/2023-09-13-15:28:41.log,x86 fail
+,oe_test_FSIO_mount_xfs_rw,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_xfs_rw/2023-09-13-15:27:41.log,x86 fail
+,oe_test_FSIO_mount_ext4_sync,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext4_sync/2023-09-13-15:41:45.log,x86 fail
+,oe_test_FSIO_mount_ext4_rw,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext4_rw/2023-09-13-15:19:23.log,x86 fail
+,oe_test_FSIO_create_ext4,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_create_ext4/2023-09-13-15:28:53.log,x86 fail
+,oe_test_FSIO_mount_ext4_delalloc,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext4_delalloc/2023-09-13-15:20:00.log,x86 fail
+,oe_test_FSIO_mount_ext3_setErrors,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext3_setErrors/2023-09-13-15:19:06.log,x86 fail
+,oe_test_FSIO_mount_ext4_discard,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext4_discard/2023-09-13-15:41:24.log,x86 fail
+,oe_test_FSIO_mount_ext4_ro,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext4_ro/2023-09-13-15:41:10.log,x86 fail
+,oe_test_FSIO_mount_ext4_block_validity,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext4_block_validity/2023-09-13-15:41:34.log,x86 fail
+,oe_test_FSIO_mount_ext3_to_ext4,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext3_to_ext4/2023-09-13-15:20:11.log,x86 fail
+,oe_test_FSIO_mount_ext3_ro,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext3_ro/2023-09-13-15:23:03.log,x86 fail
+,oe_test_FSIO_ext3_resize2fs,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_ext3_resize2fs/2023-09-13-15:22:12.log,x86 fail
+,oe_test_FSIO_mount_xfs_dax,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_xfs_dax/2023-09-13-15:27:13.log,x86 fail
+,oe_test_FSIO_umount_busy,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_umount_busy/2023-09-13-15:42:19.log,x86 fail
+,oe_test_FSIO_umount_by_openfile,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_umount_by_openfile/2023-09-13-15:24:42.log,x86 fail
+,oe_test_FSIO_create_xfs,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_create_xfs/2023-09-13-15:18:33.log,x86 fail
+,oe_test_FSIO_ext4_resize2fs,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_ext4_resize2fs/2023-09-13-15:40:58.log,x86 fail
+,oe_test_FSIO_mount_character_dir,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_character_dir/2023-09-13-15:20:24.log,x86 fail
+,oe_test_FSIO_mount_xfs_xfsrestore,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_xfs_xfsrestore/2023-09-13-15:20:37.log,x86 fail
+,oe_test_FSIO_mv_rm_mount,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mv_rm_mount/2023-09-13-15:21:58.log,x86 fail
+,oe_test_FSIO_mount_umount_ext4,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_umount_ext4/2023-09-13-15:23:37.log,x86 fail
+,oe_test_FSIO_mount_ext4_nodiscard,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_ext4_nodiscard/2023-09-13-15:39:57.log,x86 fail
+,oe_test_FSIO_mount_umount_ext3,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_umount_ext3/2023-09-13-15:18:51.log,x86 fail
+,oe_test_FSIO_mount_xfs_ro,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_xfs_ro/2023-09-13-15:25:06.log,x86 fail
+,oe_test_FSIO_remkfs,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_remkfs/2023-09-13-15:39:27.log,x86 fail
+,oe_test_FSIO_mount_umount_xfs,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_umount_xfs/2023-09-13-15:23:55.log,x86 fail
+,oe_test_FSIO_mount_remount,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_remount/2023-09-13-15:28:21.log,x86 fail
+,oe_test_FSIO_mount_empty_dir,x86 fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_mount_empty_dir/2023-09-13-15:22:26.log,x86 fail
+,oe_test_FSIO_check_fs_type,fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_check_fs_type/2023-09-13-15:22:53.log,
+,oe_test_FSIO_create_squashfs,fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_create_squashfs/2023-09-13-15:30:07.log,preinstall absent
+hdparm,oe_test_hdparm,x86 fail,./mugen-riscv/logs/hdparm/oe_test_hdparm/2023-09-12-16:16:31.log,x86 fail
+avahi,oe_test_service_avahi-daemon,x86 fail,./mugen-riscv/logs/avahi/oe_test_service_avahi-daemon/2023-09-12-14:31:45.log,x86 fail
+,oe_test_socket_avahi-daemon,x86 fail,./mugen-riscv/logs/avahi/oe_test_socket_avahi-daemon/2023-09-12-14:34:26.log,x86 fail
+,oe_test_service_avahi-dnsconfd,fail,./mugen-riscv/logs/avahi/oe_test_service_avahi-dnsconfd/2023-09-12-14:32:53.log,file missing/systemd unit restart failure/systemd unit runtime error/systemd unit enable failure
+tang,oe_test_service_tangd-keygen,success,./mugen-riscv/logs/tang/oe_test_service_tangd-keygen/2023-09-12-14:51:29.log,None
+,oe_test_socket_tangd,fail,./mugen-riscv/logs/tang/oe_test_socket_tangd/2023-09-12-14:52:22.log,
+,oe_test_service_tangd-update,fail,./mugen-riscv/logs/tang/oe_test_service_tangd-update/2023-09-12-14:51:56.log,
+ndisc6,oe_test_ndisc6_tcpspray,success,./mugen-riscv/logs/ndisc6/oe_test_ndisc6_tcpspray/2023-09-13-10:14:53.log,None
+,oe_test_ndisc6_rdnssd,success,./mugen-riscv/logs/ndisc6/oe_test_ndisc6_rdnssd/2023-09-13-10:17:29.log,None
+,oe_test_ndisc6_tracert6,x86 fail,./mugen-riscv/logs/ndisc6/oe_test_ndisc6_tracert6/2023-09-13-10:15:44.log,x86 fail
+,oe_test_ndisc6_rdisc6,x86 fail,./mugen-riscv/logs/ndisc6/oe_test_ndisc6_rdisc6/2023-09-13-10:16:37.log,x86 fail
+,oe_test_ndisc6_name2addr,x86 fail,./mugen-riscv/logs/ndisc6/oe_test_ndisc6_name2addr/2023-09-13-10:16:09.log,x86 fail
+,oe_test_ndisc6_addr2name,x86 fail,./mugen-riscv/logs/ndisc6/oe_test_ndisc6_addr2name/2023-09-13-10:15:17.log,x86 fail
+,oe_test_ndisc6_rltraceroute6,x86 fail,./mugen-riscv/logs/ndisc6/oe_test_ndisc6_rltraceroute6/2023-09-13-10:17:03.log,x86 fail
+,oe_test_ndisc6_tcptraceroute6,x86 fail,./mugen-riscv/logs/ndisc6/oe_test_ndisc6_tcptraceroute6/2023-09-13-10:17:56.log,x86 fail
+,oe_test_ndisc6_ndisc6,x86 fail,./mugen-riscv/logs/ndisc6/oe_test_ndisc6_ndisc6/2023-09-13-10:14:25.log,x86 fail
+gsl,oe_test_gsl_randlist_04,success,./mugen-riscv/logs/gsl/oe_test_gsl_randlist_04/2023-09-12-13:29:52.log,None
+,oe_test_gsl_randlist_01,success,./mugen-riscv/logs/gsl/oe_test_gsl_randlist_01/2023-09-12-13:28:46.log,None
+,oe_test_gsl_randlist_03,success,./mugen-riscv/logs/gsl/oe_test_gsl_randlist_03/2023-09-12-13:29:29.log,None
+,oe_test_gsl_randlist_02,success,./mugen-riscv/logs/gsl/oe_test_gsl_randlist_02/2023-09-12-13:29:08.log,None
+,oe_test_gsl_histogram_01,x86 fail,./mugen-riscv/logs/gsl/oe_test_gsl_histogram_01/2023-09-12-13:28:17.log,x86 fail
+lm_sensors,oe_test_service_sensord,success,./mugen-riscv/logs/lm_sensors/oe_test_service_sensord/2023-09-12-14:44:09.log,None
+,oe_test_service_lm_sensors,x86 fail,./mugen-riscv/logs/lm_sensors/oe_test_service_lm_sensors/2023-09-12-14:43:49.log,x86 fail
+,oe_test_service_fancontrol,x86 fail,./mugen-riscv/logs/lm_sensors/oe_test_service_fancontrol/2023-09-12-14:43:24.log,x86 fail
+mc,oe_test_mcdiff_01,success,./mugen-riscv/logs/mc/oe_test_mcdiff_01/2023-09-12-14:14:09.log,None
+,oe_test_mc_base_01,x86 fail,./mugen-riscv/logs/mc/oe_test_mc_base_01/2023-09-12-14:13:45.log,x86 fail
+,oe_test_mcedit_base_01,x86 fail,./mugen-riscv/logs/mc/oe_test_mcedit_base_01/2023-09-12-14:14:31.log,x86 fail
+,oe_test_mcview_base_01,x86 fail,./mugen-riscv/logs/mc/oe_test_mcview_base_01/2023-09-12-14:14:55.log,x86 fail
+netcf,oe_test_service_netcf-transaction,x86 fail,./mugen-riscv/logs/netcf/oe_test_service_netcf-transaction/2023-09-12-16:27:08.log,x86 fail
+memcached,oe_test_memcached_01,success,./mugen-riscv/logs/memcached/oe_test_memcached_01/2023-09-12-14:47:49.log,None
+,oe_test_memcached_02,success,./mugen-riscv/logs/memcached/oe_test_memcached_02/2023-09-12-14:48:14.log,None
+,oe_test_service_memcached,fail,./mugen-riscv/logs/memcached/oe_test_service_memcached/2023-09-12-14:48:39.log,
+patchutils,oe_test_patchutils_grepdiff_04,success,./mugen-riscv/logs/patchutils/oe_test_patchutils_grepdiff_04/2023-09-12-17:46:54.log,None
+,oe_test_patchutils_lsdiff_04,success,./mugen-riscv/logs/patchutils/oe_test_patchutils_lsdiff_04/2023-09-12-17:49:17.log,None
+,oe_test_patchutils_combinediff_02,success,./mugen-riscv/logs/patchutils/oe_test_patchutils_combinediff_02/2023-09-12-17:43:30.log,None
+,oe_test_patchutils_lsdiff_02,success,./mugen-riscv/logs/patchutils/oe_test_patchutils_lsdiff_02/2023-09-12-17:48:32.log,None
+,oe_test_patchutils_flipdiff_02,success,./mugen-riscv/logs/patchutils/oe_test_patchutils_flipdiff_02/2023-09-12-17:45:25.log,None
+,oe_test_patchutils_grepdiff_01,success,./mugen-riscv/logs/patchutils/oe_test_patchutils_grepdiff_01/2023-09-12-17:45:46.log,None
+,oe_test_patchutils_interdiff_02,success,./mugen-riscv/logs/patchutils/oe_test_patchutils_interdiff_02/2023-09-12-17:47:42.log,None
+,oe_test_patchutils_splitdiff,success,./mugen-riscv/logs/patchutils/oe_test_patchutils_splitdiff/2023-09-12-17:49:37.log,None
+,oe_test_patchutils_filterdiff_02,success,./mugen-riscv/logs/patchutils/oe_test_patchutils_filterdiff_02/2023-09-12-17:44:16.log,None
+,oe_test_patchutils_grepdiff_03,success,./mugen-riscv/logs/patchutils/oe_test_patchutils_grepdiff_03/2023-09-12-17:46:29.log,None
+,oe_test_patchutils_grepdiff_02,success,./mugen-riscv/logs/patchutils/oe_test_patchutils_grepdiff_02/2023-09-12-17:46:07.log,None
+,oe_test_patchutils_filterdiff_01,success,./mugen-riscv/logs/patchutils/oe_test_patchutils_filterdiff_01/2023-09-12-17:43:54.log,None
+,oe_test_patchutils_lsdiff_03,success,./mugen-riscv/logs/patchutils/oe_test_patchutils_lsdiff_03/2023-09-12-17:48:55.log,None
+,oe_test_patchutils_filterdiff_03,success,./mugen-riscv/logs/patchutils/oe_test_patchutils_filterdiff_03/2023-09-12-17:44:39.log,None
+,oe_test_patchutils_lsdiff_01,success,./mugen-riscv/logs/patchutils/oe_test_patchutils_lsdiff_01/2023-09-12-17:48:10.log,None
+,oe_test_patchutils_flipdiff_01,x86 fail,./mugen-riscv/logs/patchutils/oe_test_patchutils_flipdiff_01/2023-09-12-17:45:01.log,x86 fail
+,oe_test_patchutils_interdiff_01,x86 fail,./mugen-riscv/logs/patchutils/oe_test_patchutils_interdiff_01/2023-09-12-17:47:15.log,x86 fail
+,oe_test_patchutils_combinediff_01,x86 fail,./mugen-riscv/logs/patchutils/oe_test_patchutils_combinediff_01/2023-09-12-17:43:04.log,x86 fail

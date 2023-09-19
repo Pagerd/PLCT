@@ -1,0 +1,4 @@
+测试套/软件包名,测试用例名,状态,日志文件,原因
+,oe_test_power_powertop2tuned_optimize,fail,./mugen-riscv/logs/os-basic/oe_test_power_powertop2tuned_optimize/2023-09-13-11:01:18.log,file missing
+,oe_test_uname,fail,./mugen-riscv/logs/os-basic/oe_test_uname/2023-09-13-14:03:13.log,Execution failed
+,oe_test_FSIO_check_fs_type,fail,./mugen-riscv/logs/FS_FileSystem/oe_test_FSIO_check_fs_type/2023-09-13-15:22:53.log,The system doesn't support ext4

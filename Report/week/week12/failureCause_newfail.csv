@@ -1,0 +1,73 @@
+测试套/软件包名,测试用例名,状态,日志文件,原因
+os-basic,oe_test_net_mtr,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_mtr/2023-09-13-12:37:09.log,grep _gateway错误
+,oe_test_nmcli_Mgntconnect,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_Mgntconnect/2023-09-13-11:07:41.log,未指定连接
+,oe_test_nmcli_8023link,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_8023link/2023-09-13-11:59:42.log,未指定连接
+,oe_test_nmcli_con_reload,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_con_reload/2023-09-13-11:48:45.log,未指定连接
+,oe_test_gcc_01,x86 fail,./mugen-riscv/logs/os-basic/oe_test_gcc_01/2023-09-13-11:45:38.log,gcc -Wall main.c错误
+,oe_test_nmcli_route,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_route/2023-09-13-12:16:58.log,未指定连接
+,oe_test_net_ncat,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_ncat/2023-09-13-10:30:40.log,无法解析主机名：名称或服务未知
+,oe_test_nmcli_add_connect,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_add_connect/2023-09-13-12:36:38.log,未指定连接
+,oe_test_nmcli_vlan,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_vlan/2023-09-13-13:53:50.log,未指定连接
+,oe_test_timedatectl,x86 fail,./mugen-riscv/logs/os-basic/oe_test_timedatectl/2023-09-13-12:26:12.log,不支持 NTP
+,oe_test_server_httpd_tls,x86 fail,./mugen-riscv/logs/os-basic/oe_test_server_httpd_tls/2023-09-13-13:54:08.log,Job for httpd.service failed because the control process exited with error code.
+,oe_test_kernel_sysctl,x86 fail,./mugen-riscv/logs/os-basic/oe_test_kernel_sysctl/2023-09-13-11:55:38.log,sysctl -a错误
+,oe_test_nmcli_bridge,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_bridge/2023-09-13-10:56:06.log,未指定连接
+,oe_test_nmcli_config_gw,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_config_gw/2023-09-13-12:17:47.log,未指定连接
+,oe_test_net_setmode,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_setmode/2023-09-13-11:06:03.log,复原环境时什么也没做
+,oe_test_net_IPVLAN,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_IPVLAN/2023-09-13-11:11:26.log,未指定连接
+,oe_test_nmcli_device,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_device/2023-09-13-14:10:17.log,未指定连接
+,oe_test_net_cmd_ifconfig,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_cmd_ifconfig/2023-09-13-12:07:02.log,复原环境时什么也没做
+,oe_test_net_config,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_config/2023-09-13-11:15:33.log,复原环境时什么也没做
+,oe_test_server_httpd_recover,fail,./mugen-riscv/logs/os-basic/oe_test_server_httpd_recover/2023-09-13-13:34:01.log,Job for httpd.service failed because the control process exited with error code.
+,oe_test_disk_tuned_disable,fail,./mugen-riscv/logs/os-basic/oe_test_disk_tuned_disable/2023-09-13-13:40:07.log,file missing
+,oe_test_disk_tuned_install,fail,./mugen-riscv/logs/os-basic/oe_test_disk_tuned_install/2023-09-13-13:25:19.log,file missing
+,oe_test_disk_tuned_modify,fail,./mugen-riscv/logs/os-basic/oe_test_disk_tuned_modify/2023-09-13-13:48:26.log,file missing/timeout
+,oe_test_basic_UserMgmt_permission,fail,./mugen-riscv/logs/os-basic/oe_test_basic_UserMgmt_permission/2023-09-13-11:06:39.log,权限被拒绝/无法锁定/etc/passwd
+,oe_test_server_mysql,fail,./mugen-riscv/logs/os-basic/oe_test_server_mysql/2023-09-13-13:49:23.log,file missing
+,oe_test_server_httpd_restart,fail,./mugen-riscv/logs/os-basic/oe_test_server_httpd_restart/2023-09-13-13:35:35.log,Job for httpd.service failed because the control process exited with error code.
+,oe_test_server_httpd_port,fail,./mugen-riscv/logs/os-basic/oe_test_server_httpd_port/2023-09-13-11:02:56.log,Job for httpd.service failed because the control process exited with error code.
+,oe_test_disk_tuned_set,fail,./mugen-riscv/logs/os-basic/oe_test_disk_tuned_set/2023-09-13-12:28:14.log,file missing/timeout
+,oe_test_home_directory,fail,./mugen-riscv/logs/os-basic/oe_test_home_directory/2023-09-13-13:44:20.log,preinstall absent
+,oe_test_uname,fail,./mugen-riscv/logs/os-basic/oe_test_uname/2023-09-13-14:03:13.log,uname -m fail
+lvm2,oe_test_lvm2_vgrename_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgrename_001/2023-09-12-17:35:11.log,No device found for /dev/.
+,oe_test_lvm2_vgchange_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgchange_001/2023-09-12-17:37:41.log,No device found for /dev/.
+,oe_test_lvm2_pvdisplay_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_pvdisplay_001/2023-09-12-17:35:46.log,No device found for /dev/.
+,oe_test_lvm2_vgextend_002,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgextend_002/2023-09-12-17:38:19.log,No device found for /dev/.
+,oe_test_lvm2_pvremove_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_pvremove_001/2023-09-12-17:30:14.log,No device found for /dev/.
+,oe_test_lvm2_vgexport_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgexport_001/2023-09-12-17:39:45.log,No device found for /dev/.
+,oe_test_lvm2_vgextend_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgextend_001/2023-09-12-17:38:58.log,No device found for /dev/.
+,oe_test_lvm2_vgchange_002,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgchange_002/2023-09-12-17:40:24.log,No device found for /dev/.
+,oe_test_lvm2_vgdisplay_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgdisplay_001/2023-09-12-17:34:35.log,No device found for /dev/.
+,oe_test_lvm2_pvchange_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_pvchange_001/2023-09-12-17:37:14.log,No device found for /dev/.
+,oe_test_lvm2_vgcreate_001,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_vgcreate_001/2023-09-12-17:33:12.log,No device found for /dev/.
+,oe_test_socket_lvm2-lvmpolld,x86 fail,./mugen-riscv/logs/lvm2/oe_test_socket_lvm2-lvmpolld/2023-09-12-17:29:39.log,No device found for /dev/.
+,oe_test_lvm2_pvdisplay_002,x86 fail,./mugen-riscv/logs/lvm2/oe_test_lvm2_pvdisplay_002/2023-09-12-17:33:58.log,No device found for /dev/.
+,oe_test_socket_dm-event,x86 fail,./mugen-riscv/logs/lvm2/oe_test_socket_dm-event/2023-09-12-17:29:06.log,No device found for /dev/.
+accountsservice,oe_test_service_accounts-daemon,x86 fail,./mugen-riscv/logs/accountsservice/oe_test_service_accounts-daemon/2023-09-12-15:47:22.log,"/etc/systemd/system/graphical.target.wants/accounts-daemon.service"’: No such file or directory
+dbus,oe_test_service_dbus,fail,./mugen-riscv/logs/dbus/oe_test_service_dbus/2023-09-12-13:17:52.log,systemd unit restart failure/systemd unit runtime error
+asciidoc,oe_test_asciidoc_a2x_03,x86 fail,./mugen-riscv/logs/asciidoc/oe_test_asciidoc_a2x_03/2023-09-12-13:54:35.log,测试环境未安装a2x
+ypserv,oe_test_service_yppasswdd,fail,./mugen-riscv/logs/ypserv/oe_test_service_yppasswdd/2023-09-12-14:55:22.log,A dependency job for yppasswdd.service failed
+,oe_test_service_ypserv,fail,./mugen-riscv/logs/ypserv/oe_test_service_ypserv/2023-09-12-15:14:21.log,A dependency job for yppasswdd.service failed
+,oe_test_service_ypxfrd,fail,./mugen-riscv/logs/ypserv/oe_test_service_ypxfrd/2023-09-12-15:15:07.log,A dependency job for yppasswdd.service failed
+brltty,oe_test_service_brltty,x86 fail,./mugen-riscv/logs/brltty/oe_test_service_brltty/2023-09-12-15:51:59.log,‘/etc/systemd/system/rescue.target.wants/brltty.service’: No such file or directory
+lxc,oe_test_lxc_unshare_update,x86 fail,./mugen-riscv/logs/lxc/oe_test_lxc_unshare_update/2023-09-12-12:26:18.log,连接被对等方重置 - 无法接收响应
+usbmuxd,oe_test_service_usbmuxd,fail,./mugen-riscv/logs/usbmuxd/oe_test_service_usbmuxd/2023-09-12-17:52:04.log,systemctl status usbmuxd.service failed
+nspr,oe_test_nspr_001,x86 fail,./mugen-riscv/logs/nspr/oe_test_nspr_001/2023-09-12-15:29:55.log,未安装g++
+,oe_test_nspr_002,x86 fail,./mugen-riscv/logs/nspr/oe_test_nspr_002/2023-09-12-15:30:47.log,未安装g++
+,oe_test_service_powertop,fail,./mugen-riscv/logs/powertop/oe_test_service_powertop/2023-09-12-15:33:26.log,‘/etc/systemd/system/multi-user.target.wants/powertop.service’: No such file or directory
+,oe_test_socket_acpid,x86 fail,./mugen-riscv/logs/acpid/oe_test_socket_acpid/2023-09-12-13:23:53.log,"/etc/systemd/system/sockets.target.wants/acpid.socket"’: No such file or directory
+,oe_test_service_acpid,x86 fail,./mugen-riscv/logs/acpid/oe_test_service_acpid/2023-09-12-13:23:04.log,"/etc/systemd/system/sockets.target.wants/acpid.socket"’: No such file or directory
+hdparm,oe_test_hdparm,x86 fail,./mugen-riscv/logs/hdparm/oe_test_hdparm/2023-09-12-16:16:31.log,设备的 ioctl 不合适
+avahi,oe_test_service_avahi-daemon,x86 fail,./mugen-riscv/logs/avahi/oe_test_service_avahi-daemon/2023-09-12-14:31:45.log,Job for avahi-daemon.service failed because the control process exited with error code
+,oe_test_socket_avahi-daemon,x86 fail,./mugen-riscv/logs/avahi/oe_test_socket_avahi-daemon/2023-09-12-14:34:26.log,‘"/etc/systemd/system/sockets.target.wants/avahi-daemon.socket"’: No such file or directory
+,oe_test_service_avahi-dnsconfd,fail,./mugen-riscv/logs/avahi/oe_test_service_avahi-dnsconfd/2023-09-12-14:32:53.log,file missing/systemd unit restart failure/systemd unit runtime error/systemd unit enable failure
+,oe_test_socket_tangd,fail,./mugen-riscv/logs/tang/oe_test_socket_tangd/2023-09-12-14:52:22.log,A dependency job for tangd.socket failed
+,oe_test_service_tangd-update,fail,./mugen-riscv/logs/tang/oe_test_service_tangd-update/2023-09-12-14:51:56.log,Job for tangd-update.service failed because the control process exited with error code
+,oe_test_ndisc6_tracert6,x86 fail,./mugen-riscv/logs/ndisc6/oe_test_ndisc6_tracert6/2023-09-13-10:15:44.log,socket.gaierror:Name or service not known
+,oe_test_ndisc6_addr2name,x86 fail,./mugen-riscv/logs/ndisc6/oe_test_ndisc6_addr2name/2023-09-13-10:15:17.log,socket.gaierror:Name or service not known
+,oe_test_ndisc6_rltraceroute6,x86 fail,./mugen-riscv/logs/ndisc6/oe_test_ndisc6_rltraceroute6/2023-09-13-10:17:03.log,socket.gaierror:Name or service not known
+,oe_test_ndisc6_tcptraceroute6,x86 fail,./mugen-riscv/logs/ndisc6/oe_test_ndisc6_tcptraceroute6/2023-09-13-10:17:56.log,socket.gaierror:Name or service not known
+,oe_test_ndisc6_ndisc6,x86 fail,./mugen-riscv/logs/ndisc6/oe_test_ndisc6_ndisc6/2023-09-13-10:14:25.log,socket.gaierror:Name or service not known
+,oe_test_gsl_histogram_01,x86 fail,./mugen-riscv/logs/gsl/oe_test_gsl_histogram_01/2023-09-12-13:28:17.log,Failed option: gsl-histogram -u 
+netcf,oe_test_service_netcf-transaction,x86 fail,./mugen-riscv/logs/netcf/oe_test_service_netcf-transaction/2023-09-12-16:27:08.log,"/etc/systemd/system/multi-user.target.wants/netcf-transaction.service"’: No such file or directory
+,oe_test_service_memcached,fail,./mugen-riscv/logs/memcached/oe_test_service_memcached/2023-09-12-14:48:39.log,memcached.service restart failed

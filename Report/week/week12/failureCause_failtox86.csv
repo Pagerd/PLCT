@@ -1,0 +1,14 @@
+测试套/软件包名,测试用例名,状态,日志文件,原因
+,oe_test_expect,x86 fail,./mugen-riscv/logs/os-basic/oe_test_expect/2023-09-13-13:12:46.log,x86 fail
+,oe_test_ethtool,x86 fail,./mugen-riscv/logs/os-basic/oe_test_ethtool/2023-09-13-11:49:06.log,x86 fail
+,oe_test_count_gperftools_function,x86 fail,./mugen-riscv/logs/os-basic/oe_test_count_gperftools_function/2023-09-13-13:47:09.log,x86 fail
+,oe_test_xzcmp,x86 fail,./mugen-riscv/logs/os-basic/oe_test_xzcmp/2023-09-13-11:05:54.log,x86 fail
+,oe_test_nmcli_set_bond,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_set_bond/2023-09-13-13:13:06.log,x86 fail
+,oe_test_system_monitor_share_total,x86 fail,./mugen-riscv/logs/os-basic/oe_test_system_monitor_share_total/2023-09-13-11:00:04.log,x86 fail
+,oe_test_net_VRF,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_VRF/2023-09-13-10:35:48.log,x86 fail
+,oe_test_disk_graphics_card,x86 fail,./mugen-riscv/logs/os-basic/oe_test_disk_graphics_card/2023-09-13-10:59:17.log,x86 fail
+,oe_test_net_cmd_scp,x86 fail,./mugen-riscv/logs/os-basic/oe_test_net_cmd_scp/2023-09-13-14:07:48.log,x86 fail
+,oe_test_nmcli_set_team,x86 fail,./mugen-riscv/logs/os-basic/oe_test_nmcli_set_team/2023-09-13-13:53:38.log,x86 fail
+,oe_test_hostnamectl,x86 fail,./mugen-riscv/logs/os-basic/oe_test_hostnamectl/2023-09-13-11:01:43.log,x86 fail
+,oe_test_who,x86 fail,./mugen-riscv/logs/os-basic/oe_test_who/2023-09-13-11:15:02.log,x86 fail
+,oe_test_service_gdm,x86 fail,./mugen-riscv/logs/gdm/oe_test_service_gdm/2023-09-12-16:09:41.log,x86 fail
