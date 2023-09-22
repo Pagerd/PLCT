@@ -1,0 +1,13 @@
+测试套/软件包名,测试用例名,状态,日志文件,原因
+nss-pam-ldapd,oe_test_service_nslcd,newfail,./mugen-riscv/logs/nss-pam-ldapd/oe_test_service_nslcd/2023-09-22-02:05:00.log,
+,oe_test_dbus_dbus-tools_002,newfail,./mugen-riscv/logs/dbus/oe_test_dbus_dbus-tools_002/2023-09-21-19:15:11.log,
+,oe_test_dbus_dbus-daemon,newfail,./mugen-riscv/logs/dbus/oe_test_dbus_dbus-daemon/2023-09-21-19:13:56.log,
+ipvsadm,oe_test_ipvs_SCEN_TUN_07,newfail,./mugen-riscv/logs/ipvsadm/oe_test_ipvs_SCEN_TUN_07/2023-09-22-08_32_33.log,
+,oe_test_ipvs_SCEN_TUN_04,newfail,./mugen-riscv/logs/ipvsadm/oe_test_ipvs_SCEN_TUN_04/2023-09-22-07_56_01.log,
+,oe_test_ipvs_SCEN_TUN_08,newfail,./mugen-riscv/logs/ipvsadm/oe_test_ipvs_SCEN_TUN_08/2023-09-22-08_45_20.log,
+,oe_test_ipvs_SCEN_TUN_06,newfail,./mugen-riscv/logs/ipvsadm/oe_test_ipvs_SCEN_TUN_06/2023-09-22-08_20_15.log,
+,oe_test_ipvs_SCEN_TUN_02,newfail,./mugen-riscv/logs/ipvsadm/oe_test_ipvs_SCEN_TUN_02/2023-09-22-07_32_51.log,
+,oe_test_ipvs_SCEN_TUN_01,newfail,./mugen-riscv/logs/ipvsadm/oe_test_ipvs_SCEN_TUN_01/2023-09-22-07_18_40.log,
+,oe_test_ipvs_SCEN_TUN_03,newfail,./mugen-riscv/logs/ipvsadm/oe_test_ipvs_SCEN_TUN_03/2023-09-22-07_43_40.log,
+,oe_test_ipvs_SCEN_TUN_05,newfail,./mugen-riscv/logs/ipvsadm/oe_test_ipvs_SCEN_TUN_05/2023-09-22-08_07_34.log,
+,oe_test_tcm_loop,newfail,./mugen-riscv/logs/kernel/oe_test_tcm_loop/2023-09-21-20:36:05.log,
