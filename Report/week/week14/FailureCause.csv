@@ -1,0 +1,64 @@
+测试套/软件包名,测试用例名,状态,与23RC1对比,日志文件,原因
+FS_FileSystem,oe_test_FSIO_create_squashfs,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/FS_FileSystem/oe_test_FSIO_create_squashfs/2023-10-11-21:35:25.log,没有命令mksquashfs
+acl,oe_test_access_providepam,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/acl/oe_test_access_providepam/2023-10-11-08:12:53.log,x86 fail
+apr,oe_test_apr_001,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/apr/oe_test_apr_001/2023-10-11-01:29:05.log,未安装gcc,success after install
+,oe_test_apr_002,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/apr/oe_test_apr_002/2023-10-11-01:30:06.log,未安装gcc,success after install
+audit,oe_test_service_auditd,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/audit/oe_test_service_auditd/2023-10-11-16:08:09.log,x86 fail diff reason
+automake,oe_test_automake,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/automake/oe_test_automake/2023-10-10-20_31_59.log,x86 fail
+bison,oe_test_bison,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/bison/oe_test_bison/2023-10-11-03:42:39.log,未安装gcc success after install
+createrepo_c,oe_test_createrepo_c_local_repo,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/createrepo_c/oe_test_createrepo_c_local_repo/2023-10-10-20_56_29.log,没有包createrepo_c
+dnf,oe_test_dnf_all-repos,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/dnf/oe_test_dnf_all-repos/2023-10-11-06:55:43.log,没有everything
+,oe_test_dnf_assumeno_autoremove,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/dnf/oe_test_dnf_assumeno_autoremove/2023-10-11-06:56:35.log,没有包vim-enhanced
+,oe_test_dnf_enhancement_exclude,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/dnf/oe_test_dnf_enhancement_exclude/2023-10-11-07:08:54.log,failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+,oe_test_dnf_nobest_nodocs_nogpgcheck,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/dnf/oe_test_dnf_nobest_nodocs_nogpgcheck/2023-10-11-07:12:03.log,failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+,oe_test_dnf_priority,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/dnf/oe_test_dnf_priority/2023-10-11-07:12:58.log,failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+,oe_test_dnf_repeat-install,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/dnf/oe_test_dnf_repeat-install/2023-10-11-07:17:38.log,failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+firewalld,oe_test_firewalld_block_all_icmp,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/firewalld/oe_test_firewalld_block_all_icmp/2023-10-11-06:59:26.log,timeout
+,oe_test_firewalld_runtime_rules_in_effect,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/firewalld/oe_test_firewalld_runtime_rules_in_effect/2023-10-11-08:54:53.log,二号机连接失败
+gdb,oe_test_gdb-breakpoints,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/gdb/oe_test_gdb-breakpoints/2023-10-11-10:32:16.log,未安装gcc success after install
+,oe_test_gdb-list,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/gdb/oe_test_gdb-list/2023-10-11-10:32:48.log,未安装gcc,gdb success after install
+,oe_test_gdb-watch,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/gdb/oe_test_gdb-watch/2023-10-11-10:33:03.log,未安装gcc,gdb success after install
+glusterfs,oe_test_service_glusterfssharedstorage,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/glusterfs/oe_test_service_glusterfssharedstorage/2023-10-10-19_57_35.log,缺少包liburing.so.2
+hdparm,oe_test_hdparm,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/hdparm/oe_test_hdparm/2023-10-11-12:46:08.log,HDIO_GET_32BIT 失败：设备的 ioctl 不合适
+hostname,oe_test_service_nis-domainname,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/hostname/oe_test_service_nis-domainname/2023-10-11-02:47:07.log,nis-domainname.service服务起不来
+intltool,oe_test_intltool_intltool-extract,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/intltool/oe_test_intltool_intltool-extract/2023-10-10-19_49_36.log,没有包intltool-0.51.0-15.oe2309.noarch
+,oe_test_intltool_intltool-merge_01,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/intltool/oe_test_intltool_intltool-merge_01/2023-10-10-19_46_33.log,没有包intltool-0.51.0-15.oe2309.noarch
+,oe_test_intltool_intltool-merge_02,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/intltool/oe_test_intltool_intltool-merge_02/2023-10-10-19_47_51.log,没有包intltool-0.51.0-15.oe2309.noarch
+,oe_test_intltool_intltool-prepare,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/intltool/oe_test_intltool_intltool-prepare/2023-10-10-19_51_00.log,没有包intltool-0.51.0-15.oe2309.noarch
+,oe_test_intltool_intltool-update,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/intltool/oe_test_intltool_intltool-update/2023-10-10-19_48_43.log,没有包intltool-0.51.0-15.oe2309.noarch
+,oe_test_intltool_intltoolize,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/intltool/oe_test_intltool_intltoolize/2023-10-10-19_51_59.log,没有包intltool-0.51.0-15.oe2309.noarch
+ipset,oe_test_service_ipset,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/ipset/oe_test_service_ipset/2023-10-11-01:25:58.log,Oct 11 01:26:00 openeuler systemd[1]: ipset.service: Failed with result 'signal'.
+iputils,oe_test_iputils_ping6_01,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/iputils/oe_test_iputils_ping6_01/2023-10-11-11:01:25.log,
+,oe_test_iputils_ping6_02,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/iputils/oe_test_iputils_ping6_02/2023-10-11-11:02:06.log,
+,oe_test_iputils_ping6_03,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/iputils/oe_test_iputils_ping6_03/2023-10-11-11:03:04.log,
+,oe_test_iputils_ping6_04,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/iputils/oe_test_iputils_ping6_04/2023-10-11-11:03:49.log,
+,oe_test_iputils_ping_04,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/iputils/oe_test_iputils_ping_04/2023-10-11-11:00:41.log,
+javapackages-tools,oe_test_build-classpath,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/javapackages-tools/oe_test_build-classpath/2023-10-11-09:50:58.log,cglib-3.3.0-1.oe2309.noarch无法安装导致失败
+kernel,oe_test_nbd,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/kernel/oe_test_nbd/2023-10-11-06:51:01.log,无法删除“nbd”：资源暂时不可用
+kmod,oe_test_depmod,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/kmod/oe_test_depmod/2023-10-10-23:59:17.log,x86 fail
+libdb,oe_test_libdb,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/libdb/oe_test_libdb/2023-10-11-01:07:33.log,未安装gcc success after install
+libmicrohttpd,oe_test_libmicrohttpd,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/libmicrohttpd/oe_test_libmicrohttpd/2023-10-10-20_42_09.log,未安装gcc
+libreswan,oe_test_libreswan_ipsec_setup,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/libreswan/oe_test_libreswan_ipsec_setup/2023-10-11-07:25:18.log,
+,oe_test_libreswan_ipsec_showhostkey_nss,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/libreswan/oe_test_libreswan_ipsec_showhostkey_nss/2023-10-11-07:26:33.log,
+,oe_test_libreswan_ipsec_systemctl,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/libreswan/oe_test_libreswan_ipsec_systemctl/2023-10-11-07:28:24.log,
+,oe_test_service_ipsec,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/libreswan/oe_test_service_ipsec/2023-10-11-07:34:05.log,
+libtar,oe_test_libtar,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/libtar/oe_test_libtar/2023-10-11-09:04:33.log,未安装gcc success after install
+lorax,oe_test_service_lorax-composer,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/lorax/oe_test_service_lorax-composer/2023-10-10-20_22_02.log,没有包lorax-composer-34.1-4.oe2309.riscv64 
+,oe_test_socket_lorax-composer,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/lorax/oe_test_socket_lorax-composer/2023-10-10-20_27_44.log,没有包lorax-composer-34.1-4.oe2309.riscv64 
+open-iscsi,oe_test_socket_iscsid,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/open-iscsi/oe_test_socket_iscsid/2023-10-11-00:15:04.log,x86 fail
+openblas,oe_test_openblas,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/openblas/oe_test_openblas/2023-10-11-03:07:34.log,未安装gcc success after install
+openscap,oe_test_fix_anisible,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/openscap/oe_test_fix_anisible/2023-10-11-09:43:16.log,缺包rpm-build-4.18.1-8.oe2309.riscv64,openscap-1.3.7-1.oe2309.riscv64
+,oe_test_openscap_01,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/openscap/oe_test_openscap_01/2023-10-11-09:38:49.log,缺包rpm-build-4.18.1-8.oe2309.riscv64,openscap-1.3.7-1.oe2309.riscv64
+,oe_test_scanning_system,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/openscap/oe_test_scanning_system/2023-10-11-09:39:48.log,缺包rpm-build-4.18.1-8.oe2309.riscv64,openscap-1.3.7-1.oe2309.riscv64
+os-storage,oe_test_storage_smb_write_full,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/os-storage/oe_test_storage_smb_write_full/2023-10-10-20_51_14.log,Could not change active booleans: Invalid boolean
+pixman,oe_test_pixman,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/pixman/oe_test_pixman/2023-10-10-20_48_23.log,未安装gcc success after install
+procps-ng,oe_test_procps-ng-pmap,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/procps-ng/oe_test_procps-ng-pmap/2023-10-11-03:18:18.log,未安装gcc success after install
+protobuf,oe_test_protobuf,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/protobuf/oe_test_protobuf/2023-10-10-20_49_12.log,缺包protobuf-java-util-3.19.6-1.oe2309.noarch
+python-blivet,oe_test_service_blivet,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/python-blivet/oe_test_service_blivet/2023-10-11-21:43:15.log,timeout
+qemu,oe_test_service_qemu-pr-helper,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/qemu/oe_test_service_qemu-pr-helper/2023-10-11-11:46:40.log,缺包qemu
+,oe_test_socket_qemu-pr-helper,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/qemu/oe_test_socket_qemu-pr-helper/2023-10-11-11:48:04.log,缺包qemu
+smoke-basic-os,oe_test_rpmrebuild,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/smoke-basic-os/oe_test_rpmrebuild/2023-10-11-09:45:02.log,缺包rpm-build-4.18.1-8.oe2309.riscv64
+,oe_test_rsyslog_10,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/smoke-basic-os/oe_test_rsyslog_10/2023-10-11-09:53:07.log,
+,oe_test_sort,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/smoke-basic-os/oe_test_sort/2023-10-11-07:39:29.log,
+systemtap,oe_test_service_stap-exporter,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/systemtap/oe_test_service_stap-exporter/2023-10-11-01:19:54.log,
+vdo,oe_test_service_vdo,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/vdo/oe_test_service_vdo/2023-10-10-20_55_34.log,

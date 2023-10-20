@@ -1,0 +1,17 @@
+createrepo_c,oe_test_createrepo_c_local_repo,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/createrepo_c/oe_test_createrepo_c_local_repo/2023-10-10-20_56_29.log,缺包createrepo_c
+dnf,oe_test_dnf_assumeno_autoremove,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/dnf/oe_test_dnf_assumeno_autoremove/2023-10-11-06:56:35.log,缺包vim-enhanced
+intltool,oe_test_intltool_intltool-extract,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/intltool/oe_test_intltool_intltool-extract/2023-10-10-19_49_36.log,缺包intltool-0.51.0-15.oe2309.noarch
+,oe_test_intltool_intltool-merge_01,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/intltool/oe_test_intltool_intltool-merge_01/2023-10-10-19_46_33.log,缺包intltool-0.51.0-15.oe2309.noarch
+,oe_test_intltool_intltool-merge_02,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/intltool/oe_test_intltool_intltool-merge_02/2023-10-10-19_47_51.log,缺包intltool-0.51.0-15.oe2309.noarch
+,oe_test_intltool_intltool-prepare,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/intltool/oe_test_intltool_intltool-prepare/2023-10-10-19_51_00.log,缺包intltool-0.51.0-15.oe2309.noarch
+,oe_test_intltool_intltool-update,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/intltool/oe_test_intltool_intltool-update/2023-10-10-19_48_43.log,缺包intltool-0.51.0-15.oe2309.noarch
+,oe_test_intltool_intltoolize,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/intltool/oe_test_intltool_intltoolize/2023-10-10-19_51_59.log,缺包intltool-0.51.0-15.oe2309.noarch
+lorax,oe_test_service_lorax-composer,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/lorax/oe_test_service_lorax-composer/2023-10-10-20_22_02.log,缺包lorax-composer-34.1-4.oe2309.riscv64 
+,oe_test_socket_lorax-composer,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/lorax/oe_test_socket_lorax-composer/2023-10-10-20_27_44.log,缺包lorax-composer-34.1-4.oe2309.riscv64 
+openscap,oe_test_fix_anisible,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/openscap/oe_test_fix_anisible/2023-10-11-09:43:16.log,缺包rpm-build-4.18.1-8.oe2309.riscv64,openscap-1.3.7-1.oe2309.riscv64
+,oe_test_openscap_01,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/openscap/oe_test_openscap_01/2023-10-11-09:38:49.log,缺包rpm-build-4.18.1-8.oe2309.riscv64,openscap-1.3.7-1.oe2309.riscv64
+,oe_test_scanning_system,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/openscap/oe_test_scanning_system/2023-10-11-09:39:48.log,缺包rpm-build-4.18.1-8.oe2309.riscv64,openscap-1.3.7-1.oe2309.riscv64
+qemu,oe_test_service_qemu-pr-helper,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/qemu/oe_test_service_qemu-pr-helper/2023-10-11-11:46:40.log,缺包qemu
+,oe_test_socket_qemu-pr-helper,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/qemu/oe_test_socket_qemu-pr-helper/2023-10-11-11:48:04.log,缺包qemu
+smoke-basic-os,oe_test_rpmrebuild,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/smoke-basic-os/oe_test_rpmrebuild/2023-10-11-09:45:02.log,缺包rpm-build-4.18.1-8.oe2309.riscv64
+protobuf,oe_test_protobuf,fail,RC5fail,./oe-rv2309/mugen-riscv_rc5/logs/protobuf/oe_test_protobuf/2023-10-10-20_49_12.log,缺包protobuf-java-util-3.19.6-1.oe2309.noarch
