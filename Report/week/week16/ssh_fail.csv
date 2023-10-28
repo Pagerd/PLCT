@@ -1,0 +1,10 @@
+测试套/软件包名,测试用例名,状态,日志文件,原因
+os-basic,oe_test_expect,fail,./mugen-riscv/logs/os-basic/oe_test_expect/2023-10-20-08_57_14.log,ssh连接失败
+,oe_test_reboot,fail,./mugen-riscv/logs/os-basic/oe_test_reboot/2023-10-20-05_34_59.log,ssh连接失败
+,oe_test_net_ncat,fail,./mugen-riscv/logs/os-basic/oe_test_net_ncat/2023-10-20-08_42_59.log,ssh连接失败
+,oe_test_system_monitor_login,fail,./mugen-riscv/logs/os-basic/oe_test_system_monitor_login/2023-10-20-03_48_08.log,ssh连接失败
+,oe_test_net_cmd_scp,fail,./mugen-riscv/logs/os-basic/oe_test_net_cmd_scp/2023-10-20-08_40_34.log,ssh连接失败
+,oe_test_hostnamectl,fail,./mugen-riscv/logs/os-basic/oe_test_hostnamectl/2023-10-20-08_14_08.log,ssh连接失败
+,oe_test_net_config,fail,./mugen-riscv/logs/os-basic/oe_test_net_config/2023-10-20-08_41_35.log,ssh连接失败
+,oe_test_system_monitor_reboot,fail,./mugen-riscv/logs/os-basic/oe_test_system_monitor_reboot/2023-10-20-03_17_21.log,ssh连接失败
+FS_Directory,oe_test_FSIO_dir_umask_exit,fail,./mugen-riscv/logs/FS_Directory/oe_test_FSIO_dir_umask_exit/2023-10-22-17:56:49.log,ssh连接失败
