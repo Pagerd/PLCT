@@ -1,0 +1,222 @@
++ source ../common/common_lib.sh
+++ source /root/mugen/libs/locallibs/common_lib.sh+++ python3 --version
++ main
+++ type -t post_test
++ '[' -n function ']'
++ grep expect
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
+Thu Oct 12 13:29:57 2023 - INFO  - Start environmental preparation.
++ DNF_INSTALL ctdb
++ pkgs=ctdb
++ node=1
++ tmpfile2=/tmp/tmplqkm66av
++ '[' -z '' ']'
++ tmpfile=/tmp/tmplqkm66av
++ echo 127.0.0.1
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
+Thu Oct 12 13:31:23 2023 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
+Thu Oct 12 13:31:23 2023 - INFO  - Start testing...
++ test_execution ctdb.service
++ service=ctdb.service
+++ date '+%Y-%m-%d %T'
++ log_time='2023-10-12 13:31:23'
++ test_restart ctdb.service
++ service=ctdb.service
++ systemctl restart ctdb.service
++ CHECK_RESULT 0 0 0 'ctdb.service restart failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='ctdb.service restart failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status ctdb.service
++ grep 'Active: active'
+     Active: active (running) since Thu 2023-10-12 13:31:24 CST; 5s ago
++ CHECK_RESULT 0 0 0 'ctdb.service restart failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='ctdb.service restart failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ systemctl stop ctdb.service
++ CHECK_RESULT 0 0 0 'ctdb.service stop failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='ctdb.service stop failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status ctdb.service
++ grep 'Active: inactive'
+     Active: inactive (dead)
++ CHECK_RESULT 0 0 0 'ctdb.service stop failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='ctdb.service stop failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ systemctl start ctdb.service
++ CHECK_RESULT 0 0 0 'ctdb.service start failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='ctdb.service start failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status ctdb.service
++ grep 'Active: active'
+     Active: active (running) since Thu 2023-10-12 13:31:36 CST; 5s ago
++ CHECK_RESULT 0 0 0 'ctdb.service start failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='ctdb.service start failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ test_enabled ctdb.service
++ service=ctdb.service
++ '[' disabled == enabled ']'
++ '[' disabled == disabled ']'
+++ systemctl enable ctdb.service
++ symlink_file=/etc/systemd/system/multi-user.target.wants/ctdb.service
++ find /etc/systemd/system/multi-user.target.wants/ctdb.service
+/etc/systemd/system/multi-user.target.wants/ctdb.service
++ CHECK_RESULT 0 0 0 'ctdb.service enable failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='ctdb.service enable failed'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ find /etc/systemd/system/multi-user.target.wants/ctdb.service
++ CHECK_RESULT 1 0 1 'ctdb.service disable failed'
++ actual_result=1
++ expect_result=0
++ mode=1
++ test 1x == 0x
++ test 1x == 0x
++ CHECK_RESULT 0 0 1 'There is an error message for the log of ctdb.service'
++ mode=1
++ error_log='There is an error message for the log of ctdb.service'
++ exit_mode=0
++ test 0x == 0x
++ test -n 'There is an error message for the log of ctdb.service'
++ LOG_ERROR 'There is an error message for the log of ctdb.service'
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 28'
++ message='../common/common_lib.sh line 28'
+Thu Oct 12 13:31:46 2023 - ERROR - ../common/common_lib.sh line 28
++ '[' 0 -eq 1 ']'
++ service=ctdb.service
++ systemctl start ctdb.service
++ systemctl reload ctdb.service
++ CHECK_RESULT 0 0 0 'Job type reload is not applicable for unit ctdb.service'
++ mode=0
++ error_log='Job type reload is not applicable for unit ctdb.service'
++ exit_mode=0
++ systemctl status ctdb.service
++ grep 'Active: active'
+     Active: active (running) since Thu 2023-10-12 13:31:36 CST; 10s ago
+Thu Oct 12 13:31:46 2023 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ LOG_ERROR 'failed to execute the case.'
++ CHECK_RESULT 1 0 1 'ctdb.service disable failed'
++ actual_result=1
++ expect_result=0
++ mode=1
++ test 1x == 0x
++ CHECK_RESULT 0 0 1 'There is an error message for the log of ctdb.service'
++ mode=1
++ error_log='There is an error message for the log of ctdb.service'
++ exit_mode=0
++ test 0x == 0x
++ test -n 'There is an error message for the log of ctdb.service'
++ LOG_ERROR 'There is an error message for the log of ctdb.service'
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 28'
++ message='../common/common_lib.sh line 28'
+Thu Oct 12 13:31:46 2023 - ERROR - ../common/common_lib.sh line 28
++ '[' 0 -eq 1 ']'
++ service=ctdb.service
++ systemctl start ctdb.service
++ systemctl reload ctdb.service
++ CHECK_RESULT 0 0 0 'Job type reload is not applicable for unit ctdb.service'
++ mode=0
++ error_log='Job type reload is not applicable for unit ctdb.service'
++ exit_mode=0
++ systemctl status ctdb.service
++ grep 'Active: active'
+     Active: active (running) since Thu 2023-10-12 13:31:36 CST; 10s ago
+Thu Oct 12 13:31:46 2023 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
+Thu Oct 12 13:31:47 2023 - ERROR - failed to execute the case.
++ exit 1
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Thu Oct 12 13:31:47 2023 - INFO  - start environment cleanup.
++ systemctl stop ctdb.service
++ rm -rf /etc/ctdb/nodes
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmplqkm66av ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmplqkm66av
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Thu Oct 12 13:31:57 2023 - INFO  - Finish environment cleanup!

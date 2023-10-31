@@ -1,0 +1,30 @@
+测试套/软件包名,测试用例名,状态,日志文件,原因
+lvm2,oe_test_socket_lvm2-lvmpolld,fail,./mugen-riscv/logs/lvm2/oe_test_socket_lvm2-lvmpolld/2023-10-22-20:47:06.log,lvm2service关闭失败
+,oe_test_socket_dm-event,fail,./mugen-riscv/logs/lvm2/oe_test_socket_dm-event/2023-10-22-20:45:41.log,lvm2service关闭失败
+,oe_test_service_lvm2-monitor,fail,./mugen-riscv/logs/lvm2/oe_test_service_lvm2-monitor/2023-10-22-20:36:04.log,lvm2service关闭失败
+rtkit,oe_test_service_rtkit-daemon,fail,./mugen-riscv/logs/rtkit/oe_test_service_rtkit-daemon/2023-10-20-03_59_54.log,rtkit-daemon关闭失败
+accountsservice,oe_test_service_accounts-daemon,fail,./mugen-riscv/logs/accountsservice/oe_test_service_accounts-daemon/2023-10-20-03_15_15.log,accounts-daemon关闭失败
+chrony,oe_test_service_chronyd,fail,./mugen-riscv/logs/chrony/oe_test_service_chronyd/2023-10-22-14:44:42.log,chronyd关闭失败
+haveged,oe_test_service_haveged,fail,./mugen-riscv/logs/haveged/oe_test_service_haveged/2023-10-22-16:13:45.log,haveged关闭失败
+nfs-utils,oe_test_target_nfs-client,fail,./mugen-riscv/logs/nfs-utils/oe_test_target_nfs-client/2023-10-23-01:44:47.log,nfs-utils关闭失败
+ceph,oe_test_target_ceph-mon,fail,./mugen-riscv/logs/ceph/oe_test_target_ceph-mon/2023-10-20-01_12_53.log,ceph-mon服务关闭失败
+,oe_test_target_ceph,fail,./mugen-riscv/logs/ceph/oe_test_target_ceph/2023-10-20-01_30_31.log,ceph-mon服务关闭失败
+smartmontools,oe_test_service_smartd,fail,./mugen-riscv/logs/smartmontools/oe_test_service_smartd/2023-10-20-04_01_35.log,smartmontools service服务关闭失败
+util-linux,oe_test_socket_uuidd,fail,./mugen-riscv/logs/util-linux/oe_test_socket_uuidd/2023-10-20-02_28_19.log,启动uuid服务失败
+netcf,oe_test_service_netcf-transaction,fail,./mugen-riscv/logs/netcf/oe_test_service_netcf-transaction/2023-10-22-16:30:05.log, netcf service服务关闭失败
+open-iscsi,oe_test_service_iscsi,fail,./mugen-riscv/logs/open-iscsi/oe_test_service_iscsi/2023-10-20-01_25_56.log,open-iscsi service服务关闭失败
+,oe_test_socket_iscsid,fail,./mugen-riscv/logs/open-iscsi/oe_test_socket_iscsid/2023-10-20-01_29_08.log,open-iscsi service服务关闭失败
+,oe_test_target_ceph-radosgw,fail,./mugen-riscv/logs/ceph/oe_test_target_ceph-radosgw/2023-10-20-01_22_02.log,ceph-mon服务关闭失败
+,oe_test_target_ceph-rbd-mirror,fail,./mugen-riscv/logs/ceph/oe_test_target_ceph-rbd-mirror/2023-10-20-01_26_26.log,ceph-mon服务关闭失败
+,oe_test_target_ceph-mgr,fail,./mugen-riscv/logs/ceph/oe_test_target_ceph-mgr/2023-10-20-01_00_15.log,ceph-mon服务关闭失败
+,oe_test_target_ceph-mds,fail,./mugen-riscv/logs/ceph/oe_test_target_ceph-mds/2023-10-20-00_55_54.log,ceph-mon服务关闭失败
+avahi,oe_test_service_avahi-daemon,fail,./mugen-riscv/logs/avahi/oe_test_service_avahi-daemon/2023-10-20-02_18_53.log,avahi service服务关闭失败
+,oe_test_socket_avahi-daemon,fail,./mugen-riscv/logs/avahi/oe_test_socket_avahi-daemon/2023-10-20-02_22_06.log,avahi service服务关闭失败
+systemtap,oe_test_service_systemtap,fail,./mugen-riscv/logs/systemtap/oe_test_service_systemtap/2023-10-20-02_31_46.log,systemtap service服务关闭失败
+acpid,oe_test_socket_acpid,fail,./mugen-riscv/logs/acpid/oe_test_socket_acpid/2023-10-20-01_41_46.log,acpid service服务关闭失败
+,oe_test_service_acpid,fail,./mugen-riscv/logs/acpid/oe_test_service_acpid/2023-10-20-01_40_16.log,acpid service服务关闭失败
+rsyslog,oe_test_service_rsyslog,fail,./mugen-riscv/logs/rsyslog/oe_test_service_rsyslog/2023-10-19-23_22_40.log,rsyslog service服务关闭失败
+upower,oe_test_service_upower,fail,./mugen-riscv/logs/upower/oe_test_service_upower/2023-10-22-17:00:46.log,upower service服务关闭失败
+,oe_test_target_ceph-osd,fail,./mugen-riscv/logs/ceph/oe_test_target_ceph-osd/2023-10-20-01_17_17.log,ceph-mon服务关闭失败
+pcsc-lite,oe_test_socket_pcscd,fail,./mugen-riscv/logs/pcsc-lite/oe_test_socket_pcscd/2023-10-22-15:02:39.log,socket_pcscd服务关闭失败
+libstoragemgmt,oe_test_service_libstoragemgmt,fail,./mugen-riscv/logs/libstoragemgmt/oe_test_service_libstoragemgmt/2023-10-20-03_43_49.log,libstoragemgmt关闭失败

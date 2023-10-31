@@ -1,0 +1,14 @@
++ tmpfile2='Last metadata expiration check: 0:04:51 ago on Tue Oct 10 20:23:19 2023.
+Error: 
+ Problem: conflicting requests
+  - nothing provides qemu-img needed by lorax-composer-34.1-4.oe2309.riscv64 from OS
+(try to add '\''--skip-broken'\'' to skip uninstallable packages or '\''--nobest'\'' to use not only best candidate packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:04:51 ago on Tue Oct 10 20:23:19 2023.
+Error: 
+ Problem: conflicting requests
+  - nothing provides qemu-img needed by lorax-composer-34.1-4.oe2309.riscv64 from OS
+(try to add '\''--skip-broken'\'' to skip uninstallable packages or '\''--nobest'\'' to use not only best candidate packages)'
++ systemctl stop lorax-composer.service
+Failed to stop lorax-composer.service: Unit lorax-composer.service not loaded.
++ LOG_INFO 'End of environmental preparation!'
