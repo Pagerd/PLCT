@@ -17,7 +17,7 @@
 
 - 将rc7中新增测试套的单独测试报告合并添加至另一个仓库，并进行对应的修改[PR#18](https://gitee.com/yunxiangluo/openeuler-riscv-23.09-test/pulls/18)
 
-- 调研ruyi测试策略，和蔡老师一起编写了测试策略[RUYI 包管理 demo 版本测试策略.md](https://github.com/Pagerd/PLCT/tree/main/Report/Oct/week16/RUYI 包管理 demo 版本测试策略.md)
+- 调研ruyi测试策略，和蔡老师一起编写了测试策略[RUYI包管理demo版本测试策略.md](https://github.com/Pagerd/PLCT/tree/main/Report/Oct/week16/RUYI包管理demo版本测试策略.md)
 
 - 将RC8测试中的test3进行测试并提交 [PR](https://github.com/KotorinMinami/res_list/pull/60)
 
