@@ -1,0 +1,230 @@
++ source ./common/common_lib.sh
+++ source /root/mugen-ruyi-ruyisdk/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-ruyi-ruyisdk/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-ruyi-ruyisdk/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Mon Oct 30 05:40:22 2023 - INFO  - Start environmental preparation.
++ install_ruyi
++ curl -L -o ruyi https://mirror.iscas.ac.cn/ruyisdk/ruyi/testing/ruyi.20231030
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  8 9727k    8  850k    0     0  2423k      0  0:00:04 --:--:--  0:00:04 2423k 99 9727k   99 9694k    0     0  7236k      0  0:00:01  0:00:01 --:--:-- 7234k100 9727k  100 9727k    0     0  7243k      0  0:00:01  0:00:01 --:--:-- 7242k
++ chmod +x ruyi
+++ realpath ruyi
++ ln -s /root/mugen-ruyi-ruyisdk/testcases/cli-test/ruyi/ruyi /usr/bin/ruyi
+++ get_ruyi_dir
+++ ruyibase=
+++ '[' '' == '' ']'
+++ ruyibase=/root/.cache/
+++ echo /root/.cache//ruyi
++ rm -rf /root/.cache//ruyi
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-ruyi-ruyisdk/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Mon Oct 30 05:40:24 2023 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-ruyi-ruyisdk/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Mon Oct 30 05:40:24 2023 - INFO  - Start to run test.
++ export XDG_CACHE_HOME=/root/.cache/test
++ XDG_CACHE_HOME=/root/.cache/test
++ mkdir /root/.cache/test
+mkdir: cannot create directory ‘/root/.cache/test’: File exists
++ xdg_ruyi_dir=/root/.cache/test/ruyi
++ default_ruyi_dir=/root/.cache/ruyi
++ ruyi list
++ CHECK_RESULT 0 0 0 'Check ruyi empty list failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ruyi empty list failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ruyi update
++ CHECK_RESULT 0 0 0 'Check ruyi update failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ruyi update failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ruyi list
++ grep 'Package declares'
+Package declares 2 distfiles:
++ CHECK_RESULT 0 0 0 'Check ruyi list package failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ruyi list package failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ruyi list
++ grep 'Binary artifacts'
+### Binary artifacts
++ CHECK_RESULT 0 0 0 'Check ruyi list artifacts failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ruyi list artifacts failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'Toolchain metadata'
++ ruyi list
+### Toolchain metadata
++ CHECK_RESULT 0 0 0 'Check ruyi list metadata failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ruyi list metadata failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ ruyi list
+++ grep -e '^## '
+++ head -n 1
+++ awk '{last_word = $NF; sub(/.$/, "", last_word); print substr(last_word, 2, length(last_word) - 1)}'
++ pkgname=plct-20231026
++ ruyi install plct-20231026
+info: downloading 
+https://mirror.iscas.ac.cn/ruyisdk/dist/RuyiSDK-20231026-riscv64-plct-linux-gnu.
+tar.xz to 
+/root/.cache/test/ruyi/distfiles/RuyiSDK-20231026-riscv64-plct-linux-gnu.tar.xz
+Traceback (most recent call last):
+  File "/tmp/onefile_1763_1698644427_274461/ruyi/ruyipkg/distfile.py", line 19, in ensure
+FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/test/ruyi/distfiles/RuyiSDK-20231026-riscv64-plct-linux-gnu.tar.xz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/tmp/onefile_1763_1698644427_274461/__main__.py", line 10, in <module>
+  File "/tmp/onefile_1763_1698644427_274461/ruyi/cli/__init__.py", line 104, in main
+  File "/tmp/onefile_1763_1698644427_274461/ruyi/ruyipkg/pkg.py", line 133, in cli_install
+  File "/tmp/onefile_1763_1698644427_274461/ruyi/ruyipkg/distfile.py", line 22, in ensure
+  File "/tmp/onefile_1763_1698644427_274461/ruyi/ruyipkg/distfile.py", line 64, in fetch
+  File "/tmp/onefile_1763_1698644427_274461/subprocess.py", line 389, in call
+  File "/tmp/onefile_1763_1698644427_274461/subprocess.py", line 1026, in __init__
+  File "/tmp/onefile_1763_1698644427_274461/subprocess.py", line 1950, in _execute_child
+FileNotFoundError: [Errno 2] No such file or directory: 'wget'
++ CHECK_RESULT 1 0 0 'Check ruyi install package failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi install package failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi install package failed'
++ LOG_ERROR 'Check ruyi install package failed'
++ message='Check ruyi install package failed'
++ python3 /root/mugen-ruyi-ruyisdk/libs/locallibs/mugen_log.py --level error --message 'Check ruyi install package failed'
+Mon Oct 30 05:40:27 2023 - ERROR - Check ruyi install package failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi_cachedir.sh line 46'
++ message='oe_test_ruyi_cachedir.sh line 46'
++ python3 /root/mugen-ruyi-ruyisdk/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi_cachedir.sh line 46'
+Mon Oct 30 05:40:27 2023 - ERROR - oe_test_ruyi_cachedir.sh line 46
++ '[' 0 -eq 1 ']'
++ return 0
++ ruyi install plct-20231026
++ grep 'skipping already installed package plct-20231026'
+info: skipping already installed package plct-20231026
++ CHECK_RESULT 0 0 0 'Check ruyi install duplicate package failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ruyi install duplicate package failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ '[' -d /root/.cache/test/ruyi ']'
++ CHECK_RESULT 0 0 0 'Check ruyi create xdg based cache directory failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ruyi create xdg based cache directory failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ '[' -d /root/.cache/ruyi ']'
++ CHECK_RESULT 1 0 1 'Check ruyi create default cache directory failed'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='Check ruyi create default cache directory failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ export XDG_CACHE_HOME=
++ XDG_CACHE_HOME=
++ rm -rf /root/.cache/test/ruyi
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-ruyi-ruyisdk/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Mon Oct 30 05:40:27 2023 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 1
++ test 1 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-ruyi-ruyisdk/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Mon Oct 30 05:40:27 2023 - ERROR - failed to execute the case.
++ exit 1
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-ruyi-ruyisdk/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Mon Oct 30 05:40:27 2023 - INFO  - start environment cleanup.
++ remove_ruyi
++ rm -f ruyi
++ rm -f /usr/bin/ruyi
++ export RUYI_DEBUG=
++ RUYI_DEBUG=
+++ get_ruyi_dir
+++ ruyibase=
+++ '[' '' == '' ']'
+++ ruyibase=/root/.cache/
+++ echo /root/.cache//ruyi
++ rm -rf /root/.cache//ruyi
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-ruyi-ruyisdk/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Mon Oct 30 05:40:27 2023 - INFO  - Finish environment cleanup!
