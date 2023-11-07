@@ -1,0 +1,33 @@
+测试套/软件包名,测试用例名,状态,日志文件,原因
+os-basic,oe_test_expect,fail,./mugen-riscv/logs/os-basic/oe_test_expect/2023-10-20-08_57_14.log,ssh连接失败 重测后通过
+,oe_test_reboot,fail,./mugen-riscv/logs/os-basic/oe_test_reboot/2023-10-20-05_34_59.log,ssh连接失败 重测后通过
+,oe_test_server_mariadb_backup,fail,./mugen-riscv/logs/os-basic/oe_test_server_mariadb_backup/2023-10-20-04_53_13.log,没有软件包checkpolicy-3.5-1.oe2309.riscv64
+,oe_test_net_ncat,fail,./mugen-riscv/logs/os-basic/oe_test_net_ncat/2023-10-20-08_42_59.log,ssh连接失败 重测后通过
+,oe_test_server_httpd_tls,fail,./mugen-riscv/logs/os-basic/oe_test_server_httpd_tls/2023-10-20-04_54_16.log,没有软件包apr-1.7.0-5.oe2309.riscv64
+,oe_test_server_httpd_restart,fail,./mugen-riscv/logs/os-basic/oe_test_server_httpd_restart/2023-10-20-04_56_13.log,没有软件包apr-1.7.0-5.oe2309.riscv64
+,oe_test_lsusb,fail,./mugen-riscv/logs/os-basic/oe_test_lsusb/2023-10-20-08_59_20.log,没有挂载usb工具 重测后通过
+,oe_test_USBinfo,fail,./mugen-riscv/logs/os-basic/oe_test_USBinfo/2023-10-20-07_47_08.log, 重测后通过
+,oe_test_system_monitor_login,fail,./mugen-riscv/logs/os-basic/oe_test_system_monitor_login/2023-10-20-03_48_08.log,ssh连接失败 重测后通过
+,oe_test_net_cmd_scp,fail,./mugen-riscv/logs/os-basic/oe_test_net_cmd_scp/2023-10-20-08_40_34.log,ssh连接失败 重测后通过
+,oe_test_hostnamectl,fail,./mugen-riscv/logs/os-basic/oe_test_hostnamectl/2023-10-20-08_14_08.log,ssh连接失败 重测后通过
+,oe_test_uname,fail,./mugen-riscv/logs/os-basic/oe_test_uname/2023-10-20-03_17_03.log,测试用例编写错误，grep错误
+,oe_test_system_monitor_reboot,fail,./mugen-riscv/logs/os-basic/oe_test_system_monitor_reboot/2023-10-20-03_17_21.log,ssh连接失败 重测后通过
+,oe_test_net_config,fail,./mugen-riscv/logs/os-basic/oe_test_net_config/2023-10-20-08_41_35.log,ssh连接失败 重测后通过
+,oe_test_service_chrony-wait,fail,./mugen-riscv/logs/chrony/oe_test_service_chrony-wait/2023-10-22-14:46:06.log,配置环境出现错误
+fio,oe_test_fio_003,fail,./mugen-riscv/logs/fio/oe_test_fio_003/2023-10-22-14:16:43.log, 重测后通过
+initscripts,oe_test_service_network,fail,./mugen-riscv/logs/initscripts/oe_test_service_network/2023-10-22-13:23:34.log, 重测后通过
+,oe_test_service_netconsole,fail,./mugen-riscv/logs/initscripts/oe_test_service_netconsole/2023-10-22-13:25:11.log, 重测后通过
+FS_Directory,oe_test_FSIO_dir_umask_exit,fail,./mugen-riscv/logs/FS_Directory/oe_test_FSIO_dir_umask_exit/2023-10-22-17:56:49.log,ssh连接失败 重测后通过
+gdm,oe_test_service_gdm,fail,./mugen-riscv/logs/gdm/oe_test_service_gdm/2023-10-20-03_29_42.log,没有包ModemManager-glib-1.20.6-1.oe2309.riscv64
+os-storage,oe_test_storage_Mutipath_initramfs,fail,./mugen-riscv/logs/os-storage/oe_test_storage_Mutipath_initramfs/2023-10-23-02:06:26.log,超时 重测后通过
+rasdaemon,oe_test_service_ras-mc-ctl,fail,./mugen-riscv/logs/rasdaemon/oe_test_service_ras-mc-ctl/2023-10-20-03_01_29.log,没有包perl-DBD-SQLite-1.72-1.oe2309.riscv64
+,oe_test_service_rasdaemon,fail,./mugen-riscv/logs/rasdaemon/oe_test_service_rasdaemon/2023-10-20-02_59_49.log,没有包perl-DBD-SQLite-1.72-1.oe2309.riscv64
+PackageKit,oe_test_packagekit_pkcon,fail,./mugen-riscv/logs/PackageKit/oe_test_packagekit_pkcon/2023-10-20-02_38_41.log,测试环境已安装git导致出现误报
+httpd,oe_test_service_htcacheclean,fail,./mugen-riscv/logs/httpd/oe_test_service_htcacheclean/2023-10-19-22_42_22.log,Invalid argument 重测后通过
+iperf3,oe_test_iperf3_command_client,fail,./mugen-riscv/logs/iperf3/oe_test_iperf3_command_client/2023-10-20-02_03_19.log, 重测后通过
+openssh,oe_test_openssh_locked,fail,./mugen-riscv/logs/openssh/oe_test_openssh_locked/2023-10-19-21_05_57.log, 重测后通过
+kmod,oe_test_weak-modules,fail,./mugen-riscv/logs/kmod/oe_test_weak-modules/2023-10-22-12:59:32.log,fstatat(10, catch.ko): Not a directory 重测后通过
+hdparm,oe_test_hdparm,fail,./mugen-riscv/logs/hdparm/oe_test_hdparm/2023-10-19-23_20_25.log,非问题：x86 报错相同，原因为 qemu 平台不支持 by nil
+smoke-basic-os,oe_test_python_pip_install,fail,./mugen-riscv/logs/smoke-basic-os/oe_test_python_pip_install/2023-10-19-23_43_33.log,pip安装失败，重测后通过 
+dnf,oe_test_dnf_help_history_info,fail,./mugen-riscv/logs/dnf/oe_test_dnf_help_history_info/2023-10-19-23_57_49.log,目前软件源没有everything
+firewalld,oe_test_firewalld_block_all_icmp,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_block_all_icmp/2023-10-19-21_56_55.log,超时 重测后通过
