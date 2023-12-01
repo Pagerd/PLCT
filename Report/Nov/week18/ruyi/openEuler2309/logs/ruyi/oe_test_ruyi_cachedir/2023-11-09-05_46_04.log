@@ -1,0 +1,238 @@
++ source ./common/common_lib.sh
+++ source /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Thu Nov  9 05:46:10 2023 - INFO  - Start environmental preparation.
++ install_ruyi
++ curl -L -o ruyi https://mirror.iscas.ac.cn/ruyisdk/ruyi/testing/ruyi.amd64.20231107
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0 93 10.7M   93 10.0M    0     0  2174k      0  0:00:05  0:00:04  0:00:01 2180k100 10.7M  100 10.7M    0     0  2254k      0  0:00:04  0:00:04 --:--:-- 2260k
++ chmod +x ruyi
+++ realpath ruyi
++ ln -s /var/jenkins/workspace/ruyi-test/mugen-ruyi/testcases/cli-test/ruyi/ruyi /usr/bin/ruyi
+++ get_ruyi_dir
+++ ruyibase=
+++ '[' '' == '' ']'
+++ ruyibase=/root/.cache/
+++ echo /root/.cache//ruyi
++ rm -rf /root/.cache//ruyi
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Thu Nov  9 05:46:17 2023 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Thu Nov  9 05:46:18 2023 - INFO  - Start to run test.
++ export XDG_CACHE_HOME=/root/.cache/test
++ XDG_CACHE_HOME=/root/.cache/test
++ mkdir /root/.cache/test
++ xdg_ruyi_dir=/root/.cache/test/ruyi
++ default_ruyi_dir=/root/.cache/ruyi
++ ruyi list
+List of available packages:
+
++ CHECK_RESULT 0 0 0 'Check ruyi empty list failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ruyi empty list failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ruyi update
++ CHECK_RESULT 0 0 0 'Check ruyi update failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ruyi update failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ ruyi list
+++ grep -e '^* '
+++ wc -l
++ pkgcnt=1
++ CHECK_RESULT 1 0 1 'Check ruyi list failed'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='Check ruyi list failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ ruyi list
++ grep 'Package declares'
++ CHECK_RESULT 1 0 1 'Check ruyi brief list failed'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='Check ruyi brief list failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ ruyi list --verbose
++ grep 'Package declares'
+Package declares 2 distfiles:
++ CHECK_RESULT 0 0 0 'Check ruyi list verbose package failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ruyi list verbose package failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ruyi list --verbose
++ grep 'Binary artifacts'
+### Binary artifacts
++ CHECK_RESULT 0 0 0 'Check ruyi list verbose artifacts failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ruyi list verbose artifacts failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ruyi list --verbose
++ grep 'Toolchain metadata'
+### Toolchain metadata
++ CHECK_RESULT 0 0 0 'Check ruyi list verbose metadata failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ruyi list verbose metadata failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ ruyi list
+++ grep -e '^* '
+++ cut '-d ' -f 2
+++ head -n 1
++ pkgname=plct
++ ruyi install plct
+info: downloading 
+https://mirror.iscas.ac.cn/ruyisdk/dist/RuyiSDK-20231026-riscv64-plct-linux-gnu.
+tar.xz to 
+/root/.cache/test/ruyi/distfiles/RuyiSDK-20231026-riscv64-plct-linux-gnu.tar.xz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  6  163M    6 10.0M    0     0  2278k      0  0:01:13  0:00:04  0:01:09 2290k  7  163M    7 12.3M    0     0  2528k      0  0:01:06  0:00:05  0:01:01 2539k  8  163M    8 14.2M    0     0  2612k      0  0:01:04  0:00:05  0:00:59 2622k 11  163M   11 18.1M    0     0  2807k      0  0:00:59  0:00:06  0:00:53 3573k 15  163M   15 25.6M    0     0  3165k      0  0:00:53  0:00:08  0:00:45 3918k 16  163M   16 26.6M    0     0  3166k      0  0:00:52  0:00:08  0:00:44 4133k 18  163M   18 29.6M    0     0  3165k      0  0:00:52  0:00:09  0:00:43 3861k 20  163M   20 33.3M    0     0  3220k      0  0:00:52  0:00:10  0:00:42 3899k 23  163M   23 38.8M    0     0  3336k      0  0:00:50  0:00:11  0:00:39 3997k 25  163M   25 41.4M    0     0  3371k      0  0:00:49  0:00:12  0:00:37 3769k 27  163M   27 45.0M    0     0  3388k      0  0:00:49  0:00:13  0:00:36 3771k 29  163M   29 49.0M    0     0  3413k      0  0:00:49  0:00:14  0:00:35 3878k 34  163M   34 57.1M    0     0  3536k      0  0:00:47  0:00:16  0:00:31 4102k 35  163M   35 57.4M    0     0  3538k      0  0:00:47  0:00:16  0:00:31 4048k 36  163M   36 60.4M    0     0  3513k      0  0:00:47  0:00:17  0:00:30 3871k 38  163M   38 63.8M    0     0  3516k      0  0:00:47  0:00:18  0:00:29 3864k 41  163M   41 67.7M    0     0  3540k      0  0:00:47  0:00:19  0:00:28 3921k 43  163M   43 70.8M    0     0  3521k      0  0:00:47  0:00:20  0:00:27 3456k 44  163M   44 73.6M    0     0  3491k      0  0:00:48  0:00:21  0:00:27 3334k 46  163M   46 76.4M    0     0  3463k      0  0:00:48  0:00:22  0:00:26 3289k 48  163M   48 79.3M    0     0  3440k      0  0:00:48  0:00:23  0:00:25 3158k 49  163M   49 81.9M    0     0  3409k      0  0:00:49  0:00:24  0:00:25 2898k 51  163M   51 84.7M    0     0  3387k      0  0:00:49  0:00:25  0:00:24 2840k 53  163M   53 87.2M    0     0  3360k      0  0:00:49  0:00:26  0:00:23 2789k 55  163M   55 90.2M    0     0  3350k      0  0:00:50  0:00:27  0:00:23 2838k 56  163M   56 93.3M    0     0  3340k      0  0:00:50  0:00:28  0:00:22 2870k 58  163M   58 96.2M    0     0  3327k      0  0:00:50  0:00:29  0:00:21 2924k 60  163M   60 99.2M    0     0  3317k      0  0:00:50  0:00:30  0:00:20 2957k 62  163M   62  102M    0     0  3314k      0  0:00:50  0:00:31  0:00:19 3069k 64  163M   64  105M    0     0  3296k      0  0:00:50  0:00:32  0:00:18 2996k 66  163M   66  108M    0     0  3295k      0  0:00:50  0:00:33  0:00:17 3034k 67  163M   67  111M    0     0  3295k      0  0:00:50  0:00:34  0:00:16 3107k 70  163M   70  114M    0     0  3302k      0  0:00:50  0:00:35  0:00:15 3213k 71  163M   71  117M    0     0  3292k      0  0:00:50  0:00:36  0:00:14 3159k 73  163M   73  120M    0     0  3280k      0  0:00:51  0:00:37  0:00:14 3176k 75  163M   75  123M    0     0  3267k      0  0:00:51  0:00:38  0:00:13 3080k 77  163M   77  126M    0     0  3266k      0  0:00:51  0:00:39  0:00:12 3064k 78  163M   78  129M    0     0  3256k      0  0:00:51  0:00:40  0:00:11 2931k 80  163M   80  132M    0     0  3254k      0  0:00:51  0:00:41  0:00:10 2974k 82  163M   82  135M    0     0  3245k      0  0:00:51  0:00:42  0:00:09 2984k 84  163M   84  138M    0     0  3249k      0  0:00:51  0:00:43  0:00:08 3115k 86  163M   86  141M    0     0  3241k      0  0:00:51  0:00:44  0:00:07 3041k 88  163M   88  144M    0     0  3242k      0  0:00:51  0:00:45  0:00:06 3128k 90  163M   90  148M    0     0  3262k      0  0:00:51  0:00:46  0:00:05 3328k 93  163M   93  152M    0     0  3272k      0  0:00:51  0:00:47  0:00:04 3504k 98  163M   98  162M    0     0  3324k      0  0:00:50  0:00:49  0:00:01 3847k100  163M  100  163M    0     0  3324k      0  0:00:50  0:00:50 --:--:-- 3959k
+info: extracting RuyiSDK-20231026-riscv64-plct-linux-gnu.tar.xz for package 
+plct-20231026
+info: package plct-20231026 installed to 
+/root/.cache/test/ruyi/toolchains/x86_64/plct-20231026
++ CHECK_RESULT 0 0 0 'Check ruyi install package failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ruyi install package failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ruyi install plct
++ grep 'skipping already installed package plct'
+info: skipping already installed package plct-20231026
++ CHECK_RESULT 0 0 0 'Check ruyi install duplicate package failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ruyi install duplicate package failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ '[' -d /root/.cache/test/ruyi ']'
++ CHECK_RESULT 0 0 0 'Check ruyi create xdg based cache directory failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ruyi create xdg based cache directory failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ '[' -d /root/.cache/ruyi ']'
++ CHECK_RESULT 1 0 1 'Check ruyi create default cache directory failed'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='Check ruyi create default cache directory failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ rm -rf /root/.cache/test
++ export XDG_CACHE_HOME=
++ XDG_CACHE_HOME=
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Thu Nov  9 05:55:09 2023 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Thu Nov  9 05:55:10 2023 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Thu Nov  9 05:55:12 2023 - INFO  - start environment cleanup.
++ remove_ruyi
++ rm -f ruyi
++ rm -f /usr/bin/ruyi
++ export RUYI_DEBUG=
++ RUYI_DEBUG=
+++ get_ruyi_dir
+++ ruyibase=
+++ '[' '' == '' ']'
+++ ruyibase=/root/.cache/
+++ echo /root/.cache//ruyi
++ rm -rf /root/.cache//ruyi
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Thu Nov  9 05:55:13 2023 - INFO  - Finish environment cleanup!

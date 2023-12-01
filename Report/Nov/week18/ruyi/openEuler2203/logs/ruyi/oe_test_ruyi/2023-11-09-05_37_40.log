@@ -1,0 +1,508 @@
++ source ./common/common_lib.sh
+++ source /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Thu Nov  9 05:37:45 2023 - INFO  - Start environmental preparation.
++ install_ruyi
++ curl -L -o ruyi https://mirror.iscas.ac.cn/ruyisdk/ruyi/testing/ruyi.amd64.20231107
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 38 10.7M   38 4185k    0     0  2883k      0  0:00:03  0:00:01  0:00:02 2884k 67 10.7M   67 7417k    0     0  3108k      0  0:00:03  0:00:02  0:00:01 3109k100 10.7M  100 10.7M    0     0  3307k      0  0:00:03  0:00:03 --:--:-- 3309k
++ chmod +x ruyi
+++ realpath ruyi
++ ln -s /var/jenkins/workspace/ruyi-test/mugen-ruyi/testcases/cli-test/ruyi/ruyi /usr/bin/ruyi
+++ get_ruyi_dir
+++ ruyibase=
+++ '[' '' == '' ']'
+++ ruyibase=/root/.cache/
+++ echo /root/.cache//ruyi
++ rm -rf /root/.cache//ruyi
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Thu Nov  9 05:37:49 2023 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Thu Nov  9 05:37:50 2023 - INFO  - Start to run test.
++ ruyi
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
++ CHECK_RESULT 1 0 1 'Check ruyi empty cmdline failed'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='Check ruyi empty cmdline failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ ruyi
++ grep usage
++ CHECK_RESULT 1 0 0 'Check ruyi empty cmdline help failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi empty cmdline help failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi empty cmdline help failed'
++ LOG_ERROR 'Check ruyi empty cmdline help failed'
++ message='Check ruyi empty cmdline help failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi empty cmdline help failed'
+Thu Nov  9 05:37:53 2023 - ERROR - Check ruyi empty cmdline help failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 33'
++ message='oe_test_ruyi.sh line 33'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 33'
+Thu Nov  9 05:37:54 2023 - ERROR - oe_test_ruyi.sh line 33
++ '[' 0 -eq 1 ']'
++ return 0
++ ruyi -h
++ grep usage
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
++ CHECK_RESULT 1 0 0 'Check ruyi help failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi help failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi help failed'
++ LOG_ERROR 'Check ruyi help failed'
++ message='Check ruyi help failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi help failed'
+Thu Nov  9 05:37:56 2023 - ERROR - Check ruyi help failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 35'
++ message='oe_test_ruyi.sh line 35'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 35'
+Thu Nov  9 05:37:57 2023 - ERROR - oe_test_ruyi.sh line 35
++ '[' 0 -eq 1 ']'
++ return 0
++ ruyi list
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
++ CHECK_RESULT 1 0 0 'Check ruyi empty list failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi empty list failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi empty list failed'
++ LOG_ERROR 'Check ruyi empty list failed'
++ message='Check ruyi empty list failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi empty list failed'
+Thu Nov  9 05:37:59 2023 - ERROR - Check ruyi empty list failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 37'
++ message='oe_test_ruyi.sh line 37'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 37'
+Thu Nov  9 05:38:00 2023 - ERROR - oe_test_ruyi.sh line 37
++ '[' 0 -eq 1 ']'
++ return 0
+++ get_ruyi_dir
+++ ruyibase=
+++ '[' '' == '' ']'
+++ ruyibase=/root/.cache/
+++ echo /root/.cache//ruyi
++ '[' -d /root/.cache//ruyi ']'
++ CHECK_RESULT 1 0 0 'Check ruyi create cache directory failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi create cache directory failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi create cache directory failed'
++ LOG_ERROR 'Check ruyi create cache directory failed'
++ message='Check ruyi create cache directory failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi create cache directory failed'
+Thu Nov  9 05:38:01 2023 - ERROR - Check ruyi create cache directory failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 39'
++ message='oe_test_ruyi.sh line 39'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 39'
+Thu Nov  9 05:38:01 2023 - ERROR - oe_test_ruyi.sh line 39
++ '[' 0 -eq 1 ']'
++ return 0
++ ruyi update
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
++ CHECK_RESULT 1 0 0 'Check ruyi update failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi update failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi update failed'
++ LOG_ERROR 'Check ruyi update failed'
++ message='Check ruyi update failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi update failed'
+Thu Nov  9 05:38:04 2023 - ERROR - Check ruyi update failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 41'
++ message='oe_test_ruyi.sh line 41'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 41'
+Thu Nov  9 05:38:04 2023 - ERROR - oe_test_ruyi.sh line 41
++ '[' 0 -eq 1 ']'
++ return 0
+++ ruyi list
+++ wc -l
+++ grep -e '^* '
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
++ pkgcnt=0
++ CHECK_RESULT 0 0 1 'Check ruyi list failed'
++ actual_result=0
++ expect_result=0
++ mode=1
++ error_log='Check ruyi list failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 1 -eq 0 ']'
++ test 0x == 0x
++ test -n 'Check ruyi list failed'
++ LOG_ERROR 'Check ruyi list failed'
++ message='Check ruyi list failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi list failed'
+Thu Nov  9 05:38:07 2023 - ERROR - Check ruyi list failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 43'
++ message='oe_test_ruyi.sh line 43'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 43'
+Thu Nov  9 05:38:07 2023 - ERROR - oe_test_ruyi.sh line 43
++ '[' 0 -eq 1 ']'
++ return 0
++ ruyi list
++ grep 'Package declares'
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
++ CHECK_RESULT 1 0 1 'Check ruyi brief list failed'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='Check ruyi brief list failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ ruyi list --verbose
++ grep 'Package declares'
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
++ CHECK_RESULT 1 0 0 'Check ruyi list verbose package failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi list verbose package failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi list verbose package failed'
++ LOG_ERROR 'Check ruyi list verbose package failed'
++ message='Check ruyi list verbose package failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi list verbose package failed'
+Thu Nov  9 05:38:11 2023 - ERROR - Check ruyi list verbose package failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 47'
++ message='oe_test_ruyi.sh line 47'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 47'
+Thu Nov  9 05:38:12 2023 - ERROR - oe_test_ruyi.sh line 47
++ '[' 0 -eq 1 ']'
++ return 0
++ ruyi list --verbose
++ grep 'Binary artifacts'
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
++ CHECK_RESULT 1 0 0 'Check ruyi list verbose artifacts failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi list verbose artifacts failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi list verbose artifacts failed'
++ LOG_ERROR 'Check ruyi list verbose artifacts failed'
++ message='Check ruyi list verbose artifacts failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi list verbose artifacts failed'
+Thu Nov  9 05:38:14 2023 - ERROR - Check ruyi list verbose artifacts failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 49'
++ message='oe_test_ruyi.sh line 49'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 49'
+Thu Nov  9 05:38:15 2023 - ERROR - oe_test_ruyi.sh line 49
++ '[' 0 -eq 1 ']'
++ return 0
++ ruyi list --verbose
++ grep 'Toolchain metadata'
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
++ CHECK_RESULT 1 0 0 'Check ruyi list verbose metadata failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi list verbose metadata failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi list verbose metadata failed'
++ LOG_ERROR 'Check ruyi list verbose metadata failed'
++ message='Check ruyi list verbose metadata failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi list verbose metadata failed'
+Thu Nov  9 05:38:17 2023 - ERROR - Check ruyi list verbose metadata failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 51'
++ message='oe_test_ruyi.sh line 51'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 51'
+Thu Nov  9 05:38:18 2023 - ERROR - oe_test_ruyi.sh line 51
++ '[' 0 -eq 1 ']'
++ return 0
+++ ruyi list
+++ grep -e '^* '
+++ cut '-d ' -f 2
+++ head -n 1
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
++ pkgname=
++ ruyi install
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
++ CHECK_RESULT 1 0 0 'Check ruyi install package failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi install package failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi install package failed'
++ LOG_ERROR 'Check ruyi install package failed'
++ message='Check ruyi install package failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi install package failed'
+Thu Nov  9 05:38:22 2023 - ERROR - Check ruyi install package failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 54'
++ message='oe_test_ruyi.sh line 54'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 54'
+Thu Nov  9 05:38:23 2023 - ERROR - oe_test_ruyi.sh line 54
++ '[' 0 -eq 1 ']'
++ return 0
++ ruyi install
++ grep 'skipping already installed package '
++ CHECK_RESULT 1 0 0 'Check ruyi install duplicate package failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi install duplicate package failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi install duplicate package failed'
++ LOG_ERROR 'Check ruyi install duplicate package failed'
++ message='Check ruyi install duplicate package failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi install duplicate package failed'
+Thu Nov  9 05:38:25 2023 - ERROR - Check ruyi install duplicate package failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 56'
++ message='oe_test_ruyi.sh line 56'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 56'
+Thu Nov  9 05:38:26 2023 - ERROR - oe_test_ruyi.sh line 56
++ '[' 0 -eq 1 ']'
++ return 0
++ ruyi install name:
++ grep 'skipping already installed package '
++ CHECK_RESULT 1 0 0 'Check ruyi install duplicate package by name failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi install duplicate package by name failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi install duplicate package by name failed'
++ LOG_ERROR 'Check ruyi install duplicate package by name failed'
++ message='Check ruyi install duplicate package by name failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi install duplicate package by name failed'
+Thu Nov  9 05:38:28 2023 - ERROR - Check ruyi install duplicate package by name failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 58'
++ message='oe_test_ruyi.sh line 58'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 58'
+Thu Nov  9 05:38:29 2023 - ERROR - oe_test_ruyi.sh line 58
++ '[' 0 -eq 1 ']'
++ return 0
++ ruyi list profiles
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
++ CHECK_RESULT 1 0 0 'Check ruyi profile'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi profile'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi profile'
++ LOG_ERROR 'Check ruyi profile'
++ message='Check ruyi profile'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi profile'
+Thu Nov  9 05:38:31 2023 - ERROR - Check ruyi profile
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 61'
++ message='oe_test_ruyi.sh line 61'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 61'
+Thu Nov  9 05:38:32 2023 - ERROR - oe_test_ruyi.sh line 61
++ '[' 0 -eq 1 ']'
++ return 0
+++ ruyi list profiles
+++ head -n 1
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
++ proname=
++ ruyi venv --toolchain test-venv
++ grep 'The virtual environment is now created.'
++ CHECK_RESULT 1 0 0 'Check ruyi venv install failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi venv install failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi venv install failed'
++ LOG_ERROR 'Check ruyi venv install failed'
++ message='Check ruyi venv install failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi venv install failed'
+Thu Nov  9 05:38:35 2023 - ERROR - Check ruyi venv install failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 64'
++ message='oe_test_ruyi.sh line 64'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 64'
+Thu Nov  9 05:38:36 2023 - ERROR - oe_test_ruyi.sh line 64
++ '[' 0 -eq 1 ']'
++ return 0
++ '[' -f ./test-venv/bin/ruyi-activate ']'
++ CHECK_RESULT 1 0 0 'Check ruyi venv activate file failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi venv activate file failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi venv activate file failed'
++ LOG_ERROR 'Check ruyi venv activate file failed'
++ message='Check ruyi venv activate file failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi venv activate file failed'
+Thu Nov  9 05:38:37 2023 - ERROR - Check ruyi venv activate file failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 66'
++ message='oe_test_ruyi.sh line 66'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 66'
+Thu Nov  9 05:38:38 2023 - ERROR - oe_test_ruyi.sh line 66
++ '[' 0 -eq 1 ']'
++ return 0
++ oldps1=
++ source ./test-venv/bin/ruyi-activate
+oe_test_ruyi.sh: line 68: ./test-venv/bin/ruyi-activate: No such file or directory
++ echo ''
++ grep test-venv
++ CHECK_RESULT 1 0 0 'Check activate ruyi venv PS1 failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check activate ruyi venv PS1 failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check activate ruyi venv PS1 failed'
++ LOG_ERROR 'Check activate ruyi venv PS1 failed'
++ message='Check activate ruyi venv PS1 failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check activate ruyi venv PS1 failed'
+Thu Nov  9 05:38:38 2023 - ERROR - Check activate ruyi venv PS1 failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi.sh line 70'
++ message='oe_test_ruyi.sh line 70'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi.sh line 70'
+Thu Nov  9 05:38:39 2023 - ERROR - oe_test_ruyi.sh line 70
++ '[' 0 -eq 1 ']'
++ return 0
++ ruyi-deactivate
+oe_test_ruyi.sh: line 71: ruyi-deactivate: command not found
++ '[' '' == '' ']'
++ CHECK_RESULT 0 0 0 'Check deactivate ruyi venv PS1 failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check deactivate ruyi venv PS1 failed'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rm -rf test-venv
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Thu Nov  9 05:38:40 2023 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 16
++ test 16 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Thu Nov  9 05:38:41 2023 - ERROR - failed to execute the case.
++ exit 16
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Thu Nov  9 05:38:41 2023 - INFO  - start environment cleanup.
++ remove_ruyi
++ rm -f ruyi
++ rm -f /usr/bin/ruyi
++ export RUYI_DEBUG=
++ RUYI_DEBUG=
+++ get_ruyi_dir
+++ ruyibase=
+++ '[' '' == '' ']'
+++ ruyibase=/root/.cache/
+++ echo /root/.cache//ruyi
++ rm -rf /root/.cache//ruyi
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Thu Nov  9 05:38:42 2023 - INFO  - Finish environment cleanup!

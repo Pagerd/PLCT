@@ -1,0 +1,123 @@
++ source ./common/common_lib.sh
+++ source /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Thu Nov  9 05:37:20 2023 - INFO  - Start environmental preparation.
++ install_ruyi
++ curl -L -o ruyi https://mirror.iscas.ac.cn/ruyisdk/ruyi/testing/ruyi.amd64.20231107
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  5 10.7M    5  580k    0     0  1026k      0  0:00:10 --:--:--  0:00:10 1028k 34 10.7M   34 3812k    0     0  2543k      0  0:00:04  0:00:01  0:00:03 2544k 71 10.7M   71 7852k    0     0  3101k      0  0:00:03  0:00:02  0:00:01 3103k100 10.7M  100 10.7M    0     0  3422k      0  0:00:03  0:00:03 --:--:-- 3425k
++ chmod +x ruyi
+++ realpath ruyi
++ ln -s /var/jenkins/workspace/ruyi-test/mugen-ruyi/testcases/cli-test/ruyi/ruyi /usr/bin/ruyi
+++ get_ruyi_dir
+++ ruyibase=
+++ '[' '' == '' ']'
+++ ruyibase=/root/.cache/
+++ echo /root/.cache//ruyi
++ rm -rf /root/.cache//ruyi
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Thu Nov  9 05:37:25 2023 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Thu Nov  9 05:37:25 2023 - INFO  - Start to run test.
++ ruyi update
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
+++ ruyi list
+++ head -n 1
+++ cut '-d ' -f 2
+++ grep -e '^* '
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
++ pkgname=
++ http_proxy=http://wrong.proxy
++ https_proxy=http://wrong.proxy
++ ruyi install
+ruyi: /usr/lib64/libm.so.6: version `GLIBC_2.35' not found (required by ruyi)
++ CHECK_RESULT 1 0 1 'Check ruyi install package from wrong proxy failed'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='Check ruyi install package from wrong proxy failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ ruyi install
++ grep downloading
++ CHECK_RESULT 1 0 0 'Check ruyi reinstall package failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ruyi reinstall package failed'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ruyi reinstall package failed'
++ LOG_ERROR 'Check ruyi reinstall package failed'
++ message='Check ruyi reinstall package failed'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'Check ruyi reinstall package failed'
+Thu Nov  9 05:37:32 2023 - ERROR - Check ruyi reinstall package failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ruyi_wrong_proxy.sh line 34'
++ message='oe_test_ruyi_wrong_proxy.sh line 34'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'oe_test_ruyi_wrong_proxy.sh line 34'
+Thu Nov  9 05:37:33 2023 - ERROR - oe_test_ruyi_wrong_proxy.sh line 34
++ '[' 0 -eq 1 ']'
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Thu Nov  9 05:37:34 2023 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 1
++ test 1 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Thu Nov  9 05:37:35 2023 - ERROR - failed to execute the case.
++ exit 1
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Thu Nov  9 05:37:36 2023 - INFO  - start environment cleanup.
++ remove_ruyi
++ rm -f ruyi
++ rm -f /usr/bin/ruyi
++ export RUYI_DEBUG=
++ RUYI_DEBUG=
+++ get_ruyi_dir
+++ ruyibase=
+++ '[' '' == '' ']'
+++ ruyibase=/root/.cache/
+++ echo /root/.cache//ruyi
++ rm -rf /root/.cache//ruyi
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /var/jenkins/workspace/ruyi-test/mugen-ruyi/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Thu Nov  9 05:37:37 2023 - INFO  - Finish environment cleanup!
