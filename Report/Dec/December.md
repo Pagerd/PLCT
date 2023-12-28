@@ -6,9 +6,15 @@
 
 - 将openeuler 2309RISCV独立发版镜像的测试结果进行了简单的分类后制成表格并提交[pr#8](https://gitee.com/yunxiangluo/openEuler-RISC-V-23.09-independent/pulls/8)
 
+- 对openEuler2309独立发版镜像进行VF2硬件测试，测得2309在VF2上运行正常，提交测试结果[#pr6](https://gitee.com/yunxiangluo/openEuler-RISC-V-23.09-independent/pulls/6)
+
 - 对openeuler 2309 RISCV独立发版镜像的测试结果与openeuler 2309 x86进行了对比，并对对比结果进行分析 [report](./week23/mugen_readme.md)
 
+- 对openEuler2309独立发版镜像进行lpi4a硬件测试，测得2309在lpi4a上运行正常，提交测试结果[#pr1](https://gitee.com/yunxiangluo/openEuler-RISC-V-23.09-independent/pulls/1)
+
 - 将当前的分析结果提交至报告[pr#9](https://gitee.com/yunxiangluo/openEuler-RISC-V-23.09-independent/pulls/9)
+
+- 在PLCT openday中进行了报告，内容为基于[mugen的oERV 24.03 LTS自动化测试准备，实例学习mugen测试结果分析](./10-朱旭昌-基于mugen的oERV 24.03 LTS自动化测试准备，实例学习mugen测试结果分析.pdf)
 
 - 将部分失败的测试用例提交issue
 
@@ -97,11 +103,9 @@
 ### RUYI
 
 - 对ruyi包管理器进行手动测试，发现未预装tar的情况下ruyi会报错并提交issue[#12](https://github.com/ruyisdk/ruyi/issues/12)
-- 对openEuler2309独立发版镜像进行lpi4a硬件测试，测得2309在lpi4a上运行正常，提交测试结果[#pr1](https://gitee.com/yunxiangluo/openEuler-RISC-V-23.09-independent/pulls/1)
 - 编写了lpi4a的openEuler2309安装文档并进行提交[#pr4](https://gitee.com/yunxiangluo/openEuler-RISC-V-23.09-independent/pulls/4)
-- 对openEuler2309独立发版镜像进行VF2硬件测试，测得2309在VF2上运行正常，提交测试结果[#pr6](https://gitee.com/yunxiangluo/openEuler-RISC-V-23.09-independent/pulls/6)
 - 对ruyi 2023 1204在ubuntu上进行测试来补全log并提交至主仓库[pr](https://gitee.com/yunxiangluo/ruyi-sdk-v0.2-test/pulls/6/files)
-- 录制了lpi4a上ruyi的使用视频
+- 录制了lpi4a上ruyi的使用视频[video](./ruyi.mp4)
 
 
 
