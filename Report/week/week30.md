@@ -6,14 +6,14 @@
 
 - 对调研 [基于 Eclipse CDT ，了解并以任一个demo走通RISC-V GDB调试过程，输出文档和视频 #4](https://github.com/ruyisdk/pmd/issues/4)进行了初步的阶段性结果，当前Eclipse CDT并不支持RISC-V GDB调试，添加了调研[结果文档](./week30/Eclipse_CDT.md)[commit](https://github.com/ruyisdk/pmd/commit/99e261e2a7cc7741a1ff43bb5ebadeeadd5a1f92)
 - 进行开发板调研工作，目前共调研了10个开发板
-  - [Aries Embedded FIVEBerry-A0A](./week30/investigation/Aries Embedded FIVEBerry-A0A.md)
-  - [DongshanNezhaSTU RISCV64 Allwinner D1-H Board](./week30/investigation/DongshanNezhaSTU RISCV64 Allwinner D1-H Board.md)
-  - [MangoPi MQ-Pro SBC](./week30/investigation/MangoPi MQ-Pro SBC.md)
+  - [Aries Embedded FIVEBerry-A0A](./week30/investigation/AriesEmbeddedFIVEBerry-A0A.md)
+  - [DongshanNezhaSTU RISCV64 Allwinner D1-H Board](./week30/investigation/DongshanNezhaSTURISCV64AllwinnerD1-HBoard.md)
+  - [MangoPi MQ-Pro SBC](./week30/investigation/MangoPiMQ-ProSBC.md)
   - [OpenISAVEGAboard](./week30/investigation/OpenISAVEGAboard.md)
-  - [Sipeed M1s Dock](./week30/investigation/Sipeed M1s Dock.md)
+  - [Sipeed M1s Dock](./week30/investigation/SipeedM1sDock.md)
   - [SipeedLonganNano](./week30/investigation/SipeedLonganNano.md)
   - [SparkFunRED-VThingsPlus](./week30/investigation/SparkFunRED-VThingsPlus.md)
-  - [STAR64 Model-A](./week30/investigation/STAR64 Model-A.md)
+  - [STAR64 Model-A](./week30/investigation/STAR64Model-A.md)
   - [TelinkTLSR9518ADK80D](./week30/investigation/TelinkTLSR9518ADK80D.md)
   - [XIAOESP32C3](./week30/investigation/XIAOESP32C3.md)
 
