@@ -23,20 +23,20 @@
 |            | oe_test_high_nbde                     | fail     | 软件源没有包cryptsetup-reencrypt            | [I8S2JX](https://gitee.com/openeuler/RISC-V/issues/I8S2JX) |
 |            | oe_test_tang_encrypt                  | x86 fail | 无法连接至目标端口                          | [I8S31S](https://gitee.com/openeuler/mugen/issues/I8S31S)  |
 |            | oe_test_service_clevis-luks-askpass   | x86 fail | 测试用例编写错误？                          | [I8S30G](https://gitee.com/openeuler/mugen/issues/I8S30G)  |
-| pywbem_0.12.4 | oe_test_pywbem_base_mof_compiler_01 | fail | 连接失败                                                     | [I8VSD0]https://gitee.com/openeuler/RISC-V/issues/I8VSD0 |
-|               | oe_test_pywbem_base_mof_compiler_02 | fail | 连接失败                                                     | [I8VSD0]https://gitee.com/openeuler/RISC-V/issues/I8VSD0 |
-| wsmancli      | oe_test_wsmancli_wseventmgr_02      | fail | 网络原因无法下载对应测试文件                                 | [I8VSDM]https://gitee.com/openeuler/RISC-V/issues/I8VSDM |
-|               | oe_test_wsmancli_wseventmgr_01      | fail | 网络原因无法下载对应测试文件                                 | [I8VSDM]https://gitee.com/openeuler/RISC-V/issues/I8VSDM |
-|               | oe_test_wsmancli_wsman_06           | fail | 连接smash/ipmi时超时                                         | [I8VSDM]https://gitee.com/openeuler/RISC-V/issues/I8VSDM |
-|               | oe_test_wsmancli_wsman_07           | fail | 连接网络时超时                                               | [I8VSDM]https://gitee.com/openeuler/RISC-V/issues/I8VSDM |
-|               | oe_test_wsmancli_wsman_05           | fail | 连接网络时超时                                               | [I8VSDM]https://gitee.com/openeuler/RISC-V/issues/I8VSDM |
-|               | oe_test_wsmancli_wsman_02           | fail | 缺少对应docker                                               | [I8VSDM]https://gitee.com/openeuler/RISC-V/issues/I8VSDM |
-| hbase         | oe_test_service_hbase-regionserver  | fail | 没有包hbase，hadoop-3.1-hdfs，hadoop-3.1-mapreduce，hadoop-3.1-yarn | [I8VS5N]https://gitee.com/openeuler/RISC-V/issues/I8VS5N |
-|               | oe_test_service_hbase-rest          | fail | 没有包hbase，hadoop-3.1-hdfs，hadoop-3.1-mapreduce，hadoop-3.1-yarn | [I8VS5N]https://gitee.com/openeuler/RISC-V/issues/I8VS5N |
-|               | oe_test_service_hbase-thrift        | fail | 没有包hbase，hadoop-3.1-hdfs，hadoop-3.1-mapreduce，hadoop-3.1-yarn | [I8VS5N]https://gitee.com/openeuler/RISC-V/issues/I8VS5N |
+| pywbem_0.12.4 | oe_test_pywbem_base_mof_compiler_01 | fail | 连接失败                                                     | [I8VSD0](https://gitee.com/openeuler/RISC-V/issues/I8VSD0) |
+|               | oe_test_pywbem_base_mof_compiler_02 | fail | 连接失败                                                     | [I8VSD0](https://gitee.com/openeuler/RISC-V/issues/I8VSD0) |
+| wsmancli      | oe_test_wsmancli_wseventmgr_02      | fail | 网络原因无法下载对应测试文件                                 | [I8VSDM](https://gitee.com/openeuler/RISC-V/issues/I8VSDM) |
+|               | oe_test_wsmancli_wseventmgr_01      | fail | 网络原因无法下载对应测试文件                                 | [I8VSDM](https://gitee.com/openeuler/RISC-V/issues/I8VSDM) |
+|               | oe_test_wsmancli_wsman_06           | fail | 连接smash/ipmi时超时                                         | [I8VSDM](https://gitee.com/openeuler/RISC-V/issues/I8VSDM) |
+|               | oe_test_wsmancli_wsman_07           | fail | 连接网络时超时                                               | [I8VSDM](https://gitee.com/openeuler/RISC-V/issues/I8VSDM) |
+|               | oe_test_wsmancli_wsman_05           | fail | 连接网络时超时                                               | [I8VSDM](https://gitee.com/openeuler/RISC-V/issues/I8VSDM) |
+|               | oe_test_wsmancli_wsman_02           | fail | 缺少对应docker                                               | [I8VSDM](https://gitee.com/openeuler/RISC-V/issues/I8VSDM) |
+| hbase         | oe_test_service_hbase-regionserver  | fail | 没有包hbase，hadoop-3.1-hdfs，hadoop-3.1-mapreduce，hadoop-3.1-yarn | [I8VS5N](https://gitee.com/openeuler/RISC-V/issues/I8VS5N) |
+|               | oe_test_service_hbase-rest          | fail | 没有包hbase，hadoop-3.1-hdfs，hadoop-3.1-mapreduce，hadoop-3.1-yarn | [I8VS5N](https://gitee.com/openeuler/RISC-V/issues/I8VS5N) |
+|               | oe_test_service_hbase-thrift        | fail | 没有包hbase，hadoop-3.1-hdfs，hadoop-3.1-mapreduce，hadoop-3.1-yarn | [I8VS5N](https://gitee.com/openeuler/RISC-V/issues/I8VS5N) |
 
 - 截止目前为止将当前的测试分析结果整合进主文档 [pr#11](https://gitee.com/yunxiangluo/openEuler-RISC-V-23.09-independent/pulls/11)
-- 编写了Mugen RISC-V测试策略[ppt](./week28/开源自动化测试工具Mugen和openQA在openEuler RISC-V测试中的使用-1.1.pptx)
+- 编写了Mugen RISC-V测试策略[ppt](./week28/开源自动化测试工具Mugen和openQA在openEuler RISC-V测试中的使用.pptx)
 - 将剩余的仅RV失败的测试用例提交至riscv issue [#I8XL9B](https://gitee.com/openeuler/RISC-V/issues/I8XL9B)
 
 - 在Lpi4A的revyos系统上进行了ruyi 20240116 mugen自动测试，测试用例全部通过，产出文档 [md](https://gitee.com/yunxiangluo/ruyisdk-test/blob/master/20240116/RevyOS-LPi4A.md)
