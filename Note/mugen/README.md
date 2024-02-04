@@ -168,6 +168,12 @@ bash mugen.sh -c --ip $ip --password $passwd --user $user --port $port
 - user:测试机的用户，默认为root
 - port:测试机的SSH端口，默认为22
 
+```
+bash mugen.sh -c --ip 127.0.0.1 --password openEuler12#$ --user root --port 22
+```
+
+
+
 #### 进行测试
 
 当配置完成后，便可在mugen主目录进行测试
