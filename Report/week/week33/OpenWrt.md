@@ -19,7 +19,7 @@ Linux可使用dd命令将固件镜像烧录进SD卡
 
 Windows可用balenaEther烧录镜像
 
-![1](.\OpenWrt\1.png)
+![1](./OpenWrt/1.png)
 
 ### 启动镜像
 
@@ -37,4 +37,4 @@ windows下使用putty等工具打开串口
 
 将HiFive Unmatched上电开机h，即可在窗口看见启动输出
 
-![1](.\OpenWrt\2.png)
+![1](./OpenWrt/2.png)
