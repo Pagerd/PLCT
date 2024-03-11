@@ -1,0 +1,76 @@
+测试套/软件包名,测试用例名,状态,日志文件,原因
+podman,oe_test_podman_DK_28,fail,./mugen-riscv/logs/podman/oe_test_podman_DK_28/2024-03-05-04:14:14.log,
+,oe_test_podman_28,fail,./mugen-riscv/logs/podman/oe_test_podman_28/2024-03-05-03:47:02.log,
+libvpx,oe_test_libvpx,fail,./mugen-riscv/logs/libvpx/oe_test_libvpx/2024-03-05-11:02:44.log,
+patchutils,oe_test_patchutils_combinediff_02,fail,./mugen-riscv/logs/patchutils/oe_test_patchutils_combinediff_02/2024-03-05-06:45:54.log,没有预装vi
+iftop,oe_test_iftop_text_mode,fail,./mugen-riscv/logs/iftop/oe_test_iftop_text_mode/2024-03-05-19:00:22.log,超时
+,oe_test_iftop_config,fail,./mugen-riscv/logs/iftop/oe_test_iftop_config/2024-03-05-19:37:20.log,超时
+java-11-openjdk,oe_test_openjdk11_unpack200,fail,./mugen-riscv/logs/java-11-openjdk/oe_test_openjdk11_unpack200/2024-03-05-10:14:54.log,没有足够的空间进行jdk安装
+,oe_test_openjdk11_jfr_jinfo,fail,./mugen-riscv/logs/java-11-openjdk/oe_test_openjdk11_jfr_jinfo/2024-03-05-10:21:34.log,没有足够的空间进行jdk安装
+,oe_test_openjdk11_jcmd_jstat,fail,./mugen-riscv/logs/java-11-openjdk/oe_test_openjdk11_jcmd_jstat/2024-03-05-10:28:02.log,没有足够的空间进行jdk安装
+,oe_test_java,fail,./mugen-riscv/logs/java-11-openjdk/oe_test_java/2024-03-05-09:11:39.log,(core dumped)
+groovy18,oe_test_groovy18c_01,fail,./mugen-riscv/logs/groovy18/oe_test_groovy18c_01/2024-03-05-13:15:07.log,java有问题
+ruby,oe_test_ri,fail,./mugen-riscv/logs/ruby/oe_test_ri/2024-03-05-09:50:31.log,kernel_require.rb报错
+,oe_test_irb_02,fail,./mugen-riscv/logs/ruby/oe_test_irb_02/2024-03-05-09:19:08.log,/usr/bin/irb:9:in `require': cannot load such file -- rubygems (LoadError)
+kmod,oe_test_modprobe,fail,./mugen-riscv/logs/kmod/oe_test_modprobe/2024-03-05-13:45:40.log,modprobe: FATAL: Module  not found.
+,oe_test_weak-modules,fail,./mugen-riscv/logs/kmod/oe_test_weak-modules/2024-03-05-13:49:03.log,超时
+rpmdevtools,oe_test_rpmdevtools_rpmdev-rmdevelrpms,fail,./mugen-riscv/logs/rpmdevtools/oe_test_rpmdevtools_rpmdev-rmdevelrpms/2024-03-05-15:52:34.log,使用dnf，无法在eula上测试
+obs-server,oe_test_target_obs-api-support,fail,./mugen-riscv/logs/obs-server/oe_test_target_obs-api-support/2024-03-05-06:35:17.log,没有足够的空间进行obs安装
+,oe_test_service_obsdispatcher,fail,./mugen-riscv/logs/obs-server/oe_test_service_obsdispatcher/2024-03-05-06:28:49.log,没有足够的空间进行obs安装
+,oe_test_service_obssrcserver,fail,./mugen-riscv/logs/obs-server/oe_test_service_obssrcserver/2024-03-05-06:24:43.log,没有足够的空间进行obs安装
+,oe_test_service_obsworker,fail,./mugen-riscv/logs/obs-server/oe_test_service_obsworker/2024-03-05-05:43:55.log,没有足够的空间进行obs安装
+,oe_test_service_obssigner,fail,./mugen-riscv/logs/obs-server/oe_test_service_obssigner/2024-03-05-06:51:32.log,没有足够的空间进行obs安装
+,oe_test_service_obspublisher,fail,./mugen-riscv/logs/obs-server/oe_test_service_obspublisher/2024-03-05-06:20:39.log,没有足够的空间进行obs安装
+openssh,oe_test_openssh_cipher,fail,./mugen-riscv/logs/openssh/oe_test_openssh_cipher/2024-03-05-06:12:50.log,
+,oe_test_sec_jump_login,fail,./mugen-riscv/logs/openssh/oe_test_sec_jump_login/2024-03-05-06:37:57.log,mugen测试配置错误
+iptables,oe_test_ip6tables-save,fail,./mugen-riscv/logs/iptables/oe_test_ip6tables-save/2024-03-05-15:39:32.log,
+,oe_test_service_ip6tables,fail,./mugen-riscv/logs/iptables/oe_test_service_ip6tables/2024-03-05-15:31:50.log,
+,oe_test_service_iptables,fail,./mugen-riscv/logs/iptables/oe_test_service_iptables/2024-03-05-15:34:53.log,
+firewalld,oe_test_firewalld_new_zone,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_new_zone/2024-03-05-03:35:32.log,Unit firewalld.service not found
+,oe_test_firewalld_whitelist_uids,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_whitelist_uids/2024-03-05-03:35:35.log,Unit firewalld.service not found
+,oe_test_firewalld_add_sourceport,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_add_sourceport/2024-03-05-03:39:58.log,Unit firewalld.service not found
+,oe_test_firewalld_getzone,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_getzone/2024-03-05-03:51:35.log,Unit firewalld.service not found
+,oe_test_firewalld_whitelist_user,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_whitelist_user/2024-03-05-03:37:19.log,Unit firewalld.service not found
+,oe_test_firewalld_start_stop,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_start_stop/2024-03-05-03:56:23.log,Unit firewalld.service not found
+,oe_test_firewalld_whitelist_command,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_whitelist_command/2024-03-05-03:58:41.log,Unit firewalld.service not found
+,oe_test_firewalld_zone_add_service,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_zone_add_service/2024-03-05-03:39:01.log,Unit firewalld.service not found
+,oe_test_firewalld_start_status,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_start_status/2024-03-05-03:54:51.log,Unit firewalld.service not found
+,oe_test_firewalld_start_check,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_start_check/2024-03-05-03:53:30.log,Unit firewalld.service not found
+,oe_test_firewalld_list,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_list/2024-03-05-03:54:40.log,Unit firewalld.service not found
+,oe_test_firewalld_ip_camouflage,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_ip_camouflage/2024-03-05-03:53:06.log,Unit firewalld.service not found
+,oe_test_firewalld_set_target,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_set_target/2024-03-05-03:51:53.log,Unit firewalld.service not found
+,oe_test_firewalld_add_sourceip,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_add_sourceip/2024-03-05-03:38:26.log,Unit firewalld.service not found
+,oe_test_firewalld_lockdown,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_lockdown/2024-03-05-03:56:08.log,Unit firewalld.service not found
+,oe_test_firewalld_whitelist_contexts,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_whitelist_contexts/2024-03-05-03:34:05.log,Unit firewalld.service not found
+,oe_test_firewalld_runtime_permanent,fail,./mugen-riscv/logs/firewalld/oe_test_firewalld_runtime_permanent/2024-03-05-03:46:46.log,Unit firewalld.service not found
+asciidoc,oe_test_asciidoc_a2x_01,fail,./mugen-riscv/logs/asciidoc/oe_test_asciidoc_a2x_01/2024-03-05-16:22:45.log,没有足够的空间安装软件包
+,oe_test_asciidoc_a2x_02,fail,./mugen-riscv/logs/asciidoc/oe_test_asciidoc_a2x_02/2024-03-05-16:27:14.log,没有足够的空间安装软件包
+qt5-qttools,oe_test_qt5-qttools_qdoc_01,fail,./mugen-riscv/logs/qt5-qttools/oe_test_qt5-qttools_qdoc_01/2024-03-05-09:20:13.log,没有足够的空间安装软件包
+,oe_test_qt5-qttools_lrelease-qt5,fail,./mugen-riscv/logs/qt5-qttools/oe_test_qt5-qttools_lrelease-qt5/2024-03-05-09:09:50.log,没有足够的空间安装软件包
+,oe_test_qt5-qttools_qhelpgenerator-qt5,fail,./mugen-riscv/logs/qt5-qttools/oe_test_qt5-qttools_qhelpgenerator-qt5/2024-03-05-09:29:31.log,没有足够的空间安装软件包
+,oe_test_qt5-qttools_qt5-qttools-devel,fail,./mugen-riscv/logs/qt5-qttools/oe_test_qt5-qttools_qt5-qttools-devel/2024-03-05-09:32:18.log,没有足够的空间安装软件包
+,oe_test_qt5-qttools_lconvert-qt5,fail,./mugen-riscv/logs/qt5-qttools/oe_test_qt5-qttools_lconvert-qt5/2024-03-05-08:58:34.log,没有足够的空间安装软件包
+,oe_test_qt5-qttools_qtattributionsscanner-qt5,fail,./mugen-riscv/logs/qt5-qttools/oe_test_qt5-qttools_qtattributionsscanner-qt5/2024-03-05-09:35:25.log,没有足够的空间安装软件包
+,oe_test_qt5-qttools_lupdate-qt5_02,fail,./mugen-riscv/logs/qt5-qttools/oe_test_qt5-qttools_lupdate-qt5_02/2024-03-05-09:15:31.log,没有足够的空间安装软件包
+,oe_test_qt5-qttools_lupdate-qt5_01,fail,./mugen-riscv/logs/qt5-qttools/oe_test_qt5-qttools_lupdate-qt5_01/2024-03-05-09:12:43.log,没有足够的空间安装软件包
+atune,oe_test_service_atuned_05,fail,./mugen-riscv/logs/atune/oe_test_service_atuned_05/2024-03-05-09:40:09.log,
+,oe_test_service_atune-engine,fail,./mugen-riscv/logs/atune/oe_test_service_atune-engine/2024-03-05-09:15:45.log,
+iSulad,oe_test_iSulad_container05,fail,./mugen-riscv/logs/iSulad/oe_test_iSulad_container05/2024-03-05-13:02:24.log,
+rasdaemon,oe_test_service_ras-mc-ctl,fail,./mugen-riscv/logs/rasdaemon/oe_test_service_ras-mc-ctl/2024-03-05-21:48:06.log,None
+dblatex,oe_test_dblatex_dblatex_02,fail,./mugen-riscv/logs/dblatex/oe_test_dblatex_dblatex_02/2024-03-05-14:37:21.log,
+,oe_test_dblatex_dblatex_03,fail,./mugen-riscv/logs/dblatex/oe_test_dblatex_dblatex_03/2024-03-05-14:45:43.log,
+,oe_test_dblatex_dblatex_06,fail,./mugen-riscv/logs/dblatex/oe_test_dblatex_dblatex_06/2024-03-05-15:04:33.log,
+,oe_test_dblatex_dblatex_05,fail,./mugen-riscv/logs/dblatex/oe_test_dblatex_dblatex_05/2024-03-05-14:57:53.log,
+,oe_test_dblatex_dblatex_04,fail,./mugen-riscv/logs/dblatex/oe_test_dblatex_dblatex_04/2024-03-05-14:52:02.log,
+openscap,oe_test_fix_anisible,fail,./mugen-riscv/logs/openscap/oe_test_fix_anisible/2024-03-05-14:11:18.log,
+,oe_test_openscap_01,fail,./mugen-riscv/logs/openscap/oe_test_openscap_01/2024-03-05-13:57:24.log,
+,oe_test_scanning_system,fail,./mugen-riscv/logs/openscap/oe_test_scanning_system/2024-03-05-14:03:53.log,
+libvirt,oe_test_socket_virtproxyd-tls,fail,./mugen-riscv/logs/libvirt/oe_test_socket_virtproxyd-tls/2024-03-05-05:44:00.log,
+,oe_test_socket_virtproxyd,fail,./mugen-riscv/logs/libvirt/oe_test_socket_virtproxyd/2024-03-05-05:33:26.log,
+,oe_test_socket_virtproxyd-ro,fail,./mugen-riscv/logs/libvirt/oe_test_socket_virtproxyd-ro/2024-03-05-05:28:15.log,
+sendmail,oe_test_service_sendmail,fail,./mugen-riscv/logs/sendmail/oe_test_service_sendmail/2024-03-05-20:26:30.log,
+curl,oe_test_curl_curl_004,fail,./mugen-riscv/logs/curl/oe_test_curl_curl_004/2024-03-05-11:49:28.log,
+nginx,oe_test_nginx_cli,fail,./mugen-riscv/logs/nginx/oe_test_nginx_cli/2024-03-05-18:15:57.log,
+,oe_test_service_nginx_2,fail,./mugen-riscv/logs/nginx/oe_test_service_nginx_2/2024-03-05-18:24:37.log,
+ntfs-3g,oe_test_ntfs-3g_mkfs.ntfs,fail,./mugen-riscv/logs/ntfs-3g/oe_test_ntfs-3g_mkfs.ntfs/2024-03-05-06:23:35.log,
+,oe_test_ntfs-3g_mkntfs,fail,./mugen-riscv/logs/ntfs-3g/oe_test_ntfs-3g_mkntfs/2024-03-05-05:52:23.log,
