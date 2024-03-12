@@ -1,9 +1,11 @@
 # Sail/ACT进展
 
-#### 学习进展
+#### 工作进展
 
-- 正在学习RV指令集ISA相关，目前正在学习I指令集[笔记](https://github.com/Pagerd/PLCT/tree/main/Note/RiscV/RV64I.md)
-- 正在学习SAIL-RISCV 各文件的组成以及与 RISCV ISA的对应关系，参照学习[笔记](https://github.com/KotorinMinami/plct-working/blob/main/sail-riscv/note01.md)
+- 研究了RV指令集I指令集ISA相关，编写了笔记文档[文档](https://github.com/Pagerd/PLCT/tree/main/Note/RiscV/RV64I.md)
+- 研究了SAIL-RISCV 各文件的组成以及与 RISCV ISA的对应关系，产出[文档](https://github.com/KotorinMinami/plct-working/blob/main/sail-riscv/note01.md)
+- 2月5日参加了 tech-golden-model Monday meeting，编写了会议纪要 [Md](https://github.com/Pagerd/PLCT/tree/main/Report/month/Moneth10/2-5.md)
+- 2月26日 Monday 26th Feb Arch Test ACT SIG meeting 编写了会议纪要[Md](https://github.com/Pagerd/PLCT/tree/main/Report/month/month10/2-26.md)
 
 #### 计划工作
 
