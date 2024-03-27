@@ -19,7 +19,7 @@ marp: true
 - **RISCOF** 是RISC-V架构测试框架的缩写，它是一种用于验证RISC-V实现是否符合RISC-V规范的工具，目前覆盖了RISCV的多种扩展，同时RISCOF再验证ISA实现中使用了sail作为参照的Golden model。
 - RISCOF的工作方式如下图所示
 
-![RISCOF](https://github.com/Pagerd/PLCT/tree/main/Report/week/week37/img/riscof.png)
+![RISCOF](../week37/img/riscof.png)
 
 ---
 
@@ -29,7 +29,7 @@ marp: true
 
 - CTG通过(CGF)文件来生成测试用例，CGF文件包含了不同指令的各种覆盖点，CTG将每个覆盖点视为约束,并使用求解器来识别潜在的解决方案。
 
-![RISCV-ISAC](https://github.com/Pagerd/PLCT/tree/main/Report/week/week37/img/ctg.png)
+![RISCV-ISAC](../week37/img/ctg.png)
 
 ---
 
@@ -207,10 +207,6 @@ riscof run --config=config.ini \
            --env=64i_tests/env
 ```
 
----
-
-
-![RISCV-ISAC](https://github.com/Pagerd/PLCT/tree/main/Report/week/week37/img/result.png)
 
 ---
 
