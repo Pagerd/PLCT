@@ -39,7 +39,7 @@
 
 ##### V0.7.0
 
-- 在Milk-V Pioneer v1.3  Fedora 38上对ruyiv0.7版本进行mugen测试，编写[测试报告](https://gitee.com/yunxiangluo/ruyisdk-test/blob/master/20240327/fedora-SG2042-Pioneer.md)
+- 在Milk-V Pioneer v1.3  Fedora 38上对ruyi v0.7版本进行mugen测试，编写[测试报告](https://gitee.com/yunxiangluo/ruyisdk-test/blob/master/20240327/fedora-SG2042-Pioneer.md)
 - 在LicheePi 4A RevyOS 上对ruyi v0.7版本进行mugen测试编写[测试报告](https://gitee.com/yunxiangluo/ruyisdk-test/blob/master/20240327/RevyOS-LPi4A.md)
 
 ### Sail
@@ -49,14 +49,14 @@
 
 | Issue地址                                      | issue简述                               | 链接                                                         |
 | ---------------------------------------------- | --------------------------------------- | ------------------------------------------------------------ |
-| https://github.com/riscv/sail-riscv/issues/296 | **pmpcfg允许非法值R=0, W=1**            | [MD](https://github.com/Pagerd/PLCT/tree/main/Report/week/week36/296.md) |
-| https://github.com/riscv/sail-riscv/issues/356 | **C.SRAI 和 C.SRLI 缺少 RV32 解码限制** | [MD](https://github.com/Pagerd/PLCT/tree/main/Report/week/week36/356.md) |
-| https://github.com/riscv/sail-riscv/issues/402 | **Sail中有大量的冗余代码**              | [MD](https://github.com/Pagerd/PLCT/tree/main/Report/week/week36/402.md) |
-| https://github.com/riscv/sail-riscv/issues/423 | **Sail中有大量的冗余代码**              | [MD](https://github.com/Pagerd/PLCT/tree/main/Report/week/week36/423.md) |
-| https://github.com/riscv/sail-riscv/issues/429 | **Sail中有大量的冗余代码**              | [MD](https://github.com/Pagerd/PLCT/tree/main/Report/week/week36/429.md) |
-| https://github.com/riscv/sail-riscv/issues/430 | **AMO 异常的拼写错误**                  | [MD](https://github.com/Pagerd/PLCT/tree/main/Report/week/week36/430.md) |
+| https://github.com/riscv/sail-riscv/issues/296 | **pmpcfg允许非法值R=0, W=1**            | [调研文档](https://github.com/Pagerd/PLCT/tree/main/Report/week/week36/296.md) |
+| https://github.com/riscv/sail-riscv/issues/356 | **C.SRAI 和 C.SRLI 缺少 RV32 解码限制** | [调研文档](https://github.com/Pagerd/PLCT/tree/main/Report/week/week36/356.md) |
+| https://github.com/riscv/sail-riscv/issues/402 | **Sail中有大量的冗余代码**              | [调研文档](https://github.com/Pagerd/PLCT/tree/main/Report/week/week36/402.md) |
+| https://github.com/riscv/sail-riscv/issues/423 | **Sail中有大量的冗余代码**              | [调研文档](https://github.com/Pagerd/PLCT/tree/main/Report/week/week36/423.md) |
+| https://github.com/riscv/sail-riscv/issues/429 | **Sail中有大量的冗余代码**              | [调研文档](https://github.com/Pagerd/PLCT/tree/main/Report/week/week36/429.md) |
+| https://github.com/riscv/sail-riscv/issues/430 | **AMO 异常的拼写错误**                  | [调研文档](https://github.com/Pagerd/PLCT/tree/main/Report/week/week36/430.md) |
 
 - 对issue进行汇总，编写了[SAIL-Issue调研文档](https://github.com/Pagerd/PLCT/tree/main/Report/week/week36/Sail-RISCV-Issue.md)
-- 编写了[ppt](https://github.com/Pagerd/PLCT/blob/main/Report/week/week36/%E6%9C%B1%E6%97%AD%E6%98%8C-Sail-RISCV%20issue%E8%B0%83%E7%A0%94.pptx)，并在周三在技术分享上分享了Sail-RISCV issue调研
+- 编写了[ppt](https://github.com/Pagerd/PLCT/blob/main/Report/week/week36/%E6%9C%B1%E6%97%AD%E6%98%8C-Sail-RISCV%20issue%E8%B0%83%E7%A0%94.pptx)，并在周三在技术分享上分享了《Sail-RISCV issue调研》
 - 调研了RISCOF的测试用例自动生成工具:RISCV-CTG，编写了[调研文档](https://github.com/Pagerd/PLCT/blob/main/Report/week/week37/CTG.md)
-- 编写了[ppt](https://github.com/Pagerd/PLCT/blob/main/Report/week/week37/CTG-ppt.pptx)，并在周三在技术分享上分享了Sail-RISCV issue调研
+- 编写了[ppt](https://github.com/Pagerd/PLCT/blob/main/Report/week/week37/CTG-ppt.pptx)，并在周三在技术分享上分享了《RISCOF的测试用例自动生成工具:RISCV-CTG》
