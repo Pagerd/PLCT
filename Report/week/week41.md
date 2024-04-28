@@ -4,18 +4,18 @@
 
 ##### 基础测试
 
-- 进行了SG2380下clang编译测试 ,产出文档 [ MD](.\week41\SG2380\SG2380下clang编译\)
-- 进行了SG2380下qemu使用测试，产出文档 [ MD](.\week41\SG2380\SG2380下qemu使用\)
-- 进行了SG2380下内联汇编测试，产出文档[ MD](.\week41\SG2380\SG2380下内联汇编\)
-- 进行了通过SSH登录SG2380云平台测试，产出文档[ MD](.\week41\SG2380\通过SSH登录SG2380云平台\)
-- 进行了通过Web端登录SG2380云平台测试，产出文档[ MD](.\week41\SG2380\通过Web端登录SG2380云平台\)
+- 进行了SG2380下clang编译测试 ,产出文档 [MD](.\week41\SG2380\SG2380下clang编译\)
+- 进行了SG2380下qemu使用测试，产出文档 [MD](.\week41\SG2380\SG2380下qemu使用\)
+- 进行了SG2380下内联汇编测试，产出文档[MD](.\week41\SG2380\SG2380下内联汇编\)
+- 进行了通过SSH登录SG2380云平台测试，产出文档[MD](.\week41\SG2380\通过SSH登录SG2380云平台\)
+- 进行了通过Web端登录SG2380云平台测试，产出文档[MD](.\week41\SG2380\通过Web端登录SG2380云平台\)
 
 ##### 性能测试
 
-- 进行了fio测试，产出文档[ MD](.\week41\SG2380\fio\)
-- 进行了libMicro测试，产出文档[ MD](.\week41\SG2380\libMicro\)
-- 进行了stream测试，产出文档[ MD](.\week41\SG2380\stream\)
-- 进行了unixbench测试，产出文档[ MD](.\week41\SG2380\unixbench\)
+- 进行了fio测试，产出文档[MD](.\week41\SG2380\fio\)
+- 进行了libMicro测试，产出文档[MD](.\week41\SG2380\libMicro\)
+- 进行了stream测试，产出文档[MD](.\week41\SG2380\stream\)
+- 进行了unixbench测试，产出文档[MD](.\week41\SG2380\unixbench\)
 
 ### RuyiSDK
 
