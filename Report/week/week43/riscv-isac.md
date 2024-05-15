@@ -20,7 +20,7 @@ RISC-V ISAC 是一种 ISA 覆盖率提取工具。给定一组覆盖点以及在
 
 ISAC通过[Coverage Group Format](https://riscv-isac.readthedocs.io/en/latest/cgf.html) (CGF)的特殊yaml文件格式捕捉，CGF 文件通常由单个数据集节点和多个覆盖组组成。每个覆盖组可以为不同的指令集定义多个覆盖点。
 
-
+![](https://riscv-isac.readthedocs.io/en/latest/_images/riscv-isac.png)
 
 
 
@@ -64,13 +64,23 @@ Commands:
 
 ISAC的一个作用是标准化cgf文件
 
+```
+Usage: riscv_isac normalize [OPTIONS]
+  Normalize the cgf.
+Options:
+  -c, --cgf-file PATH     Coverage Group File  [required]
+  -o, --output-file PATH  Coverage Group File  [required]
+  -x, --xlen [32|64]      XLEN value for the ISA.
+  --help                  Show this message and exit.
+```
+
 例如在riscv-ctg仓库中，可以在预设cgf文件中使用如下代码
 
 ```
 riscv_isac --verbose info normalize -c dataset.cgf -c rv64i.cgf -o normalized.cgf -x 32
 ```
 
-随后出现normalized。cgf文件，该文件可以单独由risccv-ctg生成测试用例
+随后出现normalized.cgf文件，该文件可以单独由risccv-ctg生成测试用例
 
 ```
 riscv_ctg -v debug -d ./tests/ -r -cf ./sample_cgfs/normalized.cgf -bi rv64i -p2
@@ -86,12 +96,38 @@ riscv_ctg -v debug -d ./tests/ -r -cf ./dataset.cgf -cf ./rv32i.cgf -bi rv32i -p
 
 isac的另一个作用是使用给定的日志和 cgf 文件计算测试的覆盖率。
 
+```
+Usage: riscv_isac coverage [OPTIONS]
+  Run Coverage analysis on tracefile.
+Options:
+  -e, --elf PATH                  ELF file
+  -t, --trace-file PATH           Instruction trace file to be analyzed
+  -c, --cgf-file PATH             Coverage Group File  [required]
+  -d, --detailed                  Select detailed mode of  coverage printing
+  --parser-name NAME              Parser plugin name
+  --decoder-name NAME             Decoder plugin name
+  --parser-path PATH              Parser file path
+  --decoder-path PATH             Decoder file path
+  -o, --output-file PATH          Coverage Group File
+  --test-label LABEL_START LABEL_END
+                                  Pair of labels denoting start and end points
+                                  of the test region(s). Multiple allowed.
+  --sig-label LABEL_START LABEL_END
+                                  Pair of labels denoting start and end points
+                                  of the signature region(s). Multiple
+                                  allowed.
+  --dump PATH                     Dump Normalized Coverage Group File
+  -l, --cov-label COVERAGE LABEL  Coverage labels to consider for this run.
+  -x, --xlen [32|64]              XLEN value for the ISA.
+  --help                          Show this message and exit.
+```
+
 进行计算时需要解码器和解析器，ISAC附带以下标准插件
 
 解析器插件：
 
-- [SAIL C 模型](https://github.com/rems-project/sail-riscv) `c_sail`：用于解析SAIL 生成的 C 模型的执行日志的解析器。
-- [SPIKE](https://github.com/riscv/riscv-isa-sim) `spike`：来自 riscv-isa-sim 的执行日志的解析器。
+- SAIL C 模型  `c_sail`：用于解析SAIL 生成的 C 模型的执行日志的解析器。
+- SPIKE `spike`：来自 riscv-isa-sim 的执行日志的解析器。
 
 解码器插件：
 
@@ -102,53 +138,35 @@ isac的另一个作用是使用给定的日志和 cgf 文件计算测试的覆�
 对于使用ACT进行的测试，可以通过以下方式来进行计算
 
 ```
-riscv_isac --verbose info coverage -d -t add-01.log --parser-name c_sail --decoder-name internaldecoder -o coverage.rpt --sig-label begin_signature end_signature --test-label rvtest_code_begin rvtest_code_end -e add-01.elf -c dataset.cgf -c rv32i.cgf -x 32 -l add
+riscv_isac coverage -d -t add-01.log --parser-name c_sail --decoder-name internaldecoder -o coverage.rpt --sig-label begin_signature end_signature --test-label rvtest_code_begin rvtest_code_end -e add-01.elf -c dataset.cgf -c rv32i.cgf -x 32 -l add
 ```
 
-注意：当前情况下在尝试对riscof中的add指令进行此操作时出现以下错误：
-
-```
-Traceback (most recent call last):
-  File "/home/pager/.local/bin/riscv_isac", line 33, in <module>
-    sys.exit(load_entry_point('riscv-isac', 'console_scripts', 'riscv_isac')())
-  File "/usr/lib/python3/dist-packages/click/core.py", line 1128, in __call__
-    return self.main(*args, **kwargs)
-  File "/usr/lib/python3/dist-packages/click/core.py", line 1053, in main
-    rv = self.invoke(ctx)
-  File "/usr/lib/python3/dist-packages/click/core.py", line 1659, in invoke
-    return _process_result(sub_ctx.command.invoke(sub_ctx))
-  File "/usr/lib/python3/dist-packages/click/core.py", line 1395, in invoke
-    return ctx.invoke(self.callback, **ctx.params)
-  File "/usr/lib/python3/dist-packages/click/core.py", line 754, in invoke
-    return __callback(*args, **kwargs)
-  File "/home/pager/Desktop/riscv-isac/riscv_isac/main.py", line 136, in coverage
-    isac(output_file,elf,trace_file, window_size, expand_cgf(cgf_file,int(xlen),int(flen),log_redundant), parser_name, decoder_name, parser_path, decoder_path, detailed, test_label,
-  File "/home/pager/Desktop/riscv-isac/riscv_isac/isac.py", line 40, in isac
-    rpt = cov.compute(trace_file, test_name, cgf, parser_name, decoder_name, detailed, xlen, flen, test_addr, dump, cov_labels, sig_addr, window_size, no_count, procs)
-  File "/home/pager/Desktop/riscv-isac/riscv_isac/coverage.py", line 1468, in compute
-    dump_file.write(ruamel.yaml.round_trip_dump(rcgf, indent=5, block_seq_indent=3))
-  File "/home/pager/.local/lib/python3.10/site-packages/ruamel/yaml/main.py", line 1284, in round_trip_dump
-    error_deprecation('round_trip_dump', 'dump')
-  File "/home/pager/.local/lib/python3.10/site-packages/ruamel/yaml/main.py", line 1039, in error_deprecation
-    raise AttributeError(s, name=None)
-AttributeError: 
-"round_trip_dump()" has been removed, use
-
-  yaml = YAML()
-  yaml.dump(...)
-
-instead of file "/home/pager/Desktop/riscv-isac/riscv_isac/coverage.py", line 1468
-
-    dump_file.write(ruamel.yaml.round_trip_dump(rcgf, indent=5, block_seq_indent=3))
-
-```
+该操作将会在目录下生成coverage.rpt报告
 
 ### 合并报告
 
 isca可以将生成的不同覆盖率的报告合并到一个主报告中
 
 ```
-riscv_isac --verbose info merge -c dataset.cgf -c rv32i.cgf -o merged_report 1.rpt 2.rpt 3.rpt
+Usage: riscv_isac merge [OPTIONS] [FILES]...
+  Merge given coverage files.
+Options:
+  -d, --detailed          Select detailed mode of  coverage printing
+  -c, --cgf-file PATH     Coverage Group File  [required]
+  -o, --output-file PATH  Coverage Group File.
+  --help                  Show this message and exit.
 ```
 
+要使用该功能，在命令栏中输入如下指令即可
+
+```
+riscv_isac merge -c dataset.cgf -c rv32i.cgf -o merged_report 1.rpt 2.rpt 3.rpt
+```
+
+合并后的报告如下图所示
+
 ![](/1.png)
+
+## 总结
+
+RISC-V ISAC的覆盖率报告对于RISCOF测试有着至关重要的作用，因此掌握ISAC的使用对于RISCOF测试有着至关重要的作用。
