@@ -21,8 +21,6 @@ marp: true
 
 ![RISCOF](../week37/img/riscof.png)
 
-可以看到其中ISAC所扮演的行为
-
 ---
 
 ## RISCV ISAC
@@ -31,11 +29,11 @@ RISC-V ISAC 是一种 ISA 覆盖率提取工具。给定一组覆盖点以及在
 
 ISAC通过[Coverage Group Format](https://riscv-isac.readthedocs.io/en/latest/cgf.html) (CGF)的特殊yaml文件格式捕捉，CGF 文件通常由单个数据集节点和多个覆盖组组成。每个覆盖组可以为不同的指令集定义多个覆盖点。
 
-
-![](https://riscv-isac.readthedocs.io/en/latest/_images/riscv-isac.png)
-
 ---
 
+
+
+---
 
 
 ## 安装ISAC
@@ -198,11 +196,32 @@ riscv_isac merge -c dataset.cgf -c rv32i.cgf -o merged_report 1.rpt 2.rpt 3.rpt
 
 合并后的报告如下图所示
 
-![](/1.png)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
 
 ---
 
 ## 总结
 
 RISC-V ISAC的覆盖率报告对于RISCOF测试有着至关重要的作用，因此掌握ISAC的使用对于RISCOF测试有着至关重要的作用。
+
+---
+# End
 
