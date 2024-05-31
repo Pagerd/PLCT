@@ -5,7 +5,7 @@
 ### 会议纪要
 
 - 参加了5.13 sail Arch Compat. Test SlG meeting会议，产出了[会议纪要](https://github.com/Pagerd/PLCT/tree/main/Report/week/week41/note.md)
-- 参加了5.7 Arch Compatibility Test Sig meeting会议，产出了[会议纪要](https://github.com/Pagerd/PLCT/tree/main/Report/week/wekk42/ArchCompatibilityTest.md)
+- 参加了5.7 Arch Compatibility Test Sig meeting会议，产出了[会议纪要](https://github.com/Pagerd/PLCT/tree/main/Report/week/week42/ArchCompatibilityTest.md)
 - 参加了5.9 RV Toolchain SIG meeting会议，产出了[会议纪要](https://github.com/Pagerd/PLCT/tree/main/Report/week/week42/RVToolchainSIG.md)
 
 ### 调研
@@ -21,10 +21,4 @@
 
 - 编写了RISC-V ISAC 多功能覆盖率生成器 [ppt](https://github.com/Pagerd/PLCT/tree/main/Report/week/week43/RISC-VISAC多功能覆盖率生成器.pptx),并进行了技术分享
 - 编写了riscv-config及yaml规范 [ppt](https://github.com/Pagerd/PLCT/tree/main/Report/week/riscv-config及yaml规范.pptx)，并进行了技术分享
-
-### Issue
-
-| 仓库                                                         | 内容                                    | 地址                                                         |
-| ------------------------------------------------------------ | --------------------------------------- | ------------------------------------------------------------ |
-| [riscv-isac](https://github.com/riscv-software-src/riscv-isac) | 尝试从ACT计算覆盖率时获取AttributeError | [#87](https://github.com/riscv-software-src/riscv-isac/issues/87) |
 
