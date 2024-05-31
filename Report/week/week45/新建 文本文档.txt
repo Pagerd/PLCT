@@ -1,0 +1,11 @@
+P120 RISC-V 测试实习生（Sail/ACT 测试方向） 【20240527 开放 2 名】
+工作内容：
+
+参与PLCT实验室在RISCV-Sail模型和ACT（riscv-arch-test）等相关开源项目（包括riscof/riscv-isac/riscv-ctg等）的测试。在开源社区内进行ISSUE和PR的提交与反馈
+
+入职要求：
+
+LV2 及以上
+对 RISC-V 指令集有一定的了解，掌握RV32I拓展指令的知识
+了解ACT测试及对应测试框架，能本地跑通一次ACT测试
+有一定英语水平，能够在国际开源社区流畅与外国人交流
