@@ -30,7 +30,7 @@ sudo ./fastboot flash boot ./images/boot_sing.ext4
 sudo ./fastboot flash root ./images/rootfs-sing.ext4
 ```
 
-随后耐心等待烧录完成即可![2](.\img\123.png)
+随后耐心等待烧录完成即可![2](./img/123.png)
 
 由于oERV 24.03主线用的是 6.6 同源内核，所以没有HDMI驱动，因此需要使用ssh进行登录
 
@@ -57,12 +57,25 @@ gpgcheck=0
 EOF'
 ```
 
-修改修改 /etc/yum.repos.d/openEuler.repo 中的 EPOL部分
+修改修改 /etc/yum.repos.d/openEuler.repo 中的以下部分
 
 ```
-baseurl=https://mirror.iscas.ac.cn/openeuler-sig-riscv/openEuler-RISC-V/testing/20240611/v0.2/repo/24.03/EPOL/main/riscv64/
-debuginfo enabled=0
-update enabled=0
+[EPOL]
+name=EPOL
+baseurl=http://repo.openeuler.org/openEuler-24.03-LTS/EPOL/main/$basearch/
+.....
+
+[update]
+name=update
+...
+enabled=0
+....
+
+[debuginfo]
+name=debuginfo
+....
+enabled=0
+.....
 ```
 
 ### 安装
@@ -87,7 +100,7 @@ source /opt/ros/humble/setup.sh
 
 | 测试用例名                  | 状态 |
 | --------------------------- | ---- |
-| 刷机启动                    | 成功 |
+| 测试 turtlesim功能          | 失败 |
 | 使用HDMI开机                | 失败 |
 | 测试ros2 pkg create         | 成功 |
 | 测试ros2 pkg executables    | 成功 |
@@ -114,7 +127,6 @@ source /opt/ros/humble/setup.sh
 | 测试ros2 interface show     | 成功 |
 | 测试ros2 interface proto    | 成功 |
 | 测试 ros 通信组件相关功能   | 成功 |
-| 测试 turtlesim功能          | 失败 |
 
 失败的测试用例如下:
 
