@@ -359,7 +359,7 @@ ros2 bag info 工具
 
 分别在两个终端执行 `ros2 run turtlesim turtlesim_node` 和 `ros2 run turtlesim turtle_teleop_key` 
 
-在执行第一个命令时出错，XCB 平台插件缺少一些依赖,目前暂不支持在lpi4a上进行该测试
+在执行第一个命令时出错，XCB 平台插件缺少一些依赖,目前暂不支持在qemu x86上进行该测试
 
 ![Screenshot_2023-11-24_03-20-56](./img/35.png)
 
