@@ -51,7 +51,7 @@ qemu-system-x86_64 \
 bash -c 'cat << EOF > /etc/yum.repos.d/ROS.repo
 [openEulerROS-humble]
 name=openEulerROS-humble
-baseurl=https://repo.openeuler.org/openEuler-24.03-LTS/EPOL/multi_version/ROS/humble/x86_64
+baseurl=http://121.36.84.172/dailybuild/EBS-openEuler-24.03-LTS/EBS-openEuler-24.03-LTS/EPOL/multi_version/ROS/humble/x86_64/
 enabled=1
 gpgcheck=0
 EOF'
