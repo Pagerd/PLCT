@@ -10,7 +10,7 @@
 1. 宿主机操作系统：Ubuntu 22.04
 2. OS 版本：openEuler-24.03-x86
 3. 镜像地址：https://www.openeuler.org/zh/download/?version=openEuler%2024.03%20LTS
-4. 软件源：[https://build-repo.tarsier-infra.isrc.ac.cn/openEuler:/ROS/24.03/](https://build-repo.tarsier-infra.isrc.ac.cn/openEuler:/ROS/24.03/)
+4. 软件源：http://121.36.84.172/dailybuild/EBS-openEuler-24.03-LTS/EBS-openEuler-24.03-LTS/EPOL/multi_version/ROS/humble/x86_64/
 
 ## 刷写镜像并启动
 
