@@ -73,13 +73,66 @@ source /opt/ros/humble/setup.sh
 
 随后输入`source  ~/.bashrc`来激活
 
+## 安装XFCE桌面
+
+安装字库
+
+```
+# sudo dnf install dejavu-fonts liberation-fonts gnu-*-fonts google-*-fonts
+```
+
+安装Xorg
+
+```
+# sudo dnf install xorg-*
+```
+
+安装XFCE及组件
+
+```
+# sudo dnf install xfwm4 xfdesktop xfce4-* xfce4-*-plugin network-manager-applet *fonts
+```
+
+安装登录管理器
+
+```
+# sudo dnf install lightdm lightdm-gtk
+```
+
+设置默认桌面为XFCE 通过root权限用户设置
+
+```
+# echo 'user-session=xfce' >> /etc/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf
+```
+
+使用登录管理器登录XFCE
+
+```
+# sudo systemctl start lightdm
+```
+
+登录管理器启动后，在右上角左侧选择"xfce-session" 输入用户名、密码登录
+
+设置开机自启动图形界面
+
+```
+# sudo systemctl enable lightdm
+# sudo systemctl set-default graphical.target
+```
+
+重启验证
+
+```
+# sudo reboot
+```
+
 ## 测试用例列表及测试结果
 
 测试用例列表如下
 
 | 测试用例名                  | 状态 |
 | --------------------------- | ---- |
-| 测试 turtlesim功能          | 失败 |
+| 测试 turtlesim功能          | 成功 |
 | 测试ros2 pkg create         | 成功 |
 | 测试ros2 pkg executables    | 成功 |
 | 测试ros2 pkg list           | 成功 |
@@ -359,7 +412,7 @@ ros2 bag info 工具
 
 分别在两个终端执行 `ros2 run turtlesim turtlesim_node` 和 `ros2 run turtlesim turtle_teleop_key` 
 
-在执行第一个命令时出错，XCB 平台插件缺少一些依赖,目前暂不支持在qemu x86上进行该测试
+测试通过
 
-![Screenshot_2023-11-24_03-20-56](./img/35.png)
+![Screenshot_2023-11-24_03-20-56](./img/36.png)
 
