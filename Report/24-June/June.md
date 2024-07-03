@@ -10,6 +10,7 @@
 
 
 - 在Sail-RISCV仓库中 `pmpcfg 允许非法值 R=0, W=1`问题下进行了讨论，并协助跟进解决关闭此issue [#296](https://github.com/riscv/sail-riscv/issues/296#issuecomment-2175539444)
+- 正在研究ACT仓库新issue Zfh 测试缺少浮点到浮点的转换 [Issue](https://github.com/riscv-non-isa/riscv-arch-test/issues/458),已编写新的CTG测试用例，但ISAC中IBM模型并不支持相关16位数据的产生，目前正在尝试修复。
 
 
 ### ROS2测试
