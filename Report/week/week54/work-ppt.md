@@ -1,4 +1,11 @@
-# 在ACT框架上添加测试用例
+---
+marp: true
+---
+
+# 在ACT测试框架中添加新指令支持
+测试团队-朱旭昌
+
+---
 
 ## SAIL/ACT简介
 
@@ -6,11 +13,13 @@
 - Sail-RiSCV是一个用Sail语言编写的RISC-V架构的形式化规范，基于此规范，我们可以编写与之相关的编译器，解释器，构建汇编文件，elf可执行文件，虚拟执行软件等
 - ACT是RISC-V Architecture Test SIG 对RISC-V 基础架构的一套测试，旨在帮助确保为给定 RISC-V 配置文件/规范编写的软件能够在符合该配置文件的所有实现上运行。ACT测试还有助于确保实施者正确理解并实施了规范。
 
-
+---
 
 ## ACT当前的不足
 
-ACT测试目前仍有许多拓展及对应的指令没有支持，因此需要对这些指令进行添加
+ACT测试目前仍有许多拓展及对应的指令没有支持，例如fcvt.d.h等浮点转浮点指令，因此需要为这些指令编写测试用例来进行测试。
+
+---
 
 ## RISCOF测试工具
 
@@ -18,30 +27,58 @@ RISCOF为ACT测试使用的测试框架，在添加新指令支持时显然需�
 
 RISCOF的工作方式如下图所示
 
+```
 
 
-![RISCOF](../week37/img/riscof.png)
+
+
+
+
+
+
+
+
+
+
+
+```
 
 
 
 可以看到，RISCOF测试使用的测试用例均由RISCV-CTG进行生成，因此想要添加新指令支持就需要在RISCV-CTG上进行
 
-
+---
 
 ## RISCV-CTG
 
 - RISCV-CTG 是基于 RISC-V 的兼容性测试生成器。该工具用于生成官方RISC-V 架构测试套件和 RISC-V 架构测试框架RISCOF中使用的测试用例。
 - CTG通过(CGF)文件来生成测试用例，CGF文件包含了不同指令的各种覆盖点，CTG将每个覆盖点视为约束,并使用求解器来识别潜在的解决方案。
 
-
-
-![RISCV-ISAC](../week37/img/ctg.png)
-
+```
 
 
 
 
-为了在CTG上添加新指令的支持，我们首先需要在data文件夹中的yaml文件中依据模板添加对应的指令： 
+
+
+
+
+
+
+
+
+
+```
+
+
+
+---
+
+
+
+为了在CTG上添加新指令的支持，我们首先需要在RISCV-CTG源文件中data文件夹中的yaml文件中依据模板添加对应的指令：
+
+---
 
 以fcvt.d.h为例：
 
@@ -64,8 +101,9 @@ fcvt.d.h:
     TEST_FPSR_OP_NRM($inst, $rd, $rs1, $fcsr, $correctval, $valaddr_reg, $val_offset, $flagreg, $swreg, $testreg)  
 ```
 
-随后需要编写指令相关的cgf文件用于生成测试用例
+---
 
+随后需要编写指令相关的cgf文件用于生成测试用例
 依旧以fcvt.d.h为例
 
 ```
@@ -88,15 +126,11 @@ fcvt.d.h_b22:
 .....
       abstract_comb:
         'ibm_b22(flen,16, "fcvt.d.h", 1)': 0
-        
-fcvt.d.h_b23:
-.....
-      abstract_comb:
-        'ibm_b23(flen,16, "fcvt.d.h", 1)': 0
-        
+         
 ```
+依照fcvt测试用例cgf，共需要编写b1,b22,b23,b24,b27,b28,b29等测试用例集合
 
-依照其余的fcvt测试用例cgf，共需要编写b1,b22,b23,b24,b27,b28,b29等测试用例集合
+---
 
 随后执行命令生成测试用例，会发现有报错：
 
@@ -109,7 +143,7 @@ ERROR  Error_ evaluating abstract conb: iby_b28(fLen,16."feyt.d.h"，1) in fcvt.
 ERROR  Error evaluating abstract conb: ibn_b29(fLen,16,"fcvt.d.h"，1) in fcvt.d.h_b29: local variable 'string' referenced before assignnent
 ```
 
-
+---
 
 原因是负责生成测试数据的ibm_b函数中并不支持16位，而该函数存在于RISCV-ISAC中
 
@@ -133,6 +167,8 @@ sanitise = get_sanitise_func(opcode)
         ...
 ```
 
+---
+
 因此 需要对本次涉及到的所有ibm函数修改，进行16位的支持
 
 以ibm_b1为例:
@@ -155,6 +191,8 @@ sanitise = get_sanitise_func(opcode)
             [dsnan[0], dsnan[1]] + done
 ```
 
+---
+
 ```
 hzero       = ['0x0000','0x8000']
 hminsubnorm = ['0x0001', '0x8001']
@@ -170,9 +208,17 @@ hsnan       = ['0x7C01', '0xFC01', '0x7D55', '0xFD55']
 hone        = ['0x3C00', '0xBC00']
 ```
 
+---
+
 添加完成后，重新安装riscv_isac及riscv-ctg,即可对新测试用例使用riscof进行测试
+
+---
 
 ## 总结
 
 通过RISCV-CTG及ISAC，可以方便的在RISCOF框架中添加新指令，对于完善ACT测试有着重大的帮助
+
+---
+
+End.
 
