@@ -44,12 +44,55 @@ hart0:
 
 随后点开`riscof_qemu.py`文件，此处则为我们需要进行大量修改的地方
 
-进入`def build`函数中
 
-如果你的DUT支持 --isa命令，则需要在以下处进行修改来添加缺失的ISA
+
+##### def __init__(self, *args, **kwargs):
 
 ```
-self.isa = 'rv' + self.xlen
+super().__init__(*args, **kwargs)
+        config = kwargs.get('config')
+        if config is None:
+            print("Please enter input file paths in configuration.")
+            raise SystemExit(1)
+        self.num_jobs = str(config['jobs'] if 'jobs' in config else 1)
+it from the config.ini
+        self.pluginpath=os.path.abspath(config['pluginpath'])
+config.ini file.
+        self.isa_spec = os.path.abspath(config['ispec'])
+        self.platform_spec = os.path.abspath(config['pspec'])
+running
+        if 'target_run' in config and config['target_run']=='0':
+            self.target_run = False
+        else:
+            self.target_run = True
+```
+
+此处主要进行dut的基本设置，用于将config中的参数传递给riscof，大部分情况下不需要作更改
+
+
+
+##### def initialise(self, suite, work_dir, archtest_env):
+
+```
+def initialise(self, suite, work_dir, archtest_env):
+       self.work_dir = work_dir
+       self.suite_dir = suite
+       self.compile_cmd = 'riscv64-unknown-elf-gcc -march={0} \
+         -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles -g\
+         -T '+self.pluginpath+'/env/link.ld\
+         -I '+self.pluginpath+'/env/\
+         -I ' + archtest_env + ' {1} -o {2} {3}'
+```
+
+此函数主要将待测测试用例编译为elf文件，大部分情况下不需要作更改
+
+##### def build(self, isa_yaml, platform_yaml):
+
+```
+# load the isa yaml as a dictionary in python.
+      ispec = utils.load_yaml(isa_yaml)['hart0']
+      self.xlen = ('64' if 64 in ispec['supported_xlen'] else '32')
+      self.isa = 'rv' + self.xlen
       if "I" in ispec["ISA"]:
           self.isa += 'i'
       if "M" in ispec["ISA"]:
@@ -60,31 +103,48 @@ self.isa = 'rv' + self.xlen
           self.isa += 'd'
       if "C" in ispec["ISA"]:
           self.isa += 'c'
-      if "Zfh" in ispec["ISA"]:
-          self.isa += '_Zfh'
-      print(self.isa+' '+ispec["ISA"])
+
+      self.compile_cmd = self.compile_cmd+' -mabi='+('lp64 ' if 64 in ispec['supported_xlen'] else 'ilp32 ')
 ```
 
-随后下拉到`RunTest`命令，此处需要根据不同的dut命令进行相应的修改以执行elf文件并生成结果
+通过选取 isa yaml 的“supported_xlen”字段中的最大值来捕获 XLEN 值。同时其中的ISA相关字段为spike获取ISA的函数，其余dut不一定支持此参数
+
+##### def runTests(self, testList):
 
 ```
-if self.target_run:
-            # set up the simulation command. Template is for spike. Please change.
+def runTests(self, testList):
+      if os.path.exists(self.work_dir+ "/Makefile." + self.name[:-1]):
+            os.remove(self.work_dir+ "/Makefile." + self.name[:-1])
+      make = utils.makeUtil(makefilePath=os.path.join(self.work_dir, "Makefile." + self.name[:-1]))
+      make.makeCommand = 'make -k -j' + self.num_jobs
+      for testname in testList:
+          testentry = testList[testname]
+          test = testentry['test_path']
+          test_dir = testentry['work_dir']
+          elf = 'my.elf'
+          sig_file = os.path.join(test_dir, self.name[:-1] + ".signature")
+          # prefix with "-D". The following does precisely that.
+          compile_macros= ' -D' + " -D".join(testentry['macros'])
+          cmd = self.compile_cmd.format(testentry['isa'].lower(), self.xlen, test, elf, compile_macros)
+          if self.target_run:
             simcmd = self.dut_exe + ' --isa={0} +signature={1} +signature-granularity=4 {2}'.format(self.isa, sig_file, elf)
+          else:
+            simcmd = 'echo "NO RUN"'
+          execute = '@cd {0}; {1}; {2};'.format(testentry['work_dir'], cmd, simcmd)
+          make.add_target(execute)
+      if not self.target_run:
+          raise SystemExit(0)
 ```
 
-以qemu为例，需要修改为以下代码（pending）
+此函数主要负责进行测试，前半部分为riscof通用设置，不需要进行修改
+
+对此函数的修改主要体现在此处
 
 ```
 if self.target_run:
-            # set up the simulation command. Template is for spike. Please change.
-            self.dut_exe = "qemu-system-riscv64"
-            simcmd = self.dut_exe + ' -nographic -bios none -kernel {2}'.format(self.isa, sig_file, elf)
+            simcmd = self.dut_exe + ' --isa={0} +signature={1} +signature-granularity=4 {2}'.format(self.isa, sig_file, elf)
+          else:
+            simcmd = 'echo "NO RUN"'
 ```
 
-随后返回测试界面，使用以下命令启动ACT测试即可
-
-```
-riscof run --config=config.ini --suite=riscv-arch-test/riscv-test-suite/ --env=riscv-arch-test/riscv-test-suite/env
-```
-
+需要将此处的命令行修改为dut所符合的测试命令
