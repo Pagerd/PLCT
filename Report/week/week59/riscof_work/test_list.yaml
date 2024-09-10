@@ -1,0 +1,309 @@
+# testlist generated on 2024-07-23 15:52 GMT
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.d.h_b1-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.d.h_b1-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=64
+  isa: RV32IFD_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.d.h_b1
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.d.h_b1-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.d.h_b22-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.d.h_b22-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=64
+  isa: RV32IFD_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.d.h_b22
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.d.h_b22-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.d.h_b23-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.d.h_b23-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=64
+  isa: RV32IFD_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.d.h_b23
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.d.h_b23-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.d.h_b24-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.d.h_b24-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=64
+  isa: RV32IFD_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.d.h_b24
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.d.h_b24-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.d.h_b27-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.d.h_b27-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=64
+  isa: RV32IFD_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.d.h_b27
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.d.h_b27-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.d.h_b28-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.d.h_b28-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=64
+  isa: RV32IFD_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.d.h_b28
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.d.h_b28-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.d.h_b29-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.d.h_b29-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=64
+  isa: RV32IFD_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.d.h_b29
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.d.h_b29-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.d_b1-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.h.d_b1-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=64
+  isa: RV32IFD_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.h.d_b1
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.d_b1-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.d_b22-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.h.d_b22-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=64
+  isa: RV32IFD_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.h.d_b22
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.d_b22-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.d_b23-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.h.d_b23-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=64
+  isa: RV32IFD_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.h.d_b23
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.d_b23-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.d_b24-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.h.d_b24-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=64
+  isa: RV32IFD_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.h.d_b24
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.d_b24-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.d_b27-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.h.d_b27-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=64
+  isa: RV32IFD_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.h.d_b27
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.d_b27-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.d_b28-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.h.d_b28-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=64
+  isa: RV32IFD_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.h.d_b28
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.d_b28-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.d_b29-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.h.d_b29-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=64
+  isa: RV32IFD_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.h.d_b29
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.d_b29-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.s_b1-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.h.s_b1-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=32
+  isa: RV32IF_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.h.s_b1
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.s_b1-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.s_b22-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.h.s_b22-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=32
+  isa: RV32IF_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.h.s_b22
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.s_b22-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.s_b23-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.h.s_b23-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=32
+  isa: RV32IF_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.h.s_b23
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.s_b23-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.s_b24-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.h.s_b24-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=32
+  isa: RV32IF_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.h.s_b24
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.s_b24-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.s_b27-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.h.s_b27-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=32
+  isa: RV32IF_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.h.s_b27
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.s_b27-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.s_b28-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.h.s_b28-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=32
+  isa: RV32IF_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.h.s_b28
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.s_b28-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.s_b29-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.h.s_b29-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=32
+  isa: RV32IF_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.h.s_b29
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.h.s_b29-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.s.h_b1-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.s.h_b1-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=32
+  isa: RV32IF_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.s.h_b1
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.s.h_b1-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.s.h_b22-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.s.h_b22-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=32
+  isa: RV32IF_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.s.h_b22
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.s.h_b22-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.s.h_b23-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.s.h_b23-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=32
+  isa: RV32IF_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.s.h_b23
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.s.h_b23-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.s.h_b24-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.s.h_b24-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=32
+  isa: RV32IF_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.s.h_b24
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.s.h_b24-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.s.h_b27-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.s.h_b27-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=32
+  isa: RV32IF_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.s.h_b27
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.s.h_b27-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.s.h_b28-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.s.h_b28-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=32
+  isa: RV32IF_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.s.h_b28
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.s.h_b28-01.S
+/home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.s.h_b29-01.S:
+  commit_id: '-'
+  work_dir: /home/pager/Desktop/work/ZfhTest/riscof_work/rv32i_m/Zfh/src/fcvt.s.h_b29-01.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=32
+  - FLEN=32
+  isa: RV32IF_Zicsr_Zfh
+  coverage_labels:
+  - fcvt.s.h_b29
+  test_path: /home/pager/Desktop/work/ZfhTest/riscv-arch-test/riscv-test-suite/rv32i_m/Zfh/src/fcvt.s.h_b29-01.S
