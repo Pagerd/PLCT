@@ -2,11 +2,20 @@ import os
 import csv
 from pathlib import Path
 
-filename ='./fmadd_b15-01.S'
+filename ='./ofmadd_b15-01.S'
+filename2 = ""
+filename3 = './test0.S'
+filename4 = './test2.S'
 
 start = ""
+o = 0
 
-if __name__ == "__main__":
+
+
+
+def sov():
+    x1 = 0 + (767*o)
+    y1 = 0 + (2303*o)
     array = []
     scase = []
     row = []
@@ -22,32 +31,80 @@ if __name__ == "__main__":
              # 在这里处理每一行内容，例如：
             if (cleaned_line != ''):
                 if(z == 0):
+                    if (cleaned_line[0] == 'i'):
+                        if(x >= x1):
+                            y=0
+                        x = x+1
                     if (len(cleaned_line) > 7):
                         if(cleaned_line[7] == 'S'):
-                            if(x != 0):
+                            if(x > x1):
                                 row.append(cleaned_line)
-                            print(cleaned_line)
-                    if (cleaned_line[0] == 'i'):
-                        y=0
-                        x = x+1
+                                print(cleaned_line)
                     if(y > 4):
                         y = -1
+                        row.append(cleaned_line)
                         array.append(row)
                         row = []
                         #print(x)
-                        if(x == 767):
+                        if(x >= (x1+726)):
                             z = -1
                     if (y > -1):
                         row.append(cleaned_line)
                         y = y+1
                 if (z == -1):
-                    if (cleaned_line[0] == 'i'):
-                        scase.append(cleaned_line)
+                    if (cleaned_line[0] == 'N'):
+                        if(a >= y1):
+                            scase.append(cleaned_line)
                         a = a+1
                         #print(a)
-                        if(a > 2302):
+                        if(a > (y1+2303)):
                             z = -2
-    print(array)
+    print(array[1][1])
     print(scase)
+    with open(filename2, 'w', encoding='utf-8') as file2:
+        with open(filename4, 'r', encoding='utf-8') as file3:
+            lines = file3.readlines()
+            for gj in lines:
+                s = ""
+                s = gj
+                file2.write(s)
+        for ii in array:
+            for bb in ii:
+                file2.write(bb)
+                file2.write("\n")
+            file2.write("\n")
+        file2.write("#endif\n")
+        file2.write("RVTEST_CODE_END\n")
+        file2.write("RVMODEL_HALT\n")
+        file2.write("RVTEST_DATA_BEGIN\n")
+        file2.write(".align 4\n")
+        file2.write("rvtest_data:\n")
+        file2.write(".word 0xbabecafe\n")
+        file2.write(".word 0xabecafeb\n")
+        file2.write(".word 0xbecafeba\n")
+        file2.write(".word 0xecafebab\n")
+        file2.write("test_dataset_0:\n")
+        for yo in scase:
+            file2.write(yo)
+            file2.write("\n")
+        with open(filename3, 'r', encoding='utf-8') as file3:
+            lines = file3.readlines()
+            for gj in lines:
+                s = ""
+                s = gj
+                file2.write(s)
+        
+    file2.close()
+        
                         
-
+if __name__ == "__main__":
+    for i in range(49):
+        o = i
+        if(o >=10):
+            if(o >= 100):
+                filename2 = "./fmadd_b15-"+str(i+1)+".S"
+            else:
+                filename2 = "./fmadd_b15-0"+str(i+1)+".S"
+        else:
+            filename2 = "./fmadd_b15-00"+str(i+1)+".S"
+        sov()
