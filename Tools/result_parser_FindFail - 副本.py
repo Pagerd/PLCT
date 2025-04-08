@@ -2,7 +2,7 @@ import os
 import csv
 from pathlib import Path
 
-filename ='./ofmadd_b15-01.S'
+filename ='./ofnmsub_b15-01.S'
 filename2 = ""
 filename3 = './test0.S'
 filename4 = './test2.S'
@@ -37,7 +37,7 @@ def sov():
                         x = x+1
                     if (len(cleaned_line) > 7):
                         if(cleaned_line[7] == 'S'):
-                            if(x > x1):
+                            if(x >= x1):
                                 row.append(cleaned_line)
                                 print(cleaned_line)
                     if(y > 4):
@@ -59,7 +59,7 @@ def sov():
                         #print(a)
                         if(a > (y1+2303)):
                             z = -2
-    print(array[1][1])
+    #print(array[1][1])
     print(scase)
     with open(filename2, 'w', encoding='utf-8') as file2:
         with open(filename4, 'r', encoding='utf-8') as file3:
@@ -98,13 +98,14 @@ def sov():
         
                         
 if __name__ == "__main__":
-    for i in range(49):
+    for i in range(20):
         o = i
-        if(o >=10):
+        print(o)
+        if(o >9):
             if(o >= 100):
-                filename2 = "./fmadd_b15-"+str(i+1)+".S"
+                filename2 = "./fnmsub_b15-"+str(i+1)+".S"
             else:
-                filename2 = "./fmadd_b15-0"+str(i+1)+".S"
+                filename2 = "./fnmsub_b15-0"+str(i+1)+".S"
         else:
-            filename2 = "./fmadd_b15-00"+str(i+1)+".S"
+            filename2 = "./fnmsub_b15-00"+str(i+1)+".S"
         sov()
