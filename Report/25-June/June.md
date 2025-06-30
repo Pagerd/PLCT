@@ -2,7 +2,9 @@
 
 ### 会议
 
-参加了6月2日的ACT会议并写了会议纪要[MD](./week85/ACT.md)
+- 参加了6月2日的ACT会议并写了会议纪要[MD](https://github.com/Pagerd/PLCT/blob/main/Report/week/week85/ACT.md)
+
+- 参加了6月30日的ACT会议并写了会议纪要[MD](https://github.com/Pagerd/PLCT/blob/main/Report/week/week87/ACT.md)
 
 ### Sail/ACT
 
@@ -28,5 +30,5 @@
 
 ### 其他
 
-- 编写了玄铁课程ppt : 在Licheepi 4A上运行Deepseek.ppt
+- 编写了玄铁课程ppt : 在Licheepi 4A上运行[Deepseek.ppt]((https://github.com/Pagerd/PLCT/blob/main/Report/25-June/runningDeepseek.pptx))
 
