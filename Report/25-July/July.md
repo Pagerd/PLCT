@@ -2,8 +2,8 @@
 
 ### 会议
 
-- 参加了7月29日的ACT会议并写了会议纪要[MD](https://github.com/Pagerd/PLCT/tree/main/Report/week90/ACT.md)
-- 参加了7月14日的ACT会议并写了会议纪要[MD](https://github.com/Pagerd/PLCT/tree/main/Report/week88/ACT.md)
+- 参加了7月29日的ACT会议并写了会议纪要[MD](https://github.com/Pagerd/PLCT/tree/main/Report/week/week90/ACT.md)
+- 参加了7月14日的ACT会议并写了会议纪要[MD](https://github.com/Pagerd/PLCT/tree/main/Report/week/week88/ACT.md)
 
 ### PR相关
 
